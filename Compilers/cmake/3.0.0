@@ -1,0 +1,2 @@
+#%Module 1.0
+prepend-path	PATH		/opt/cmake/3.0.0/gcc/bin

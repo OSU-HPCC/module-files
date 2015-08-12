@@ -1,0 +1,6 @@
+prepend_path("PATH","/act/gcc-4.6.2/bin")
+prepend_path("MANPATH","/act/gcc-4.6.2/share/man")
+prepend_path("LD_LIBRARY_PATH","/act/gcc-4.6.2/lib64")
+set_alias("gcc46","/act/gcc-4.6.2/bin/gcc")
+set_alias("g++46","/act/gcc-4.6.2/bin/g++")
+set_alias("gfortran46","/act/gcc-4.6.2/bin/gfortran")

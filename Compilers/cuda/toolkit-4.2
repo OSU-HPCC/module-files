@@ -1,0 +1,8 @@
+#%Module 1.0
+setenv          CUDA_PATH       /opt/cuda
+prepend-path	PATH		/opt/cuda/bin:/opt/cuda/open64/bin
+prepend-path	PATH		/opt/cuda/include:/opt/NVIDIA_GPU_Computing_SDK/C/bin/linux/release
+prepend-path	LD_LIBRARY_PATH	/opt/cuda/open64/lib:/opt/cuda/lib:/opt/cuda/lib64:/opt/cuda/include
+prepend-path 	CUDA_LIBS	/opt/cuda/open64/lib:/opt/cuda/lib:/opt/cuda/lib64
+prepend-path	CPLUS_INCLUDE_PATH	/opt/cuda/lib64:/opt/cuda/include
+family "GPU"

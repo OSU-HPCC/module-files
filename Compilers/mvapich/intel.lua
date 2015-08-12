@@ -1,0 +1,5 @@
+prepend_path("PATH","/act/mvapich/intel/bin")
+prepend_path("MANPATH","/act/mvapich/intel/man")
+prepend_path("INCLUDE","/usr/include/infiniband")
+prepend_path("LD_LIBRARY_PATH","/act/mvapich/intel/lib")
+family("MPI")

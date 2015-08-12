@@ -1,0 +1,6 @@
+prepend_path("PATH","/act/openmpi-1.4/intel/bin")
+prepend_path("MANPATH","/act/openmpi-1.4/intel/man")
+prepend_path("LD_LIBRARY_PATH","/act/openmpi-1.4/intel/lib")
+prepend_path("INCLUDE","/act/openmpi-1.4/intel/include")
+prepend_path("CPLUS_INCLUDE_PATH","/act/openmpi-1.4/intel/include")
+family("MPI")

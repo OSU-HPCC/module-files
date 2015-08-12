@@ -1,0 +1,6 @@
+#%Module 1.0
+prepend-path PATH /act/openmpi-1.4/gnu/bin
+prepend-path MANPATH /act/openmpi-1.4/gnu/man
+prepend-path LD_LIBRARY_PATH /act/openmpi-1.4/gnu/lib
+
+family "MPI"
