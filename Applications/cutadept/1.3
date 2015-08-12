@@ -1,0 +1,21 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Cutadapt creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Cutadapt module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the Cutadapt executibles.\n"
+puts stderr "\nVersion 1.3"
+}
+module-whatis "Name: Cutadapt"
+module-whatis "Version: 1.3"
+module-whatis "Category: python"
+module-whatis "URL: http://code.google.com/p/cutadapt/"
+module-whatis "Description: A tool that removes adapter sequences from DNA sequencing reads"
+
+
+prepend-path PATH		/opt/cutadept/1.3/python

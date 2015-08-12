@@ -1,0 +1,21 @@
+#%Module1.0###################################################
+#
+# This modulefile for package SPAGeDi creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Scythe module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the Scythe executible.\n"
+puts stderr "\nVersion 0.981 BETA"
+}
+module-whatis "Name: Scythe"
+module-whatis "Version: 0.981"
+module-whatis "Scythe classifies contaminant substrings in sequence reads"
+module-whatis "URL: https://github.com/vsbuffalo/scythe"
+
+
+
+prepend-path PATH               /opt/scythe/0.981

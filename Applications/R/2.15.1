@@ -1,0 +1,23 @@
+#%Module1.0###################################################
+#
+# This modulefile for package R creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The R module file defines the following environment variables:"
+puts stderr "PATH, MANPATH for "
+puts stderr "the location of the R distribution and its libraries.\n"
+puts stderr "\nVersion 2.15.1"
+}
+module-whatis "Name: R"
+module-whatis "Version: 2.15.1"
+module-whatis "Category: library, statistical, graphics"
+module-whatis "URL: http://www.r-project.org"
+module-whatis "Description: Statistical and graphics library language environment"
+
+
+prepend-path PATH               /opt/r/2.15.1/icc/bin
+prepend-path R_HOME		/opt/r/2.15.1/icc/lib64/R
+prepend-path MANPATH            /opt/r/2.15.1/icc/share/man

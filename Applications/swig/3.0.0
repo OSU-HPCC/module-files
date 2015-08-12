@@ -1,0 +1,22 @@
+#%Module1.0###################################################
+#
+# This modulefile for package SWIG creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The SWIG module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the SWIG distribution and its libraries.\n"
+puts stderr "\nVersion 3.0.0"
+}
+module-whatis "Name: SWIG"
+module-whatis "Version: 3.0.0"
+module-whatis "Category: molecular biology"
+module-whatis "URL: http://www.swig.org"
+module-whatis "Description: C/C++ wrapper libraries"
+
+
+prepend-path PATH		/opt/swig/3.0.0/gcc/bin
+prepend-path MANPATH		/opt/swig/3.0.0/gcc/share/man

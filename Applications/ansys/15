@@ -1,0 +1,28 @@
+#%Module1.0###################################################
+#
+# This modulefile for package ANSYS Fluent creates a variable
+# so that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The ANSYS Fluent module file defines the following environment variables:"
+puts stderr "PATH, LD_LIBRARY_PATH for "
+puts stderr "the location of the ANSYS Fluent executibles.\n"
+puts stderr "\nVersion 15"
+}
+module-whatis "Name: ANSYS Fluent"
+module-whatis "Version: 15"
+module-whatis "Category: fluid dynamics, CAD"
+module-whatis "URL: http://www.ansys.com"
+module-whatis "Description: Fluid dynamics simulation software"
+
+prepend-path PATH               /opt/ansys/ansys15/v150/fluent/bin
+prepend-path CPATH		/opt/ansys/ansys15/v150/fluent/include
+prepend-path LD_LIBRARY_PATH	/opt/ansys/ansys15/v150/fluent/lib
+prepend-path PATH               /opt/ansys/ansys15/v150/CFX/bin
+prepend-path CPATH		/opt/ansys/ansys15/v150/CFX/include
+prepend-path LD_LIBRARY_PATH	/opt/ansys/ansys15/v150/CFX/lib
+prepend-path PATH               /opt/ansys/ansys15/v150/icemcfd/linux64_amd/bin
+prepend-path LD_LIBRARY_PATH	/opt/ansys/ansys15/v150/icemcfd/linux64_amd/lib
+prepend-path ANSYSLIC_DIR	/opt/ansys/lm/shared_files/licensing

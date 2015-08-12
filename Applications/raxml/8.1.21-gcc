@@ -1,0 +1,19 @@
+#%Module1.0###################################################
+#
+# This modulefile for package 8.1.21 creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The RAxML module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the RAxML distribution and its libraries.\n"
+puts stderr "\nVersion 8.1.21"
+}
+module-whatis "Name: RAxML"
+module-whatis "Version: 8.1.21"
+
+prepend-path PATH               /opt/raxml/8.1.21/gcc-4.7.2
+
+module load gcc-4.7.2

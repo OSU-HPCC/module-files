@@ -1,0 +1,23 @@
+#%Module1.0###################################################
+#
+# This modulefile for package ClonalOrigin creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The ClonalOrigin module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the ClonalOrigin distribution and its libraries.\n"
+puts stderr "\nVersion 43"
+}
+module-whatis "Name: ClonalOrigin"
+module-whatis "Version: 43"
+module-whatis "Category: sequencing, bioinformatics, genomics"
+module-whatis "URL: http://code.google.com/p/clonalorigin/"
+module-whatis "Description:  inference of homologous recombination in bacteria using whole genome sequences"
+
+
+prepend-path PATH               /opt/clonalorigin/43/warg/bin
+
+module load gsl/1.16

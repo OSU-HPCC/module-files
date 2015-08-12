@@ -1,0 +1,23 @@
+#%Module1.0###################################################
+#
+# This modulefile for package ClonalFrame creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The ClonalFrame module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the ClonalFrame distribution and its libraries.\n"
+puts stderr "\nVersion 1.2"
+}
+module-whatis "Name: ClonalFrame"
+module-whatis "Version: 1.2"
+module-whatis "Category: sequencing, bioinformatics, genomics"
+module-whatis "URL: http://www.xavierdidelot.xtreemhost.com/clonalframe.htm"
+module-whatis "Description:  inference of bacterial microevolution using multilocus sequence data"
+
+
+prepend-path PATH               /opt/clonalframe/1.2/gcc/bin
+
+module load gsl/1.16

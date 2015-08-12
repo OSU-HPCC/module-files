@@ -1,0 +1,21 @@
+#%Module1.0###################################################
+#
+# This modulefile for package imake creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The imake module file defines the following environment variables:"
+puts stderr "PATH, for "
+puts stderr "the location of the imake distribution and its libraries.\n"
+puts stderr "\nVersion 1.0.6-2"
+}
+module-whatis "Name: imake"
+module-whatis "Version: 1.0.6-2"
+module-whatis "Category: library"
+module-whatis "URL: "
+module-whatis "Description: library for makes"
+
+prepend-path PATH               /opt/imake/1.0.6-2/prebuilt/bin
+prepend-path LD_LIBRARY_PATH    /opt/imake/1.0.6-2/prebuilt/lib

@@ -1,0 +1,21 @@
+#%Module1.0###################################################
+#
+# This modulefile for package GROMACS XTC Library creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The GROMACS XTC module file defines the following environment variables:"
+puts stderr "PATH "
+puts stderr "the location of the GROMACS XTC Libraries.\n"
+puts stderr "\nVersion 1.1"
+}
+module-whatis "Name: GROMACS XTC Library"
+module-whatis "Version: 1.1"
+module-whatis "Category: sequencing, statistical, alignment"
+module-whatis "URL: www.gromacs.org/Developer_Zone/Programming_Guide/XTC_Library"
+module-whatis "Description: GROMACS Library for reading xtc, edr, and trr files"
+
+prepend-path PATH               /opt/gromacs/xtc-1.1/gcc/bin
+prepend-path LD_LIBRARY_PATH	/opt/gromacs/xtc-1.1/gcc/lib

@@ -1,0 +1,20 @@
+#%Module1.0###################################################
+#
+# This modulefile for package CAP3 creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The CAP3 module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the CCP4 distribution and its libraries.\n"
+puts stderr "\nVersion CAP3"
+}
+module-whatis "Name: CAP3"
+module-whatis "Version: CAP3"
+module-whatis "Category: assembly"
+module-whatis "URL: http://seq.cs.iastate.edu/cap3.html"
+module-whatis "Description: Assembly software by Iowa State"
+
+prepend-path PATH               /opt/cap3/CAP3/

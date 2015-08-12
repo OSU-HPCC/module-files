@@ -1,0 +1,6 @@
+whatis("Name: STAR-RNA")
+whatis("Version: 2.4.2a")
+whatis("Category: bioinformatics")
+whatis("URL: https://github.com/alexdobin/STAR")
+prepend_path("PATH","/opt/star-rna/2.4.2a/prebuilt")
+prepend_path("LD_LIBRARY_PATH","/opt/star-rna/2.4.2a/prebuilt/lib")

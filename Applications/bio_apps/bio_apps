@@ -1,0 +1,34 @@
+#%Module1.0###################################################
+#
+# This modulefile for package bio_apps loads all needed modules so
+# that users can easily complete the bioworkshop
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The bio_apps module file defines the following environment variables:"
+puts stderr "PATH, for "
+puts stderr "the location of the bio_apps distribution and its libraries.\n"
+puts stderr ""
+}
+module-whatis "Name: bio_apps"
+module-whatis "Version: "
+module-whatis "Category: Bioworkshop"
+module-whatis "Description: module load for workshop"
+
+module load tophat
+module load velvet
+module load python
+module load bowtie
+module load R
+module load samtools
+module load bedtools
+module load bwa
+module load fastqc
+module load icommands
+module load perl
+module load abyss
+module load mummer
+module load fastx_toolkit
+module load snpeff
+module load trinotate

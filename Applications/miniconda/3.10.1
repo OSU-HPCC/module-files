@@ -1,0 +1,18 @@
+#%Module1.0
+proc ModulesHelp { } {
+        puts stderr "\n"
+        puts stderr "\tModule Miniconda loads environmental variables defining"
+        puts stderr "\tthe location of the Miniconda binaries and libraries: \n"
+ }
+
+module-whatis "Miniconda"
+module-whatis "Version: 3.10.1"
+module-whatis "Category: system, development"
+module-whatis "Description: interpreted programming language"
+module-whatis "URL: http://repo.continuum.io/miniconda"
+
+# Tcl script only
+set version 3.10.1
+
+prepend-path PATH /opt/miniconda/3.10.1/bin
+prepend-path MANPATH /opt/miniconda/3.10.1/share/man

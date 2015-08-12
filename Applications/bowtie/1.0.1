@@ -1,0 +1,21 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Bowtie creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Bowtie module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the Bowtie distribution and its libraries.\n"
+puts stderr "\nVersion 1.0.1"
+}
+module-whatis "Name: Bowtie"
+module-whatis "Version: 1.0.1"
+module-whatis "Category: genome, sequence, alignment"
+module-whatis "URL: http://bowtie-bio.sourceforge.net/index.shtml"
+module-whatis "Description: Ultrafast, memory-efficient alignment of short DNA sequences"
+
+
+prepend-path PATH               /opt/bowtie/1.0.1/prebuilt

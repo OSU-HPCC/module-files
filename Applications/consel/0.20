@@ -1,0 +1,20 @@
+#%Module1.0###################################################
+#
+# This modulefile for package CONSEL creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The CONSEL module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the CONSEL distribution and its libraries.\n"
+puts stderr "\nVersion 0.20"
+}
+module-whatis "Name: CONSEL"
+module-whatis "Version: 0.20"
+module-whatis "Category: sequencing, bioinformatics, genomics"
+module-whatis "URL: http://www.sigmath.es.osaka-u.ac.jp/shimo-lab/prog/consel/"
+module-whatis "Description: a program for assessing the confidence of phylogenetic tree selection"
+
+prepend-path PATH		/opt/consel/0.20/gcc/bin

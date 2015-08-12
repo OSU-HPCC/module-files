@@ -1,0 +1,19 @@
+#%Module1.0###################################################
+#
+# This modulefile for package libxc creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The libint module file defines the following environment variables:"
+puts stderr "PATH "
+puts stderr "the location of the libint distribution and its libraries.\n"
+puts stderr "\nVersion 2.0.3"
+}
+module-whatis "Name: libint"
+module-whatis "Version: 2.0.3"
+module-whatis "Category: library"
+
+prepend-path LD_LIBRARY_PATH	/opt/libint/2.0.3/gcc/lib
+prepend-path CPATH		/opt/libint/2.0.3/gcc/include

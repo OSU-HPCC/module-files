@@ -1,0 +1,25 @@
+#%Module1.0###################################################
+#
+# This modulefile for package EMBOSS creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The EMBOSS  module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the EMBOSS executibles.\n"
+puts stderr "\nVersion 6.5.7"
+}
+module-whatis "Name: EMBOSS"
+module-whatis "Version: 6.5.7"
+module-whatis "Category: molecular biology"
+module-whatis "URL: http://emboss.sourceforge.net/index.html"
+module-whatis "Description: EMBOSS is 'The European Molecular Biology Open Software Suite'. EMBOSS is a free Open Source software analysis package specially developed for the needs of the molecular biology (e.g. EMBnet) user community. The software automatically copes with data in a variety of formats and even allows transparent retrieval of sequence data from the web. "
+
+
+prepend-path PATH               /opt/emboss/6.5.7/gcc/bin
+# prepend-path MANPATH           
+
+
+

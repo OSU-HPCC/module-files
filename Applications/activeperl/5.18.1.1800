@@ -1,0 +1,20 @@
+#%Module1.0
+
+## ActivePerl
+
+proc ModulesHelp { } {
+        puts stderr "\n"
+        puts stderr "\tModule activeperl loads environmental variables defining"
+        puts stderr "\tthe location of the Perl binaries and libraries: "
+        puts stderr "\tActive Perl Version perl_5_18_1_1800\n"
+ }
+
+module-whatis "ActivePerl"
+module-whatis "Version: 5.18.1.1800"
+module-whatis "Category: system, development"
+module-whatis "Description: high-level, interpreted, dynamic programming language"
+module-whatis "URL: http://www.activestate.com/activeperl/"
+
+# Perl to paths
+prepend-path PATH /opt/activeperl/5.18.1.1800/gcc/bin
+prepend-path LD_LIBRARY_PATH /opt/activeperl/5.18.1.1800/gcc/lib

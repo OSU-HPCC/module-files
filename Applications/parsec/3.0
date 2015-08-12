@@ -1,0 +1,25 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Parsec creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Parsec  module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the Parsec executibles.\n"
+puts stderr "\nVersion 3.0"
+}
+module-whatis "Name: Parsec"
+module-whatis "Version: 3.0"
+module-whatis "Category: multithreaded benchmarks"
+module-whatis "URL: http://parsec.cs.princeton.edu/index.htm"
+module-whatis "Description: Princeton Application Repository for Shared-Memory Computers (PARSEC) is a benchmark suite composed of multithreaded programs. The suite focuses on emerging workloads and was designed to be representative of next-generation shared-memory programs for chip-multiprocessors."
+
+
+#prepend-path PATH               
+# prepend-path MANPATH           
+
+source /opt/parsec/3.0/gcc/env.sh
+

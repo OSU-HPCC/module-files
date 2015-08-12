@@ -1,0 +1,19 @@
+#%Module1.0###################################################
+#
+# This modulefile for package GeneMark-ES sets path
+#  to the genemark-es scripts
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The GeneMark-ES  module file defines the following environment variables:"
+puts stderr "PATH for the location of the GeneMark-ES scrips"
+puts stderr "\nVersion 2.3"
+}
+module-whatis "Name: GeneMark-ES"
+module-whatis "Version: 2.3"
+module-whatis "Category: molecular biology"
+module-whatis "URL: http://exon.gatech.edu/license_download.cgi"
+
+
+prepend-path PATH             /opt/genemark-es/2.3/  

@@ -1,0 +1,19 @@
+#%Module1.0###################################################
+#
+# This modulefile for package libxc creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The libxc module file defines the following environment variables:"
+puts stderr "PATH "
+puts stderr "the location of the libxc distribution and its libraries.\n"
+puts stderr "\nVersion 2.0.2 MPI"
+}
+module-whatis "Name: libxc"
+module-whatis "Version: 2.0.2 MPI"
+module-whatis "Category: library"
+
+prepend-path LD_LIBRARY_PATH	/opt/libxc/2.0.2/openmpi-1.4-intel/lib
+prepend-path INCLUDE		/opt/libxc/2.0.2/openmpi-1.4-intel/include

@@ -1,0 +1,24 @@
+#%Module1.0###################################################
+#
+# This modulefile for package AMOS creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The AMOS module file defines the following environment variables:"
+puts stderr "PATH, for "
+puts stderr "the location of the rsem distribution and its libraries.\n"
+puts stderr "\nVersion 3.0.0"
+}
+module-whatis "Name: AMOS"
+module-whatis "Version: 3.0.0"
+module-whatis "Category: library, statistical, graphics"
+module-whatis "URL: http://sourceforge.net/apps/mediawiki/amos/index.php?title=AMOS"
+module-whatis "Description: Whole genome assembley software"
+
+prepend-path PATH               /opt/amos/3.0.0/gcc/bin
+prepend-path LD_LIBRARY_PATH	/opt/amos/3.0.0/gcc/lib
+prepend-path INCLUDE            /opt/amos/3.0.0/gcc/include
+
+module load mummer/3.23

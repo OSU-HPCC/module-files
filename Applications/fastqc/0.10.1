@@ -1,0 +1,18 @@
+#%Module1.0###################################################
+#
+# This modulefile for package FastQC creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The FastQC module file defines the following environment variables:"
+puts stderr "PATH "
+puts stderr "the location of the FastQC distribution and its libraries.\n"
+puts stderr "\nVersion FastQC"
+}
+module-whatis "Name: FastQC"
+module-whatis "Version: 0.10.1"
+module-whatis "Category: genomics, alignment, bioinformatics"
+
+prepend-path PATH               /opt/fastqc/0.10.1/prebuilt

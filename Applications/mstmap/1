@@ -1,0 +1,18 @@
+#%Module1.0###################################################
+#
+# This modulefile for package MSTMAP creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The MSTMAP module file defines the following environment variables:"
+puts stderr "PATH "
+puts stderr "the location of the MSTMAP distribution and its libraries.\n"
+}
+module-whatis "Name: MSTMAP"
+module-whatis "Category: linkage, sequencing, mapping"
+module-whatis "URL: http://alumni.cs.ucr.edu/~yonghui/mstmap.html"
+
+
+prepend-path PATH               /opt/mstmap

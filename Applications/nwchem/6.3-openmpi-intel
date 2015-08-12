@@ -1,0 +1,29 @@
+#%Module1.0###################################################
+#
+# This modulefile for package NWChem creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The NWChem module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the NWChem distribution and its libraries.\n"
+puts stderr "\nVersion 6.3 MPI"
+}
+module-whatis "Name: NWChem"
+module-whatis "Version: 6.3 MPI"
+module-whatis "Category: chemistry, computation, dynamics"
+module-whatis "URL: http://www.nwchem-sw.org"
+module-whatis "Description: Computational chemistry tools for parallel computing and problem solving"
+
+prepend-path PATH               /opt/nwchem/6.3/openmpi-1.4-intel/bin/LINUX64
+prepend-path NWCHEM_TOP		/opt/nwchem/6.3/openmpi-1.4-intel
+prepend-path NWCHEM_TARGET	LINUX64
+prepend-path NWCHEM_EXECUTABLE	/opt/nwchem/6.3/openmpi-1.4-intel/bin/LINUX64/nwchem
+prepend-path LD_LIBRARY_PATH	/opt/nwchem/6.3/openmpi-1.4-intel/lib/LINUX64
+prepend-path LD_LIBRARY_PATH	/opt/nwchem/6.3/openmpi-1.4-intel/src/basis/libraries
+prepend-path NWCHEM_BASIS_LIBRARY /opt/nwchem/6.3/openmpi-1.4-intel/src/basis/libraries/
+# prepend-path ARMCI_DEFAULT_SHMMAX 2048
+
+module load openmpi-1.4/intel

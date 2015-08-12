@@ -1,0 +1,28 @@
+#%Module1.0###################################################
+#
+# This modulefile for package CPLEX creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The CPLEX module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the CPLEX distribution and its libraries.\n"
+puts stderr "\nVersion 12.6"
+}
+module-whatis "Name: CPLEX"
+module-whatis "Version: 12.6"
+module-whatis "Category: modeling, mathematics"
+module-whatis "URL: http://www-01.ibm.com/software/commerce/optimization/cplex-optimizer/"
+module-whatis "Description: High-performance mathematical programming solver"
+
+
+prepend-path PATH               /opt/cplex/12.6/CPLEX_Studio/cplex/bin/x86-64_linux
+prepend-path ILOGSTUDIODIR	/opt/cplex/12.6/CPLEX_Studio
+prepend-path CPLEX_HOME		/opt/cplex/12.6/CPLEX_Studio/cplex
+prepend-path CONCERT_HOME	/opt/cplex/12.6/CPLEX_Studio/concert
+prepend-path CPATH		/opt/cplex/12.6/CPLEX_Studio/cplex/include
+prepend-path CPATH		/opt/cplex/12.6/CPLEX_Studio/concert/include
+prepend-path LD_LIBRARY_PATH	/opt/cplex/12.6/CPLEX_Studio/cplex/lib/x86-64_linux/static_pic
+prepend-path LD_LIBRARY_PATH	/opt/cplex/12.6/CPLEX_Studio/concert/lib/x86-64_linux/static_pic

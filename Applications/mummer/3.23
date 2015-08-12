@@ -1,0 +1,20 @@
+#%Module1.0###################################################
+#
+# This modulefile for package MUMmer creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The MUMmer module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the MUMmer distribution and its libraries.\n"
+puts stderr "\nVersion 3.23"
+}
+module-whatis "Name: MUMmer"
+module-whatis "Version: 3.23"
+module-whatis "Category: sequencing, statistical, genomics"
+module-whatis "URL: http://mummer.sourceforge.net"
+module-whatis "Description: Software package for rapid alignment of very large DNA and amino acid sequences"
+
+prepend-path PATH               /opt/mummer/3.23/gcc

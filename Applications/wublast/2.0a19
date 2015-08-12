@@ -1,0 +1,21 @@
+#%Module1.0###################################################
+#
+# This modulefile for package WUBlast creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The WUBlast module file defines the following environment variables:"
+puts stderr "PATH "
+puts stderr "the location of the WUBlast distribution and its libraries.\n"
+puts stderr "\nVersion 2.0a19"
+}
+module-whatis "Name: WEBlast"
+module-whatis "Version: 2.0a19"
+module-whatis "Category: sequencing, statistical, alignment"
+module-whatis "URL: http://blast.wustl.edu"
+module-whatis "Description: An old version of WUBlast for use with REPET"
+
+
+prepend-path PATH               /opt/wublast/2.0a19/gcc

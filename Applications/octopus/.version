@@ -1,0 +1,6 @@
+#%Module1.0#################################################
+##
+## version file for octopus 4.1.0
+##
+
+set     ModulesVersion      "4.1.0"

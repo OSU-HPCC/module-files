@@ -1,0 +1,21 @@
+#%Module1.0###################################################
+#
+# This modulefile for package glimmerhmm creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The glimmerhmm  module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the glimmerhmm executibles.\n"
+puts stderr "\nVersion 3.0.1"
+}
+module-whatis "Name: glimmerhmm"
+module-whatis "Version: 3.0.1"
+module-whatis "Category: bioinformatics"
+module-whatis "URL: http://cbcb.umd.edu/software/glimmerhmm/"
+module-whatis "Description: GlimmerHMM is a new gene finder based on a Generalized Hidden Markov Model"
+
+prepend-path PATH               /opt/glimmerhmm/3.0.1/gcc/bin
+prepend-path PATH		/opt/glimmerhmm/3.0.1/gcc/train

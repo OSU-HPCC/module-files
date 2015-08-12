@@ -1,0 +1,22 @@
+
+#%Module1.0##########################################################################
+##
+## Gamess modulefile
+##
+proc ModulesHelp { } {
+    global version modroot
+
+    puts stderr "\tGamess"
+}
+
+module-whatis   "Gamess path"
+
+# for Tcl script use only
+set     version         may2012
+set     modroot         /opt/gamess/may2012/mvapich2-1.8-intel
+
+
+prepend-path    PATH                    $modroot
+
+module load  mvapich2-1.8/intel
+

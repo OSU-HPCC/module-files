@@ -1,0 +1,26 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Paup creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Paup  module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the Paup executibles.\n"
+puts stderr "\nVersion 4.0b10"
+}
+module-whatis "Name: Paup"
+module-whatis "Version: 4.0b10"
+module-whatis "Category: molecular biology"
+module-whatis "URL: http://paup.csit.fsu.edu/"
+module-whatis "Description: Paup is a tool for inferring and interpreting phylogenetic trees."
+
+
+prepend-path LD_LIBRARY_PATH	/opt/ncurses/5.9-i686/gcc/lib
+prepend-path PATH               /opt/paup/4.0b10/prebuilt/
+# prepend-path MANPATH           
+
+
+

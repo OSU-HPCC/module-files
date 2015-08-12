@@ -1,0 +1,20 @@
+#%Module1.0###################################################
+#
+# This modulefile for GNU Automake sets the Path variable
+# to the bin directory
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The GNU Automake modulefile sets the "
+puts stderr "PATH variable to"
+puts stderr "the location of the Automake libraries.\n"
+puts stderr "\nVersion "
+}
+module-whatis "Name: Automake"
+module-whatis "Version: 1.15"
+module-whatis "Category: libraries"
+module-whatis "URL: http://www.gnu.org/software/automake/"
+
+prepend-path PATH		/opt/automake/1.15/gcc/bin
+prepend-path LD_LIBRARY_PATH	/opt/automake/1.15/gcc/lib

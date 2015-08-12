@@ -1,0 +1,20 @@
+#%Module1.0###################################################
+#
+# This modulefile for GNU MPFR sets the Path variable
+# to the bin directory
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The GNU MPFR modulefile sets the "
+puts stderr "LD_LIBRARY_PATH variable to"
+puts stderr "the location of the MPFR libraries.\n"
+puts stderr "\nVersion 3.1.2"
+}
+module-whatis "Name: MPFR"
+module-whatis "Version: 3.1.2"
+module-whatis "Category: libraries"
+module-whatis "URL: http://www.mpfr.org"
+
+prepend-path LD_LIBRARY_PATH	/opt/mpfr/3.1.2/lib
+prepend-path CPATH		/opt/mpfr/3.1.2/include

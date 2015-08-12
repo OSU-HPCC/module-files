@@ -1,0 +1,27 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Gromacs creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Gromacs module file defines the following environment variables:"
+puts stderr "PATH, MANPATH for "
+puts stderr "the location of the Gromacs distribution and its libraries.\n"
+puts stderr "\nVersion 5.0.4"
+}
+module-whatis "Name: Gromacs"
+module-whatis "Version: 5.0.4"
+module-whatis "Category: molecular dynamics, particles, optimization"
+module-whatis "URL: http://www.gromacs.org"
+module-whatis "Description: Molecular dynamics package for particle simulations"
+
+prepend-path PATH               /opt/gromacs/5.0.4/icc/bin
+prepend-path CPATH		/opt/gromacs/5.0.4/icc/include
+prepend-path LD_LIBRARY_PATH	/opt/gromacs/5.0.4/icc/lib
+prepend-path MANPATH            /opt/gromacs/5.0.4/icc/share/man
+
+# This version was built with Intel compilers & Intel MPI
+module load intelmpi/5.0.2
+module load cmake/3.2.2

@@ -1,0 +1,22 @@
+#%Module1.0
+
+## Anaconda Python distribution with scipy stack
+
+proc ModulesHelp { } {
+        puts stderr "\n"
+        puts stderr "\tModule Anaconda Python loads environmental variables defining"
+        puts stderr "\tthe location of the Python binaries and libraries: "
+        puts stderr "\tPython Version anaconda 2.2.0\n"
+ }
+
+module-whatis "Anaconda"
+module-whatis "Version: 2.2.0"
+module-whatis "Category: system, development"
+module-whatis "Description: interpreted programming language"
+module-whatis "URL: https://store.continuum.io/cshop/anaconda/"
+
+# Tcl script only
+set version 2.2.0
+
+prepend-path PATH /opt/anaconda/2.2.0/bin
+prepend-path MANPATH /opt/anaconda/2.2.0/share/man

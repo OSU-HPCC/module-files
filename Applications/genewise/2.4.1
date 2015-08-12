@@ -1,0 +1,20 @@
+#%Module1.0###################################################
+#
+# This modulefile for package GeneWise sets path
+#  to the genewise scripts
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The GeneWise  module file defines the following environment variables:"
+puts stderr "PATH for the location of the GeneWise scrips"
+puts stderr "\nVersion 2.4.1"
+}
+module-whatis "Name: GeneWise"
+module-whatis "Version: 2.4.1"
+module-whatis "Category: molecular biology"
+module-whatis "URL: ftp://genome.crg.es/pub/software/geneid"
+
+
+prepend-path PATH		/opt/genewise/2.4.1/gcc/src/bin
+prepend-path WISECONFIGDIR	/opt/genewise/2.4.1/gcc/wisecfg

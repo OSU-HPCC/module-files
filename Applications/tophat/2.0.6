@@ -1,0 +1,24 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Tophat creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Tophat module file defines the following environment variables:"
+puts stderr "PATH "
+puts stderr "the location of the Tophat distribution and its libraries.\n"
+puts stderr "\nVersion 2.0.6"
+}
+module-whatis "Name: Tophat"
+module-whatis "Version: 2.0.6"
+module-whatis "Category: splice, mapper, alignment"
+module-whatis "URL: http://tophat.cbcb.umd.edu/"
+module-whatis "Description: Splice junction mapper for RNA-Seq reads"
+
+
+prepend-path PATH               /opt/tophat/2.0.6/prebuilt
+module load python/3.2.3
+module load bowtie
+module load samtools

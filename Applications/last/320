@@ -1,0 +1,22 @@
+#%Module1.0###################################################
+#
+# This modulefile for package LAST creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The LAST module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the LAST distribution and its libraries.\n"
+puts stderr "\nVersion 320"
+}
+module-whatis "Name: LAST"
+module-whatis "Version: 320 (gcc)"
+module-whatis "Category: genome"
+module-whatis "URL: http://last.cbrc.jp/"
+module-whatis "Description: Genome-scale sequence comparison tool"
+
+
+prepend-path PATH		/opt/last/320/gcc/bin
+prepend-path PATH		/opt/last/320/gcc/scripts

@@ -1,0 +1,25 @@
+#%Module1.0###################################################
+#
+# This modulefile for package MGLTools creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The MGLTools  module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the MGLTools executibles.\n"
+puts stderr "\nVersion 1.5.6"
+}
+module-whatis "Name: MGLTools"
+module-whatis "Version: 1.5.6"
+module-whatis "Category: molecular biology"
+module-whatis "URL: http://mgltools.scripps.edu/downloads"
+module-whatis "Description:  MGLTools is a software developed at the Molecular Graphics Laboratory (MGL) of The Scripps Research Institute for visualization and analysis of molecular structures."
+
+
+prepend-path PATH               /opt/mgltools/1.5.6/prebuilt/bin/
+# prepend-path MANPATH           
+
+
+

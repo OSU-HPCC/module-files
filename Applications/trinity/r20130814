@@ -1,0 +1,34 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Trinity 
+# creates a variable so that users can easily find the right 
+# libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Trinity module file defines the following environment variables:"
+puts stderr "PATH for the location of the Trinity"
+puts stderr " distribution and its libraries.\n"
+puts stderr "\nVersion r2013-08-14"
+}
+module-whatis "Name: Trinity"
+module-whatis "Version: r2013-08-14"
+module-whatis "Category: sequencing, de novo, genomics"
+module-whatis "URL: http://trinityrnaseq.sourceforge.net/"
+module-whatis "Description: Software for reconstructing transcriptomes from RNA-seq data"
+
+prepend-path PATH               /opt/trinity/r20130814/gcc
+prepend-path PATH		/opt/trinity/r20130814/gcc/Chrysalis
+prepend-path PATH               /opt/trinity/r20130814/gcc/Butterfly
+prepend-path PATH		/opt/trinity/r20130814/gcc/Inchworm/bin
+prepend-path PATH		/opt/trinity/r20130814/gcc/util
+prepend-path PATH		/opt/trinity/r20130814/gcc/util/misc
+prepend-path PATH		/opt/trinity/r20130814/gcc/util/RSEM_util
+prepend-path PATH		/opt/trinity/r20130814/gcc/trinity-plugins/rsem-1.2.3
+prepend-path PERL5LIB		/opt/trinity/r20130814/gcc/PerlLib
+prepend-path TRINITY_HOME	/opt/trinity/r20130814/gcc
+
+
+module load bowtie
+module load samtools

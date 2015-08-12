@@ -1,0 +1,19 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Velvet creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Velvet module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the Abyss executibles.\n"
+puts stderr "\nVersion 1.2.10"
+}
+module-whatis "Name: Velvet"
+module-whatis "Version: 1.2.10"
+module-whatis "Category: de novo, sequence, assembler"
+module-whatis "Description: De novo sequence assembler"
+
+prepend-path PATH		/opt/velvet/1.2.10/gcc

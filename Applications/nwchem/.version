@@ -1,0 +1,5 @@
+#%Module1.0#################################################
+##
+## version file for biopython 1.60
+##
+set     ModulesVersion      "6.3-openmpi-intel"

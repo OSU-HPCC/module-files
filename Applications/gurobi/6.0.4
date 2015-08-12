@@ -1,0 +1,25 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Gurobi creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Gurobi module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the Gurobi distribution and its libraries.\n"
+puts stderr "\nVersion 6.0.4"
+}
+module-whatis "Name: Gurobi"
+module-whatis "Version: 6.0.4"
+module-whatis "Category: mathematics, programming, modeling"
+module-whatis "URL: http://www.gurobi.com"
+module-whatis "Description: Mathematical programming solver"
+
+
+prepend-path GRB_LICENSE_FILE	/opt/gurobi/6.0.4/gurobi.lic
+prepend-path GUROBI_HOME	/opt/gurobi/6.0.4/linux64
+prepend-path PATH               /opt/gurobi/6.0.4/linux64/bin
+prepend-path LD_LIBRARY_PATH	/opt/gurobi/6.0.4/linux64/lib
+prepend-path CPATH		/opt/gurobi/6.0.4/linux64/include

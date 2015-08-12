@@ -1,0 +1,22 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Siesta creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Siesta module file defines the following environment variables:"
+puts stderr "PATH "
+puts stderr "the location of the Siesta distribution and its libraries.\n"
+puts stderr "\nVersion 3.1"
+}
+module-whatis "Name: Siesta"
+module-whatis "Version: 3.1 (openmpi-1.4-intel)"
+module-whatis "Category: molecular dynamics, simulation"
+module-whatis "URL: http://www.icmab.es/siesta"
+module-whatis "Description: Dynamics and simulations of molecules and solids"
+
+prepend-path PATH               /opt/siesta/3.1/openmpi-1.4-intel/Obj
+
+module load openmpi-1.4/intel

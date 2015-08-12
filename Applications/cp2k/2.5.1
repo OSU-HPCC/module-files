@@ -1,0 +1,24 @@
+#%Module1.0###################################################
+#
+# This modulefile for package CP2k creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The CP2K module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the CP2K distribution and its libraries.\n"
+puts stderr "\nVersion 2.5.1-sopt"
+}
+module-whatis "Name: CP2K"
+module-whatis "Version: 2.5.1-sopt"
+module-whatis "Category: molecular dynamics, DFT, GPW"
+module-whatis "URL: http://www.cp2k.org/"
+module-whatis "Description: Program to perform atomistic and molecular simulations of solid state, liquid, molecular, and biological systems."
+
+prepend-path PATH               /opt/cp2k/2.5.1/ifort/bin
+prepend-path PATH		/opt/cp2k/2.5.1/openmpi-1.4-intel/bin
+prepend-path LD_LIBRARY_PATH	/opt/libint/1.1.5/gcc/lib
+
+module load openmpi-1.4/intel

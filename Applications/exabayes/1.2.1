@@ -1,0 +1,25 @@
+#%Module1.0###################################################
+#
+# This modulefile for package ExaBayes creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The ExaBayes  module file defines the following environment variables:"
+puts stderr "PATH, MANPATH for "
+puts stderr "the location of the ExaBayes executibles.\n"
+puts stderr "\nVersion 1.2.1"
+}
+module-whatis "Name: ExaBayes"
+module-whatis "Version: 1.2.1"
+module-whatis "Category: molecular biology"
+module-whatis "URL: http://exelixis-lab.org/web/software/exabayes/"
+module-whatis "Description: ExaBayes is a tool for Bayesian phylogenetic analyses."
+
+
+prepend-path PATH               /opt/exabayes/1.2.1/hybrid/bin/bin
+prepend-path LD_LIBRARY_PATH    /opt/exabayes/1.2.1/hybrid/lib
+
+module load gcc-4.6.2
+module load openmpi-1.4/gnu

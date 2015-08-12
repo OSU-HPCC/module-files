@@ -1,0 +1,21 @@
+#%Module1.0###################################################
+#
+# This modulefile for package FreeBayes 
+# creates a variable so that users can easily find the right 
+# libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Free Bayes  module file defines the following environment variables:"
+puts stderr "PATH for the location the binaries"
+puts stderr "\nVersion v0.9.14-28-g7378ee6"
+}
+module-whatis "Name: FreeBayes"
+module-whatis "Version: v0.9.14-28-g7378ee6"
+module-whatis "Category: bioinformatics"
+module-whatis "URL: https://github.com/ekg/freebayes"
+
+
+prepend-path PATH               /opt/freebayes/v0.9.14-28-g7378ee6
+

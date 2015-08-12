@@ -1,0 +1,39 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Trinity 
+# creates a variable so that users can easily find the right 
+# libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Trinity module file defines the following environment variables:"
+puts stderr "PATH for the location of the Trinity"
+puts stderr " distribution and its libraries.\n"
+puts stderr "\nVersion r2014-04-13-p1"
+}
+module-whatis "Name: Trinity"
+module-whatis "Version: r2014-04-13-p1"
+module-whatis "Category: sequencing, de novo, genomics"
+module-whatis "URL: http://trinityrnaseq.sourceforge.net/"
+module-whatis "Description: Software for reconstructing transcriptomes from RNA-seq data"
+
+prepend-path PATH               /opt/trinity/r20140413p1/gcc
+prepend-path PATH		/opt/trinity/r20140413p1/gcc/Chrysalis
+prepend-path PATH               /opt/trinity/r20140413p1/gcc/Butterfly
+prepend-path PATH		/opt/trinity/r20140413p1/gcc/Inchworm/bin
+prepend-path PATH		/opt/trinity/r20140413p1/gcc/util
+prepend-path PATH		/opt/trinity/r20140413p1/gcc/util/misc
+prepend-path PATH		/opt/trinity/r20140413p1/gcc/util/RSEM_util
+prepend-path PATH		/opt/trinity/r20140413p1/gcc/trinity-plugins/rsem-1.2.3
+prepend-path PATH		/opt/trinity/r20140413p1/gcc/trinity-plugins/jellyfish-1.1.11/bin/.libs
+prepend-path PERL5LIB		/opt/trinity/r20140413p1/gcc/PerlLib
+prepend-path LD_LIBRARY_PATH	/opt/trinity/r20140413p1/gcc/trinity-plugins/jellyfish-1.1.11/.libs
+prepend-path TRINITY_HOME	/opt/trinity/r20140413p1/gcc
+
+
+module load bowtie
+module load samtools
+module load express
+module load rsem
+module load gmap

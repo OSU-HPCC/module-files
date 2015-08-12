@@ -1,0 +1,32 @@
+#%Module1.0###################################################
+#
+# This modulefile for package CCT creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The CCT module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the CCT distribution and its libraries.\n"
+puts stderr "\nVersion CCT"
+}
+module-whatis "Name: CGView Comparison Tool"
+module-whatis "Version: CCT"
+module-whatis "Category: bioinformatics"
+module-whatis "URL: http://stothard.afns.ualberta.ca/downloads/CCT/index.html"
+module-whatis "Description: Tool to visually compared sequeneces"
+
+prepend-path PATH               /opt/cct/cgview_comparison_tool/scripts
+prepend-path PATH		/opt/java/jre1.8.0_25/bin
+prepend-path LD_LIBRARY_PATH	/opt/java/jre1.8.0_25/lib
+prepend-path JAVA_HOME		/opt/java/jre1.8.0_25
+prepend-path CCT_HOME		/opt/cct/cgview_comparison_tool
+prepend-path PERL5LIB		/opt/cct/cgview_comparison_tool/lib/bioperl-1.2.3
+prepend-path PERL5LIB		/opt/cct/cgview_comparison_tool/lib/perl_modules
+
+module load bioperl/1.6.901
+module load perl/5.16.1
+module load blast+/2.2.23
+module load imagemagick/6.9.0
+module load geeqie

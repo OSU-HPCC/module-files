@@ -1,0 +1,23 @@
+#%Module1.0###################################################
+#
+# This modulefile for package DMTCP creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The DMTCP module file defines the following environment variables:"
+puts stderr "PATH, LIB for "
+puts stderr "the location of the DMTCP distribution and its libraries.\n"
+puts stderr "\nVersion 1.2.6"
+}
+module-whatis "Name: DMTCP"
+module-whatis "Version: 1.2.6"
+module-whatis "Category: checkpoint"
+module-whatis "URL: http://www.dmtcp.sourceforge.net"
+module-whatis "Description: Checkpointing software"
+
+
+prepend-path PATH               /opt/dmtcp/1.2.6/icc/bin
+prepend-path MANPATH            /opt/dmtcp/1.2.6/icc/manpages
+prepend-path LD_LIBRARY_PATH	/opt/dmtcp/1.2.6/icc/lib

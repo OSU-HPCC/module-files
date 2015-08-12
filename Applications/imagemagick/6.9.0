@@ -1,0 +1,19 @@
+#%Module1.0###################################################
+#
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The ImageMagick modulefile sets the "
+puts stderr "PATH, LD_LIBRARY_PATH variable to"
+puts stderr "the location of the ImageMagick binaries.\n"
+puts stderr "\nVersion 6.9.0"
+}
+module-whatis "Name: ImageMagick"
+module-whatis "Version: 6.9.0"
+module-whatis "Category: Package"
+module-whatis "http://www.imagemagick.org"
+
+
+prepend-path PATH               /opt/imagemagick/6.9.0/gcc/bin
+prepend-path LD_LIBRARY_PATH	/opt/imagemagick/6.9.0/gcc/lib

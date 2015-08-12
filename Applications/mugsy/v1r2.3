@@ -1,0 +1,25 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Mugsy creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Mugsy module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the Mugsy executibles.\n"
+puts stderr "\nVersion v1r2.3"
+}
+module-whatis "Name: Mugsy"
+module-whatis "Version: v1r2.3"
+module-whatis "Category: genome, bioinformatics, sequencing"
+module-whatis "URL: http://mugsy.sourceforge.net/"
+
+
+prepend-path MUGSY_INSTALL		/opt/mugsy/v1r2.3/prebuilt
+prepend-path PATH			/opt/mugsy/v1r2.3/prebuilt
+           
+
+
+

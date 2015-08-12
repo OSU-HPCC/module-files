@@ -1,0 +1,24 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Armadillo creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Armadillo module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the Armadillo executibles.\n"
+puts stderr "\nVersion Armadillo 5.200.2"
+}
+module-whatis "Name: Armadillo"
+module-whatis "Version: 5.200.2"
+module-whatis "Category: linear algebra library"
+module-whatis "URL: http://arma.sourceforge.net/"
+module-whatis "Description: linear algebra library"
+
+prepend-path CPATH              /opt/armadillo/5.200.2/gcc/usr/include/armadillo_bits
+prepend-path LD_LIBRARY_PATH	/opt/armadillo/5.200.2/gcc/usr/lib
+
+module load gcc-4.7.2
+module load cmake/3.2.2

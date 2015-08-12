@@ -1,0 +1,22 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Biopython creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The BioPython module file defines the following environment variables:"
+puts stderr "PATH, PYTHONPATH for "
+puts stderr "the location of the Biopython distribution and its libraries.\n"
+puts stderr "\nVersion 1.60"
+}
+module-whatis "Name: Biopython"
+module-whatis "Version: 1.60"
+module-whatis "Category: biology, python, molecular"
+module-whatis "URL: http://www.biopython.org"
+module-whatis "Description: Scripting tools for computational molecular biology"
+
+
+prepend-path PYTHONPATH		/opt/biopython/1.60/gcc
+prepend-path LD_LIBRARY_PATH	/opt/biopython/1.60/gcc/Bio

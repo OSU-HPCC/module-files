@@ -1,0 +1,26 @@
+#%Module1.0###################################################
+#
+# This modulefile for package FFTW creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The FFTW module file defines the following environment variables:"
+puts stderr "PATH "
+puts stderr "the location of the FFTW distribution and its libraries.\n"
+puts stderr "\nVersion 3.3.4 MPI"
+}
+module-whatis "Name: FFTW"
+module-whatis "Version: 3.3.4 MPI"
+module-whatis "Category: library, C subroutine, discrete math"
+module-whatis "URL: http://www.fftw.org"
+module-whatis "Description: C subroutine library for computing DFT in various dimensions"
+
+
+prepend-path PATH               /opt/fftw/3.3.4/intelmpi-4.1.0/bin
+prepend-path CPATH		/opt/fftw/3.3.4/intelmpi-4.1.0/include
+prepend-path LD_LIBRARY_PATH	/opt/fftw/3.3.4/intelmpi-4.1.0/lib
+prepend-path INFOPATH		/opt/fftw/3.3.4/intelmpi-4.1.0/info
+
+module load intelmpi/4.1.0

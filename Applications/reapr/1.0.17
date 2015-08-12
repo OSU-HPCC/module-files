@@ -1,0 +1,22 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Reapr creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Reapr module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the RepeatScout distribution and its libraries.\n"
+puts stderr "\nVersion 1.0.17"
+}
+module-whatis "Name: RECON"
+module-whatis "Version: 1.0.17"
+module-whatis "Category: sequencing, statistical, genomics"
+module-whatis "URL: https://www.sanger.ac.uk/resources/software/reapr/"
+module-whatis "Description: Recognize errors in assemblies using paired reads"
+
+prepend-path PATH               /opt/reapr/1.0.17/Reapr_1.0.17
+module load R/2.15.1
+module load perl/5.18.1

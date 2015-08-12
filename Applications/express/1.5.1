@@ -1,0 +1,20 @@
+#%Module1.0###################################################
+#
+# This modulefile for package eXpress creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The eXpress module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the eXpress executibles.\n"
+puts stderr "\nVersion 1.5.1"
+}
+module-whatis "Name: eXpress"
+module-whatis "Version: 1.5.1"
+module-whatis "Category: sequencing"
+module-whatis "URL: http://bio.math.berkeley.edu/eXpress"
+module-whatis "Description: Streaming quantification for high-throughput sequencing"
+
+prepend-path PATH               /opt/express/1.5.1/prebuilt

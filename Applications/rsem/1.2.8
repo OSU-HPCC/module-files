@@ -1,0 +1,22 @@
+#%Module1.0###################################################
+#
+# This modulefile for package rsem creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The rsem module file defines the following environment variables:"
+puts stderr "PATH, for "
+puts stderr "the location of the rsem distribution and its libraries.\n"
+puts stderr "\nVersion 1.2.8"
+}
+module-whatis "Name: rsem"
+module-whatis "Version: 1.2.8"
+module-whatis "Category: library, statistical, graphics"
+module-whatis "URL: http://deweylab.biostat.wisc.edu/rsem/"
+module-whatis "Description: RNA-Seq for high-end reads"
+
+prepend-path PATH               /opt/rsem/1.2.8/gcc
+
+module load R/3.0.2

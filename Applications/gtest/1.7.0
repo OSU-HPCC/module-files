@@ -1,0 +1,26 @@
+#%Module1.0###################################################
+#
+# This modulefile for package GTest creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The GTest module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the Google Test distribution and its libraries.\n"
+puts stderr "\nVersion 1.7.0"
+}
+module-whatis "Name: Google Test"
+module-whatis "Version: 1.7.0"
+module-whatis "Category: framework, library"
+module-whatis "URL: https://code.google.com/p/googletest/"
+module-whatis "Description: Google's framework for writing C++ tests"
+
+
+prepend-path PATH		/opt/gtest/1.7.0/gcc
+prepend-path CPATH		/opt/gtest/1.7.0/gcc/include/gtest
+prepend-path CPATH		/opt/gtest/1.7.0/gcc/include
+prepend-path CPATH		/opt/gtest/1.7.0/gcc/src
+prepend-path LIBPATH		/opt/gtest/1.7.0/gcc/lib
+prepend-path LD_LIBRARY_PATH	/opt/gtest/1.7.0/gcc/lib

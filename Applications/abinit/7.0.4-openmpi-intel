@@ -1,0 +1,21 @@
+#%Module1.0###################################################
+#
+# This modulefile for package ABINIT creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The ABINIT module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the ABINIT MPI distribution and its libraries.\n"
+puts stderr "\nVersion 7.0.4"
+}
+module-whatis "Name: ABINIT"
+module-whatis "Version: 7.0.4 (openmpi-1.4-intel)"
+module-whatis "Category: Charge density, total charge, molecular dynamics simulations, generate dynamical matrices."
+module-whatis "URL: http://www.abinit.org/"
+module-whatis "Description: ABINIT is a program that calculates the total energy, charge density, and electronic structure of atomic systems."
+
+prepend-path PATH               /opt/abinit/7.0.4/openmpi-1.4-intel/bin
+module load openmpi-1.4/intel

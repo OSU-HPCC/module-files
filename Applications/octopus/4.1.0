@@ -1,0 +1,26 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Octopus creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Octopus module file defines the PATH variables."
+puts stderr "\nVersion 4.1.0"
+}
+module-whatis "Name: Octopus"
+module-whatis "Version: 4.1.0"
+module-whatis "Category: "
+module-whatis "URL: http://www.tddft.org/programs/octopus"
+module-whatis "Description: "
+
+prepend-path PATH		/opt/octopus/4.1.0/bin
+prepend-path CPLUS_INCLUDE_PATH	/opt/octopus/4.1.0/include
+prepend-path LD_LIBRARY_PATH	/opt/octopus/4.1.0/lib
+prepend-path OMP_NUM_THREADS	12
+
+module load libxc
+module load gsl
+module load fftw/3.3.3
+module load netcdf

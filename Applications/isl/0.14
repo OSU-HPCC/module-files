@@ -1,0 +1,20 @@
+#%Module1.0###################################################
+#
+# This modulefile for GNU ISL sets the Path variable
+# to the bin directory
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The GNU ISL modulefile sets the "
+puts stderr "PATH variable to"
+puts stderr "the location of the ISL libraries.\n"
+puts stderr "\nVersion 0.14"
+}
+module-whatis "Name: ISL"
+module-whatis "Version: 0.14"
+module-whatis "Category: library"
+module-whatis "URL: http://gcc.gnu.org"
+
+prepend-path LD_LIBRARY_PATH	/opt/isl/0.14/build/lib
+prepend-path CPATH		/opt/isl/0.14/build/include

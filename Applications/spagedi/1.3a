@@ -1,0 +1,21 @@
+#%Module1.0###################################################
+#
+# This modulefile for package SPAGeDi creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The SPAGeDi module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the SPAGeDi distribution and its libraries.\n"
+puts stderr "\nVersion 1.3a"
+}
+module-whatis "Name: SPAGeDi"
+module-whatis "Version: 1.3a"
+module-whatis "Category: spatial structure, statistical, genomics"
+module-whatis "URL: http://ebe.ulb.ac.be/ebe/Software.html"
+module-whatis "Description: Characterise spatial genetic structure using genotype data of any ploidy level."
+
+
+prepend-path PATH               /opt/spagedi/1.3a/prebuilt/bin

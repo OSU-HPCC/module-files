@@ -1,0 +1,21 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Mothur creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The ABINIT module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the ABINIT MPI distribution and its libraries.\n"
+puts stderr "\nVersion 6.12.3"
+}
+module-whatis "Name: ABINIT"
+module-whatis "Version: 6.12.3 (openmpi-1.4-gnu)"
+module-whatis "Category: Charge density, total charge, molecular dynamics simulations, generate dynamical matrices."
+module-whatis "URL: http://www.abinit.org/"
+module-whatis "Description: ABINIT is a program that calculates the total energy, charge density, and electronic structure of atomic systems."
+
+prepend-path PATH               /opt/abinit/6.12.3/openmpi-1.4-gcc/bin
+module load openmpi-1.4/gnu

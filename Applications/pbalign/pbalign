@@ -1,0 +1,24 @@
+#%Module1.0###################################################
+#
+# This modulefile for package pbalign creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The pbalign module file defines the following environment variables:"
+puts stderr "PATH "
+puts stderr "the location of the pbalign distribution and its libraries.\n"
+}
+module-whatis "Name: pbalign"
+module-whatis "Category: sequencing, statistical, alignment"
+module-whatis "URL: https://github.com/PacificBiosciences/pbalign"
+module-whatis "Description: Alignment tool for PacBio reads"
+
+
+module load hdf5
+module load anaconda
+module load blasr
+
+prepend-path PATH               /opt/pbalign/pbalign-master/build/scripts-2.7
+prepend-path TMPDIR		/tmp

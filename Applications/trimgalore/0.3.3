@@ -1,0 +1,21 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Trim_Galore creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Trim_Galore module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the Trim_Galore executibles.\n"
+puts stderr "\nVersion 0.3.3"
+}
+module-whatis "Name: Trim_Galore"
+module-whatis "Version: 0.3.3"
+module-whatis "Category: bioinformatics"
+module-whatis "URL: http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/"
+module-whatis "Description: A wrapper tool around cutadept and fastqc to apply quality and adapter trimming to FastQ files."
+
+
+prepend-path PATH               /opt/trimgalore/0.3.3/prebuilt

@@ -1,0 +1,26 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Migrate-n creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Migrate-n module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the Migrate-n executibles.\n"
+puts stderr "\nVersion 3.4.4"
+}
+module-whatis "Name: Migrate-n"
+module-whatis "Version: 3.4.4"
+module-whatis "Category: Estimation of population sizes and gene flow"
+module-whatis "URL: http://popgen.sc.fsu.edu/Migrate/Info.html"
+module-whatis "Description: Migrate estimates effective population sizes and past migration rates between n population assuming a migration matrix model with asymmetric migration rates and different subpopulation sizes."
+
+
+module load openmpi-1.4/intel
+prepend-path PATH               /opt/migrate-n/3.4.4/openmpi-1.4-intel/bin
+# prepend-path MANPATH           
+
+
+

@@ -1,0 +1,21 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Blast+ creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Blast+ module file defines the following environment variables:"
+puts stderr "PATH "
+puts stderr "the location of the Blast+ distribution and its libraries.\n"
+puts stderr "\nVersion 2.2.27"
+}
+module-whatis "Name: Blast+"
+module-whatis "Version: 2.2.27"
+module-whatis "Category: sequencing, statistical, alignment"
+module-whatis "URL: http://blast.ncbi.nlm.nih.gov"
+module-whatis "Description: Alignment and sequencing tools for genomes"
+
+
+prepend-path PATH               /opt/blast+/2.2.27/prebuilt/bin

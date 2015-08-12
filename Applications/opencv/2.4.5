@@ -1,0 +1,23 @@
+#%Module1.0###################################################
+#
+# This modulefile for package opencv creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The OpenCV module file defines the following environment variables:"
+puts stderr "PATH, LIB for "
+puts stderr "the location of the OpenCV distribution and its libraries.\n"
+puts stderr "\nVersion 2.4.5"
+}
+module-whatis "Name: OpenCV"
+module-whatis "Version: 2.4.5"
+module-whatis "Category: programming"
+module-whatis "URL: http://opencv.org"
+module-whatis "Description: Open Source Computer Vision"
+
+
+prepend-path PATH               /opt/opencv/2.4.5/gcc/bin
+prepend-path PATH               /opt/opencv/2.4.5/gcc/release/bin
+prepend-path LD_LIBRARY_PATH	/opt/opencv/2.4.5/gcc/lib

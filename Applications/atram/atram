@@ -1,0 +1,26 @@
+#%Module1.0###################################################
+#
+# This modulefile for package aTRAM creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The aTRAM module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the aTRAM distribution and its libraries.\n"
+puts stderr "\nVersion aTRAM"
+}
+module-whatis "Name: aTRAM"
+module-whatis "Version: aTRAM"
+module-whatis "Category: alignment"
+module-whatis "URL: https://github.com/juliema/aTRAM"
+
+module load perl/5.18.1
+module load trinity
+module load abyss/1.3.6
+module load velvet
+module load muscle
+module load mafft
+
+prepend-path PATH		/opt/aTRAM

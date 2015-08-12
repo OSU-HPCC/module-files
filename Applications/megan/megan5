@@ -1,0 +1,19 @@
+#%Module1.0###################################################
+#
+# This modulefile for package MEGAN5 creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The MEGAN module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the MetaSim distribution and its libraries.\n"
+puts stderr "\nVersion MEGAN5"
+}
+module-whatis "Name: MEGAN"
+module-whatis "Version: MEGAN5"
+module-whatis "Category: bioinformatics"
+module-whatis "URL: http://ab.inf.uni-tuebingen.de/data/software/megan5/"
+
+prepend-path PATH		/opt/megan/megan5

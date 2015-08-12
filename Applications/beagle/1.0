@@ -1,0 +1,22 @@
+#%Module1.0###################################################
+#
+# This modulefile for package BEAGLE creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The BEAGLE module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the BEAGLE executibles.\n"
+puts stderr "\nVersion 1.0"
+}
+module-whatis "Name: BEAGLE "
+module-whatis "Version: 1.0"
+module-whatis "Category: Bayesian, library"
+module-whatis "URL: https://code.google.com/p/beagle-lib/"
+module-whatis "Description: BEAGLE is a high-performance library that can perform the core calculations at the heart of most Bayesian and Maximum Likelihood phylogenetics packages."
+
+
+prepend-path CPATH		/opt/beagle/1.0/gcc/include
+prepend-path LD_LIBRARY_PATH	/opt/beagle/1.0/gcc/lib

@@ -1,0 +1,19 @@
+#%Module1.0###################################################
+#
+# This modulefile for package MetaSim creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The mreps module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the MetaSim distribution and its libraries.\n"
+puts stderr "\nVersion 0.9.5"
+}
+module-whatis "Name: MetaSim"
+module-whatis "Version: 0.9.5"
+module-whatis "Category: bioinformatics"
+module-whatis "URL: http://ab.inf.uni-tuebingen.de/data/software/metasim/download/welcome.html"
+
+prepend-path PATH		/opt/metasim/0.9.5

@@ -1,0 +1,23 @@
+#%Module1.0###################################################
+#
+# This modulefile for package EnergyPlus creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The EnergyPlus module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the EnergyPlus distribution and its libraries.\n"
+puts stderr "\nVersion 8.2.0-update-1.2"
+}
+module-whatis "Name: Energy Plus"
+module-whatis "Version: 8.2.0-update-1.2"
+module-whatis "Category: simulation"
+module-whatis "URL: http://apps1.eere.energy.gov/buildings/energyplus/"
+module-whatis "Description:  Structure/building energy simulation program to model energy and water use"
+
+
+prepend-path PATH	/opt/energyplus/8.2.0-update-1.2/Products
+
+module load gcc-4.7.2

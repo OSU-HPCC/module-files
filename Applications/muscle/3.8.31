@@ -1,0 +1,20 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Muscle creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Muscle module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the Muscle distribution and its libraries.\n"
+puts stderr "\nVersion 3.8.31"
+}
+module-whatis "Name: Muscle"
+module-whatis "Version: 3.8.31"
+module-whatis "Category: sequencing, statistical, genomics"
+module-whatis "URL: n/a"
+module-whatis "Description: n/a"
+
+prepend-path PATH               /opt/muscle/3.8.31/prebuilt

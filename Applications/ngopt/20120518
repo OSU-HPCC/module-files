@@ -1,0 +1,23 @@
+#%Module1.0
+
+## ngopt
+
+proc ModulesHelp { } {
+        puts stderr "\n"
+        puts stderr "\tModule ngopt loads environmental variables defining"
+        puts stderr "\tthe location of the ngopt (NextGenOptimator): "
+        puts stderr "\tVersion 20120518"
+        puts stderr "\tand loads perl module\n"
+ }
+
+module-whatis "ngopt (NextGenOptimator"
+module-whatis "Version: 20120518"
+module-whatis "Category: bio"
+module-whatis "URL: http://code.google.com/p/ngopt/"
+
+# path
+prepend-path PATH /opt/ngopt/ngopt_a5pipeline_linux-x64_20120518/bin
+module load perl
+
+
+

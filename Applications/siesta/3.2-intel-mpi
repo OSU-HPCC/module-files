@@ -1,0 +1,24 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Siesta creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Siesta module file defines the following environment variables:"
+puts stderr "PATH "
+puts stderr "the location of the Siesta distribution and its libraries.\n"
+puts stderr "\nVersion 3.2"
+}
+module-whatis "Name: Siesta"
+module-whatis "Version: 3.2 intel-mpi"
+module-whatis "Category: molecular dynamics, simulation"
+module-whatis "URL: http://www.icmab.es/siesta"
+module-whatis "Description: Dynamics and simulations of molecules and solids"
+
+prepend-path PATH   		/opt/siesta/3.2/intel-mpi/Obj
+prepend-path LD_LIBRARY_PATH	/opt/siesta/3.2/intel-mpi/Obj
+prepend-path PATH		/opt/intel/impi/4.1.0.024/intel64/bin
+prepend-path CPATH		/opt/intel/impi/4.1.0.024/intel64/include
+prepend-path LD_LIBRARY_PATH	/opt/intel/impi/4.1.0.024/intel64/lib

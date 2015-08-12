@@ -1,0 +1,24 @@
+#%Module1.0###################################################
+#
+# This modulefile for package R creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The R module file defines the following environment variables:"
+puts stderr "PATH, MANPATH for "
+puts stderr "the location of the R distribution and its libraries.\n"
+puts stderr "\nVersion 3.2.1"
+}
+module-whatis "Name: R (MKL)(LAPACK)"
+module-whatis "Version: 3.2.1"
+module-whatis "Category: library, statistical, graphics"
+module-whatis "URL: http://www.r-project.org"
+module-whatis "Description: Statistical and graphics library language environment"
+
+prepend-path PATH               /opt/r/3.2.1/icc/bin
+prepend-path LD_LIBRARY_PATH	/opt/r/3.2.1/icc/lib
+prepend-path MANPATH            /opt/r/3.2.1/icc/share/man
+
+prepend-path R_HOME		

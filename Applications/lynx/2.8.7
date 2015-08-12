@@ -1,0 +1,20 @@
+#%Module1.0###################################################
+#
+# This modulefile for package lynx creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The lynx module file defines the following environment variables:"
+puts stderr "PATH, for "
+puts stderr "the location of the lynx distribution and its libraries.\n"
+puts stderr "\nVersion 2.8.7"
+}
+module-whatis "Name: lynx"
+module-whatis "Version: 2.8.7"
+module-whatis "Category: browser"
+module-whatis "URL: http://lynx.isc.org/"
+module-whatis "Description: command line browser"
+
+prepend-path PATH               /opt/lynx/2.8.7/gcc/bin

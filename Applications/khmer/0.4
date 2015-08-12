@@ -1,0 +1,22 @@
+#%Module1.0###################################################
+#
+# This modulefile for package khmer creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The khmer module file defines the following environment variables:"
+puts stderr "PYTHONPATH for "
+puts stderr "the location of the khmer distribution and its libraries.\n"
+puts stderr "\nVersion 0.4"
+}
+module-whatis "Name: khmer"
+module-whatis "Version: 0.4"
+module-whatis "Category: biology, python"
+module-whatis "URL: https://khmer.readthedocs.org/en/latest/index.html"
+module-whatis "Description: "
+
+
+prepend-path PYTHONPATH		/opt/khmer/gcc/0.4/python
+

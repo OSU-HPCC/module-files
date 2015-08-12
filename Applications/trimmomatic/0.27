@@ -1,0 +1,25 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Trimmomatic creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Trimmomatic  module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the Trimmomatic executibles.\n"
+puts stderr "\nVersion 0.27"
+}
+module-whatis "Name: Trimmomatic"
+module-whatis "Version: 0.27"
+module-whatis "Category: molecular biology"
+module-whatis "URL: http://www.usadellab.org/cms/index.php?page=trimmomatic"
+module-whatis "Description:  Trimmomatic: A flexible read trimming tool for Illumina NGS data"
+
+
+prepend-path PATH               /opt/trimmomatic/0.27/prebuilt/bin/
+# prepend-path MANPATH           
+
+
+

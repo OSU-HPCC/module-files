@@ -1,0 +1,23 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Abyss creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Abyss module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the Abyss executibles.\n"
+puts stderr "\nVersion 1.3.7"
+}
+module-whatis "Name: Abyss"
+module-whatis "Version: 1.3.7-mpi"
+module-whatis "Category: de novo, sequence, assembler"
+module-whatis "URL: http://www.bcgsc.ca/platform/bioinfo/software/abyss"
+module-whatis "Description: De novo sequence assembler"
+
+prepend-path PATH               /opt/abyss/1.3.7/openmpi-1.4-intel/bin
+prepend-path MANPATH		/opt/abyss/1.3.7/openmpi-1.4-intel/share/man
+
+module load openmpi-1.4/intel

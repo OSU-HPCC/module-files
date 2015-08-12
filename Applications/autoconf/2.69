@@ -1,0 +1,21 @@
+#%Module1.0###################################################
+#
+# This modulefile for GNU MPC sets the Path variable
+# to the bin directory
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The GNU Autoconf modulefile sets the "
+puts stderr "PATH variable to"
+puts stderr "the location of the Autoconf libraries.\n"
+puts stderr "\nVersion "
+}
+module-whatis "Name: Autoconf"
+module-whatis "Version: 2.69"
+module-whatis "Category: libraries"
+module-whatis "URL: http://www.gnu.org/software/autoconf/"
+
+prepend-path PATH		/opt/autoconf/2.69/gcc/bin
+prepend-path LD_LIBRARY_PATH	/opt/autoconf/2.69/gcc/lib
+prepend-path PERL5LIB		/opt/autoconf/2.69/gcc/lib

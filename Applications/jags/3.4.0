@@ -1,0 +1,24 @@
+#%Module1.0###################################################
+#
+# This modulefile for package JAGS creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The JAGS module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the GHC distribution and its libraries.\n"
+puts stderr "\nVersion 3.4.0"
+}
+module-whatis "Name: JAGS"
+module-whatis "Version: 3.4.0"
+module-whatis "Category: bayesian models"
+module-whatis "URL: http://mcmc-jags.sourceforge.net/"
+module-whatis "Description: Just Another Gibbs Sampler"
+
+
+prepend-path PATH		/opt/jags/3.4.0/gcc/bin
+prepend-path PATH		/opt/jags/3.4.0/gcc/lib
+prepend-path LD_LIBRARY_PATH	/opt/jags/3.4.0/gcc/lib/JAGS/modules-3
+prepend-path JAGS_INCLUDE	/opt/jags/3.4.0/gcc/include/JAGS

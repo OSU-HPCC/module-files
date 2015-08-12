@@ -1,0 +1,26 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Blasr creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Blasr module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the Blasr executibles.\n"
+puts stderr "\nVersion Blasr"
+}
+module-whatis "Name: Blasr"
+module-whatis "Version: 1.3.1"
+module-whatis "Category: bioinformatics"
+module-whatis "URL: https://github.com/PacificBiosciences/blasr"
+module-whatis "Description: Blasr"
+
+
+prepend-path PATH               /opt/blasr/1.3.1/gcc/alignment/bin
+prepend-path PATH		/opt/blasr/1.3.1/gcc/pbihdfutils/bin
+prepend-path PATH		/opt/blasr/1.3.1/gcc/pblibblasr-master
+prepend-path LD_LIBRARY_PATH	/opt/blasr/1.3.1/gcc/pblibblasr-master
+
+module load hdf5/1.8.12

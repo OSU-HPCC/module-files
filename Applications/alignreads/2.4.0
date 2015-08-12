@@ -1,0 +1,26 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Alignreads creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Alignreads module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the Alignreads script.\n"
+puts stderr "\nVersion 2.4.0"
+}
+module-whatis "Name: Alignreads"
+module-whatis "Version: 2.4.0"
+module-whatis "Category: genome assembly"
+module-whatis "URL: http://openwetware.org/wiki/Alignreads.py_README"
+module-whatis "Description: guided assemblies from microreads"
+
+
+module load anaconda
+module load mummer
+module load yasra/2.2
+module load lastz/1.03.02
+
+prepend-path PATH              /opt/alignreads/2.4/alignreads_2-4-0

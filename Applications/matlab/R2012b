@@ -1,0 +1,20 @@
+#%Module1.0###################################################
+#
+# This modulefile for Matlab sets the Path variable
+# to the bin directory
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Matlab modulefile sets the "
+puts stderr "PATH variable to"
+puts stderr "the location of the Matlab binaries.\n"
+puts stderr "\nVersion R2012b"
+}
+module-whatis "Name: Matlab"
+module-whatis "Version: R2012b"
+module-whatis "Category: Package"
+module-whatis "URL: www.mathworks.com"
+
+
+prepend-path PATH               /opt/matlab/R2012b/bin

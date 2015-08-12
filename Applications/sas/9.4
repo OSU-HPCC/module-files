@@ -1,0 +1,25 @@
+#%Module1.0###################################################
+#
+# This modulefile for package SAS creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The SAS module file defines the following environment variables:"
+puts stderr "PATH "
+puts stderr "the location of the SNAP distribution and its libraries.\n"
+puts stderr "\nVersion 9.4"
+}
+module-whatis "Name: SAS"
+module-whatis "Version: 9.4"
+module-whatis "Category: analytics simulation management"
+module-whatis "URL: http://www.sas.com/"
+module-whatis "Description: SAS"
+
+prepend-path PATH               /opt/sas/9.4/SASFoundation/9.4/bin
+prepend-path SAS_INSTALL_ROOT	/opt/sas/9.4/SASFoundation/9.4
+prepend-path JAVA_HOME		/opt/sas/9.4/SASPrivateJavaRuntimeEnvironment/9.4/jre
+prepend-path LD_LIBRARY_PATH	/opt/sas/9.4/SASPrivateJavaRuntimeEnvironment/9.4/jre/lib/amd64/server
+prepend-path LD_LIBRARY_PATH	/opt/sas/9.4/SASPrivateJavaRuntimeEnvironment/9.4/jre/lib/amd64
+prepend-path LD_LIBRARY_PATH    /opt/sas/9.4/SASODBCDriversfortheWebInfrastructurePlatformDataServer/9.4/Driver

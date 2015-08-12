@@ -1,0 +1,22 @@
+#%Module1.0###################################################
+#
+# This modulefile for package glimmer creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The glimmer module file defines the following environment variables:"
+puts stderr "PATH, LD_LIBRARY_PATH, INCLUDE for "
+puts stderr "the location of the glimmer executibles.\n"
+puts stderr "\nVersion 3.02"
+}
+module-whatis "Name: glimmer"
+module-whatis "Version: 3.02"
+module-whatis "Category: bioinformatics"
+module-whatis "URL: http://www.cbcb.umd.edu/software/glimmer/"
+module-whatis "Description: n/a"
+
+prepend-path PATH               /opt/glimmer/3.02/gcc/bin
+prepend-path LD_LIBRARY_PATH    /opt/glimmer/3.02/gcc/lib
+prepend-path INCLUDE            /opt/glimmer/3.02/gcc/inc

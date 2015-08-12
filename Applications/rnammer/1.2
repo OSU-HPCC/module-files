@@ -1,0 +1,25 @@
+#%Module1.0###################################################
+#
+# This modulefile for package RNAmmer creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The RNAmmer module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the RNAmmer distribution and its libraries.\n"
+puts stderr "\nVersion 1.2"
+
+module-whatis "Name: RNAmmer"
+module-whatis "Version: 1.2"
+module-whatis "Category: bioinformatics, biosequence, Markov"
+module-whatis "URL: http://www.cbs.dtu.dk"
+module-whatis "Description: RNAmmer 1.2 predicts 5s/8s, 16s/18s, and 23s/28s ribosomal RNA in full genome sequences."}
+
+prepend-path PATH               /opt/rnammer/1.2
+prepend-path MANPATH		/opt/rnammer/1.2/man
+prepend-path LD_LIBRARY_PATH	/opt/rnammer/1.2/lib
+
+module load perl/5.16.1
+module load hmmer/2.4i

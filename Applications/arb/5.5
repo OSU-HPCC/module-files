@@ -1,0 +1,23 @@
+#%Module1.0###################################################
+#
+# This modulefile for package ARB creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The ARB module file defines the following environment variables:"
+puts stderr "PATH, for "
+puts stderr "the location of the ARB distribution and its libraries.\n"
+puts stderr "\nVersion 5.5"
+}
+module-whatis "Name: The ARB Project"
+module-whatis "Version: 5.5"
+module-whatis "Category: sequencing"
+module-whatis "URL: http://www.arb-home.de/"
+module-whatis "Description: sequence database handling and data analysis"
+
+prepend-path PATH		/opt/arb/5.5/arb_svn/bin
+prepend-path LD_LIBRARY_PATH	/opt/arb/5.5/arb_svn/lib
+prepend-path LD_LIBRARY_PATH	/opt/arb/5.5/arb_svn/LIBLINK
+prepend-path ARBHOME		/opt/arb/5.5/arb_svn

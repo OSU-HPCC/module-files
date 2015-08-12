@@ -1,0 +1,25 @@
+#%Module1.0###################################################
+#
+# This modulefile for package BaTS creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The BaTS  module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the BaTS executibles.\n"
+puts stderr "\nVersion 0.9"
+}
+module-whatis "Name: BaTS"
+module-whatis "Version: 0.9"
+module-whatis "Category: molecular biology"
+module-whatis "URL: http://evolve.zoo.ox.ac.uk/evolve/BaTS.html"
+module-whatis "Description: BaTS = Bayesian Tip-Significance testing."
+
+
+prepend-path PATH               /opt/bats/0.9/prebuilt/bin/
+# prepend-path MANPATH           
+
+
+

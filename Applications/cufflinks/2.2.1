@@ -1,0 +1,21 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Cufflinks creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Cufflinks module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the Cufflinks distribution and its libraries.\n"
+puts stderr "\nVersion 2.2.1"
+}
+module-whatis "Name: Cufflinks"
+module-whatis "Version: 2.2.1"
+module-whatis "Category: RNA-Seq, transcript, expression, regulation"
+module-whatis "URL: http://cufflinks.cbcb.umd.edu/"
+module-whatis "Description: Transcript assembly, abundance estimation, differential expression/regulation in RNA-Seq samples"
+
+
+prepend-path PATH               /opt/cufflinks/2.2.1/prebuilt

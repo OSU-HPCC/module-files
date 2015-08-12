@@ -1,0 +1,6 @@
+#%Module1.0#################################################
+##
+## version file for python 2.7.3
+##
+
+set     ModulesVersion      "2.7.3"

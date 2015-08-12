@@ -1,0 +1,6 @@
+#%Module1.0#################################################
+##
+## version file for armadillo
+##
+
+set     ModulesVersion      "4.550.2"

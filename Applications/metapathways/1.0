@@ -1,0 +1,26 @@
+#%Module1.0###################################################
+#
+# This modulefile for package MetaPathways creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The metapathways module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the MetaPathways distribution and its libraries.\n"
+puts stderr "\nVersion 1.0"
+}
+module-whatis "Name: MetaPathways"
+module-whatis "Version: 1.0"
+module-whatis "Category: bioinformatics"
+module-whatis "URL: http://hallam.microbiology.ubc.ca/MetaPathways/"
+
+prepend-path PATH		/opt/metapathways/1.0/MetaPathways-master
+prepend-path METAPATHWAYS_PATH	/opt/metapathways/1.0/MetaPathways-master
+prepend-path METAPATH		/opt/metapathways/1.0/MetaPathways-master
+prepend-path METAPATHLIB	/opt/metapathways/1.0/MetaPathways-master/libs
+prepend-path PYTHONPATH		/opt/metapathways/1.0/MetaPathways-master/libs
+
+module load pathway-tools
+module load python/2.7.3

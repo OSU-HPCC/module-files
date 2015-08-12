@@ -1,0 +1,23 @@
+#%Module1.0###################################################
+#
+# This modulefile for package VinaMPI creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The VinaMPI module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the VinaMPI executibles.\n"
+puts stderr "\nVersion 1.1.2"
+}
+module-whatis "Name: VinaMPI"
+module-whatis "Version: 1.1.2"
+module-whatis "Category: biochemistry"
+module-whatis "Description: Parallel molecular docking program"
+
+prepend-path PATH		/opt/vina/vinampi-2/openmpi-1.4-intel
+prepend-path PATH		/opt/vina/vinampi-2/openmpi-1.4-intel/scripts
+
+module load openmpi-1.4/intel
+module load autodock-vina

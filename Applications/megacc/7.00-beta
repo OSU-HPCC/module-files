@@ -1,0 +1,20 @@
+#%Module1.0###################################################
+#
+# This modulefile for package MEGA-CC creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The MEGA-CC  module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the MEGA-CC executibles.\n"
+puts stderr "\nVersion 7.00-beta"
+}
+module-whatis "Name: MegaCC"
+module-whatis "Version: 7.00-beta"
+module-whatis "Category: molecular biology"
+module-whatis "URL: http://www.megasoftware.net/megaccbeta.php"
+module-whatis "Description: molecular evolutionary genetics analysis"
+
+prepend-path PATH               /opt/megacc/7.00-beta/prebuilt

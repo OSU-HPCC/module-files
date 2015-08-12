@@ -1,0 +1,24 @@
+#%Module1.0###################################################
+#
+# This modulefile for package glew creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The glew module file defines the following environment variables:"
+puts stderr "PATH, for "
+puts stderr "the location of the glew distribution and its libraries.\n"
+puts stderr "\nVersion 1.10.0"
+}
+module-whatis "Name: glew"
+module-whatis "Version: 1.10.0"
+module-whatis "Category: OpenGL, library"
+module-whatis "URL: http://glew.sourceforge.net/install.html"
+module-whatis "Description: OpenGL library"
+
+prepend-path PATH               /opt/glew/1.10.0/gcc/bin
+prepend-path PATH               /opt/glew/1.10.0/gcc/include/GL
+prepend-path INCLUDE		/opt/glew/1.10.0/gcc/include/GL
+prepend-path CPLUS_INCLUDE_PATH	/opt/glew/1.10.0/gcc/include/GL
+prepend-path LD_LIBRARY_PATH	/opt/glew/1.10.0/gcc/lib

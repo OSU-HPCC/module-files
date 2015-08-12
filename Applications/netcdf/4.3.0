@@ -1,0 +1,21 @@
+#%Module1.0###################################################
+#
+# This modulefile for package NetCDF creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The NetCDF module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the NetCDF distribution and its libraries.\n"
+puts stderr "\nVersion 4.3.0"
+}
+module-whatis "Name: NetCDF"
+module-whatis "Version: 4.3.0"
+module-whatis "Category: software libraries"
+module-whatis "URL: http://unidata.ucar.edu/software/netcdf"
+
+prepend-path PATH		/opt/netcdf/4.3.0/gcc/bin
+prepend-path CPLUS_INCLUDE_PATH /opt/netcdf/4.3.0/gcc/include
+prepend-path LD_LIBRARY_PATH	/opt/netcdf/4.3.0/gcc/lib

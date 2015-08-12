@@ -1,0 +1,22 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Abyss creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Ray module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the Ray executibles with max kmer 41.\n"
+puts stderr "\nVersion 2.3.1"
+}
+module-whatis "Name: Ray"
+module-whatis "Version: 2.3.1"
+module-whatis "Category: de novo, sequence, assembler"
+module-whatis "URL: http://sourceforge.net/projects/denovoassembler/"
+module-whatis "Description: De novo sequence assembler"
+
+prepend-path PATH               /opt/ray/2.3.1/openmpi-1.4-intel/build
+
+module load openmpi-1.4/intel

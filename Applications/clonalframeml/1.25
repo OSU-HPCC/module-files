@@ -1,0 +1,22 @@
+#%Module1.0###################################################
+#
+# This modulefile for package ClonalFrameML creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The ClonalFrameML module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the ClonalFrameLM distribution and its libraries.\n"
+puts stderr "\nVersion 1.25"
+}
+module-whatis "Name: ClonalFrameML"
+module-whatis "Version: 1.25"
+module-whatis "Category: sequencing, bioinformatics, genomics"
+module-whatis "URL: https://code.google.com/p/clonalframeml/"
+module-whatis "Description:  inference of bacterial microevolution using multilocus sequence data"
+
+
+prepend-path PATH               /opt/clonalframeml/1.25/gcc/src
+prepend-path CPATH		/opt/clonalframeml/1.25/gcc/src

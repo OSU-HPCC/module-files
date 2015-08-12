@@ -1,0 +1,22 @@
+#%Module1.0
+
+## tmhmm
+
+proc ModulesHelp { } {
+        puts stderr "\n"
+        puts stderr "\tModule tmhmm loads environmental variables defining"
+        puts stderr "\tthe location of the Perl binaries and libraries: "
+        puts stderr "\tPerl Version perl_5_18_1\n"
+	puts stderr "\ttmhmm  Version 2.0c\n"
+ }
+
+module-whatis "tmhmm"
+module-whatis "Version: 2.0c"
+module-whatis "Category: bioinformatics"
+module-whatis "Description: TMHMM 2.0 predicts transmembrane helices in proteins"
+module-whatis "URL: http://www.cbs.dtu.dk/services/TMHMM/"
+
+# Perl to paths
+module load perl/5.18.1
+prepend-path PATH /opt/tmhmm/tmhmm-2.0c/bin
+

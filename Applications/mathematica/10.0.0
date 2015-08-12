@@ -1,0 +1,22 @@
+#%Module1.0###################################################
+#
+# This modulefile for Mathematica sets the Path variable
+# to the bin directory
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Mathematica modulefile sets the "
+puts stderr "PATH variable to"
+puts stderr "the location of the Mathematica binaries.\n"
+puts stderr "\nVersion 10.0.0"
+}
+module-whatis "Name: Mathematica"
+module-whatis "Version: 10.0.0"
+module-whatis "Category: Package"
+module-whatis "URL: www.wolfram.com"
+
+
+prepend-path PATH               	/opt/mathematica/10.0/bin
+prepend-path MATHEMATICA_BASE		/opt/mathematica/10.0
+prepend-path MATHEMATICA_USERBASE	/opt/mathematica/10.0/LM/.Mathematica

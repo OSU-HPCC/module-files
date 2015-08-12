@@ -1,0 +1,21 @@
+#%Module1.0###################################################
+#
+# This modulefile for package RepeatMasker creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The RepeatMasker module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the RepeatMasker distribution and its libraries.\n"
+puts stderr "\nVersion 4.0.1"
+}
+module-whatis "Name: RepeatMasker"
+module-whatis "Version: 4.0.1"
+module-whatis "Category: sequencing, statistical, genomics"
+module-whatis "URL: http://www.repeatmasker.org/RMDownload.html"
+module-whatis "Description: A de-novo repeat family identification and modeling package"
+
+
+prepend-path PATH               /opt/repeatmasker/4.0.1/perl

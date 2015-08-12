@@ -1,0 +1,22 @@
+#%Module1.0###################################################
+#
+# This modulefile for package picard-tools creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The picard-tools module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the picard-tools distribution and its libraries.\n"
+puts stderr "\nVersion 1.131"
+}
+module-whatis "Name: picard-tools"
+module-whatis "Version: 1.131"
+module-whatis "Category: bioinformatics, genomics, sequencing"
+module-whatis "URL: http://picard.sourceforge.net"
+module-whatis "Description: "
+
+
+prepend-path PATH               /opt/picard-tools/1.131
+prepend-path LD_LIBRARY_PATH	/opt/picard-tools/1.131

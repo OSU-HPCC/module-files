@@ -1,0 +1,27 @@
+#%Module1.0###################################################
+#
+# This modulefile for package PASA2 creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The PASA2 module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the PASA executibles.\n"
+puts stderr "\nVersion r20130605p1"
+}
+module-whatis "Name: PASA2"
+module-whatis "Version: r20130605p1"
+module-whatis "Category: molecular biology"
+module-whatis "URL: http://pasa.sourceforge.net/"
+module-whatis "Description: PASA2 is a eukaryotic genome annotation tool"
+
+
+prepend-path PATH               /opt/pasa2/r20130605p1/gcc/bin
+prepend-path PATH		/opt/pasa2/r20130605p1/gcc/scripts
+prepend-path PASAHOME		/opt/pasa2/r20130605p1/gcc
+
+module load activeperl
+module load blat
+module load gmap

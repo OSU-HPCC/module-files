@@ -1,0 +1,21 @@
+#%Module1.0###################################################
+#
+# This modulefile for package spglib creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The spglib module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the spglib distribution and its libraries.\n"
+puts stderr "\nVersion 1.6.0"
+}
+module-whatis "Name: spglib"
+module-whatis "Version: 1.6.0"
+module-whatis "Category: C library, crystal symmetries, physics"
+module-whatis "URL: http://spglib.sourceforge.net/"
+module-whatis "Description: Spglib is a C library for finding and handling crystal symmetries."
+
+
+prepend-path PATH               /opt/spglib/1.6.0/gcc/lib

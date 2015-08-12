@@ -1,0 +1,19 @@
+#%Module1.0###################################################
+#
+# This modulefile for package SOAPdenovo creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The SOAPdenovo module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the SOAPdenovo executibles.\n"
+puts stderr "\nVersion r240"
+}
+module-whatis "Name: SOAPdenovo"
+module-whatis "Version: r240"
+module-whatis "Category: de novo, sequence, assembler"
+module-whatis "Description: De novo sequence assembler"
+
+prepend-path PATH               /opt/soapdenovo/240/gcc

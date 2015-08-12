@@ -1,0 +1,23 @@
+#%Module1.0###################################################
+#
+# This modulefile for package CENSOR creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The CENSOR module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the CENSOR distribution and its libraries.\n"
+puts stderr "\nVersion 4.2.28"
+}
+module-whatis "Name: CENSOR"
+module-whatis "Version: 4.2.28"
+module-whatis "Category: sequencing, bioinformatics, genomics"
+module-whatis "URL: http://www.girinst.org/censor/"
+module-whatis "Description: Compares and masks protein or nucleotide sequences"
+
+
+prepend-path PATH               /opt/censor/4.2.28/gcc/bin
+prepend-path LD_LIBRARY_PATH	/opt/censor/4.2.28/gcc/lib
+prepend-path INCLUDE		/opt/censor/4.2.28/gcc/include

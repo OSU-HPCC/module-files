@@ -1,0 +1,22 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Phrap creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Phrap module file defines the following environment variables:"
+puts stderr "PATH "
+puts stderr "the location of the Phred.\n"
+puts stderr "\nVersion 1.090518"
+}
+module-whatis "Name: Phrap"
+module-whatis "Version: 1.090518"
+module-whatis "Category: "
+module-whatis "URL: http://www.phrap.org/phredphrapconsed.html"
+module-whatis "Description: "
+
+
+prepend-path PATH               /opt/phrap/1.090518
+

@@ -1,0 +1,20 @@
+#%Module1.0
+proc ModulesHelp { } {
+        puts stderr "\n"
+        puts stderr "\tModule seqcluster loads environmental variables defining"
+        puts stderr "\tthe location of the seqcluster binaries and libraries: \n"
+ }
+
+module-whatis "seqcluster"
+module-whatis "Category: system, development"
+module-whatis "Description: interpreted programming language"
+module-whatis "URL: http://repo.continuum.io/miniconda"
+
+# Tcl script only
+set version seqcluster
+
+prepend-path PATH /opt/seqcluster/anaconda/bin
+prepend-path PATH /opt/seqcluster/linuxbrew/bin
+prepend-path MANPATH /opt/seqcluster/anaconda/share/man
+
+module load R/3.2.1

@@ -1,0 +1,25 @@
+#%Module1.0###################################################
+#
+# This modulefile for package blast+ creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The blast+  module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the blast+ executibles.\n"
+puts stderr "\nVersion 2.2.26"
+}
+module-whatis "Name: blast+"
+module-whatis "Version: 2.2.26"
+module-whatis "Category: bioinformatics"
+module-whatis "URL: http://blast.ncbi.nlm.nih.gov/"
+module-whatis "Description: blast finds regions of similarity between biological sequences"
+
+
+prepend-path PATH               /opt/blast+/2.2.26/prebuilt/bin
+# prepend-path MANPATH           
+
+
+

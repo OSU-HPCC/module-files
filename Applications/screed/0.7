@@ -1,0 +1,21 @@
+#%Module1.0###################################################
+#
+# This modulefile for package screed creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The screed module file defines the following environment variables:"
+puts stderr "PYTHONPATH for "
+puts stderr "the location of the screed distribution and its libraries.\n"
+puts stderr "\nVersion 0.7"
+}
+module-whatis "Name: screed"
+module-whatis "Version: 0.7"
+module-whatis "Category: biology, python, molecular"
+module-whatis "URL: https://screed.readthedocs.org/en/latest/index.html "
+module-whatis "Description: "
+
+
+prepend-path PYTHONPATH		/opt/screed/0.7

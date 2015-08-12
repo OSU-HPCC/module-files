@@ -1,0 +1,25 @@
+#%Module1.0###################################################
+#
+# This modulefile for package BEAST creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The BEAST  module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the BEAST executibles.\n"
+puts stderr "\nVersion 1.7.4"
+}
+module-whatis "Name: BEAST"
+module-whatis "Version: 1.7.4"
+module-whatis "Category: molecular biology"
+module-whatis "URL: http://beast.bio.ed.ac.uk/Main_Page"
+module-whatis "Description: BEAST is a cross-platform program for Bayesian MCMC analysis of molecular sequences."
+
+
+prepend-path PATH               /opt/beast/1.7.4/prebuilt/bin
+# prepend-path MANPATH           
+
+
+

@@ -1,0 +1,6 @@
+#%Module1.0#################################################
+##
+## version file for boost 1.54.0
+##
+
+set     ModulesVersion      "1.54.0"

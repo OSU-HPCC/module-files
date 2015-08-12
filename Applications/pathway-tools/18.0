@@ -1,0 +1,21 @@
+#%Module1.0###################################################
+#
+# This modulefile for package pathway-tools creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The pathway-tools module file defines the following environment variables:"
+puts stderr "PATH, LIB for "
+puts stderr "the location of the pathway-tools distribution and its libraries.\n"
+puts stderr "\nVersion 18.0"
+}
+module-whatis "Name: Pathway Tools"
+module-whatis "Version: 18.0"
+module-whatis "Category: bioinformatics"
+module-whatis "URL: http://brg.ai.sri.com/ptools"
+module-whatis "Description: Integrates genomic data with detailed functional annotations of the genome"
+
+
+prepend-path PATH               /opt/pathway-tools/18.0

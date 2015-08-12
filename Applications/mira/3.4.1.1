@@ -1,0 +1,26 @@
+#%Module1.0###################################################
+#
+# This modulefile for package MIRA creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The MIRA  module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the MIRA executibles.\n"
+puts stderr "\nVersion 3.4.1.1"
+}
+module-whatis "Name: MIRA"
+module-whatis "Version: 3.4.1.1"
+module-whatis "Category: molecular biology"
+module-whatis "URL: http://sourceforge.net/apps/mediawiki/mira-assembler/index.php?title=Main_Page"
+module-whatis "Description: MIRA is a whole genome shotgun and EST sequence assembler for Sanger, 454, Solexa (Illumina), IonTorrent data and PacBio."
+
+
+prepend-path PATH               /opt/mira/3.4.1.1/gcc/bin/
+prepend-path LD_LIBRARY_PATH	/opt/boost/1.51.0/gcc/lib/
+# prepend-path MANPATH           
+
+
+

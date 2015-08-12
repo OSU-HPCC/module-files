@@ -1,0 +1,24 @@
+#%Module1.0###################################################
+#
+# This modulefile for package LAMMPS creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The LAMMPS module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the R distribution and its libraries.\n"
+puts stderr "\nVersion 4Jul12"
+}
+module-whatis "Name: LAMMPS"
+module-whatis "Version: 4Jul12 (openmpi-1.4-intel)"
+module-whatis "Category: "
+module-whatis "URL: http://lammps.sandia.gov"
+module-whatis "Description: "
+
+prepend-path PATH               /opt/lammps/4Jul12/openmpi-1.4-intel/bin
+prepend-path LD_LIBRARY_PATH	/opt/lammps/4Jul12/openmpi-1.4-intel/lib
+
+module load openmpi-1.4/intel
+module load fftw/2.1.5

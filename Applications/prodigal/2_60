@@ -1,0 +1,17 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Prodigal puts the binary in the path
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Prodigal module file puts the binary in the "
+puts stderr "PATH "
+puts stderr "\nVersion 2_60"
+}
+module-whatis "Name: Prodigal"
+module-whatis "Version: 2_60"
+module-whatis "Category: genomics, alignment, bioinformatics"
+module-whatis "url: https://code.google.com/p/prodigal/"
+
+prepend-path PATH               /opt/prodigal/prodigal.v2_60/

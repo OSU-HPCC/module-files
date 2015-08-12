@@ -1,0 +1,31 @@
+#%Module1.0###################################################
+#
+# This modulefile for package antiSMASH creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The antiSMASH module file defines the following environment variables:"
+puts stderr "PATH "
+puts stderr "the location of the antiSMASH distribution and its libraries.\n"
+puts stderr "\nVersion 2.0.2"
+}
+module-whatis "Name: antiSMASH"
+module-whatis "Version: 2.0.2"
+module-whatis "Category: genomics, mining, metabolite"
+module-whatis "URL: http://antismash.secondarymetabolites.org"
+module-whatis "Description: antibiotics and Secondary Metabolite Analysis SHell"
+
+
+prepend-path PATH		/opt/antismash/antismash-2.0.2
+# prepend-path PATH               /opt/antismash/antismash-2.0.2/antismash
+# prepend-path PATH		/opt/antismash/antismash-2.0.2/virtual/bin
+# prepend-path INCLUDE		/opt/antismash/antismash-2.0.2/antismash/generic_modules/fullhmmer
+# prepend-path INCLUDE		/opt/antismash/antismash-2.0.2/antismash/generic_modules/clusterblast
+
+module load python/2.7.3
+module load hmmer/3.1b1
+module load glimmer/3.02
+module load glimmerhmm/3.0.1
+module load muscle/3.8.31

@@ -1,0 +1,19 @@
+#%Module1.0###################################################
+#
+# This modulefile for package GeneID sets path
+#  to the geneid scripts
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The GeneID  module file defines the following environment variables:"
+puts stderr "PATH for the location of the GeneID scrips"
+puts stderr "\nVersion 1.4.4.Jan_13_2011"
+}
+module-whatis "Name: GeneID"
+module-whatis "Version: 1.4.4.Jan_13_2011"
+module-whatis "Category: molecular biology"
+module-whatis "URL: ftp://genome.crg.es/pub/software/geneid"
+
+
+prepend-path PATH             /opt/geneid/1.4.4/gcc/bin

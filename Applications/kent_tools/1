@@ -1,0 +1,22 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Kent Tools 
+# creates a variable so that users can easily find the right 
+# libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Kent Tools module file defines the following environment variables:"
+puts stderr "PATH for the location of the Kent tools"
+puts stderr " distribution and its libraries.\n"
+puts stderr "\nVersion 1"
+}
+module-whatis "Name: Kent Tools"
+module-whatis "Version: 1"
+module-whatis "Category: sequencing, de novo, genomics"
+module-whatis "URL: http://hgdownload.cse.ucsc.edu/admin/jksrc.zip"
+
+
+prepend-path PATH               /opt/kenttools/bin/x86_64
+

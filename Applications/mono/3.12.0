@@ -1,0 +1,24 @@
+#%Module1.0###################################################
+#
+# This modulefile for Mono sets the Path variable
+# to the bin directory
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Mono modulefile sets the "
+puts stderr "PATH variable to"
+puts stderr "the location of the Matlab binaries.\n"
+puts stderr "\nVersion 3.12.0"
+}
+module-whatis "Name: Mono"
+module-whatis "Version: 3.12.0"
+module-whatis "Category: Package"
+module-whatis "URL: www.mono-project.com"
+
+
+prepend-path PATH		/opt/mono/bin
+prepend-path MANPATH		/opt/mono/share/man/
+prepend-path CPATH		/opt/mono/include
+prepend-path LD_LIBRARY_PATH	/opt/mono/lib
+prepend-path LIBRARY_PATH	/opt/mono/lib

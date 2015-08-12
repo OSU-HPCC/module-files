@@ -1,0 +1,18 @@
+#%Module1.0###################################################
+#
+# This modulefile for package GPP creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The GPP module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the GPP executibles.\n"
+puts stderr "\nVersion 2.24"
+}
+module-whatis "Name: GPP"
+module-whatis "Version: 2.24"
+module-whatis "Category: preprocessor"
+
+prepend-path PATH               /opt/gpp/2.24/gcc/bin

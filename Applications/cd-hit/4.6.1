@@ -1,0 +1,20 @@
+#%Module1.0###################################################
+#
+# This modulefile for package CD-HIT creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The CD-HIT module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the CD-HIT program and its libraries.\n"
+puts stderr "\nVersion 4.6.1"
+}
+module-whatis "Name: Clustal Omega"
+module-whatis "Version: 4.6.1 (OpenMP)"
+module-whatis "Category: clustering, sequence database, bioinformatics"
+module-whatis "URL: https://code.google.com/p/cdhit/"
+module-whatis "Description: a fast program for clustering and comparing large sets of protein or nucleotide sequences"
+
+prepend-path PATH         /opt/cd-hit/4.6.1

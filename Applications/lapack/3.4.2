@@ -1,0 +1,22 @@
+#%Module1.0###################################################
+#
+# This modulefile for package LAPACK creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The LAPACK module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the LAPACK distribution and its libraries.\n"
+puts stderr "\nVersion 3.4.2"
+}
+module-whatis "Name: LAPACK"
+module-whatis "Version: 3.4.2"
+module-whatis "Category: linear equations"
+module-whatis "URL: www.netlib.org/lapack/"
+module-whatis "Description: Linear Algebra PACK"
+
+
+prepend-path PATH		/opt/lapack/3.4.2/gcc
+prepend-path LD_LIBRARY_PATH	/opt/lapack/3.4.2/gcc

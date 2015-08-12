@@ -1,0 +1,24 @@
+#%Module1.0###################################################
+#
+# This modulefile for package NWChem creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The NWChem module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the NWChem distribution and its libraries.\n"
+puts stderr "\nVersion 6.1.1"
+}
+module-whatis "Name: NWChem"
+module-whatis "Version: 6.1.1"
+module-whatis "Category: chemistry, computation, dynamics"
+module-whatis "URL: http://www.nwchem-sw.org"
+module-whatis "Description: Computational chemistry tools for parallel computing and problem solving"
+
+prepend-path PATH               /opt/nwchem/6.1.1/ifort/bin
+prepend-path LD_LIBRARY_PATH	/opt/nwchem/6.1.1/ifort/data/libraries
+prepend-path NWCHEM_TOP		/opt/nwchem/6.1.1/ifort
+prepend-path NWCHEM_EXECUTABLE	/opt/nwchem/6.1.1/ifort/bin/nwchem
+prepend-path NWCHEM_BASIS_LIBRARY /opt/nwchem/6.1.1/ifort/data/libraries

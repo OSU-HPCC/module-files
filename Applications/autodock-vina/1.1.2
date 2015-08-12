@@ -1,0 +1,21 @@
+#%Module1.0###################################################
+#
+# This modulefile for package AutoDock Vina creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The AutoDock Vina module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the AutoDock Vina executibles.\n"
+puts stderr "\nVersion 1.1.2"
+}
+module-whatis "Name: AutoDock Vina"
+module-whatis "Version: 1.1.2"
+module-whatis "Category: biochemistry"
+module-whatis "Description: molecular docking program"
+
+prepend-path PATH		/opt/vina/autodock_vina_1_1_2/gcc/build/linux/release
+
+module load boost/1.45.0

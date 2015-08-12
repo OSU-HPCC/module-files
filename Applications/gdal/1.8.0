@@ -1,0 +1,23 @@
+#%Module1.0###################################################
+#
+# This modulefile for GDAL sets the Path variable
+# to the bin directory
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The GDAL modulefile sets the "
+puts stderr "PATH variable to"
+puts stderr "the location of the GDAL binaries.\n"
+puts stderr "\nVersion 1.8.0"
+}
+module-whatis "Name: GDAL"
+module-whatis "Version: 1.8.0"
+module-whatis "Category: geography"
+module-whatis "URL: www.gdal.org"
+
+module load mono/3.12.0
+
+prepend-path PATH		/opt/gdal/1.8.0/gcc/bin
+prepend-path LD_LIBRARY_PATH	/opt/gdal/1.8.0/gcc/lib
+prepend-path CPATH		/opt/gdal/1.8.0/gcc/include

@@ -1,0 +1,20 @@
+#%Module1.0###################################################
+#
+# This modulefile for package mreps creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The mreps module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the MrBayes distribution and its libraries.\n"
+puts stderr "\nVersion 2.5"
+}
+module-whatis "Name: mreps"
+module-whatis "Version: 2.5"
+module-whatis "Category: bioinformatics"
+module-whatis "URL: http://bioinfo.lifl.fr/mreps/"
+module-whatis "Description: Software for identifying serial repeats in genome sequences"
+
+prepend-path PATH		/opt/mreps/2.5/gcc

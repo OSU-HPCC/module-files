@@ -1,0 +1,26 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Circos creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Circos  module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the Circos executibles.\n"
+puts stderr "\nVersion 0.63-4"
+}
+module-whatis "Name: Circos"
+module-whatis "Version: 0.63-4"
+module-whatis "Category: visualization, perl"
+module-whatis "URL: http://circos.ca/"
+module-whatis "Description: Circos is a software package for visualizing data and information."
+
+
+module load perl
+prepend-path PATH              /opt/circos/0.63-4/prebuilt/bin
+# prepend-path MANPATH           
+
+
+

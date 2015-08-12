@@ -1,0 +1,20 @@
+#%Module1.0###################################################
+#
+# This modulefile for package quast  creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The examples module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the user training examples .\n"
+puts stderr "\nVersion 1.0"
+}
+module-whatis "Name: examples"
+module-whatis "Version: 1.0"
+module-whatis "Category: new user training "
+
+
+prepend-path PATH		/opt/examples
+

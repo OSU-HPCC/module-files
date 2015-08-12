@@ -1,0 +1,26 @@
+#%Module1.0###################################################
+#
+# This modulefile for package BLAS creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The BLAS  module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the BLAS executibles.\n"
+puts stderr "\nVersion BLAS"
+}
+module-whatis "Name: BLAS"
+module-whatis "Version: BLAS"
+module-whatis "Category: BLAS"
+module-whatis "URL: http://www.openblas.net"
+module-whatis "Description: BLAS"
+
+
+prepend-path PATH               /opt/blas/BLAS
+prepend-path LD_LIBRARY_PATH	/opt/blas/BLAS
+# prepend-path MANPATH           
+
+
+

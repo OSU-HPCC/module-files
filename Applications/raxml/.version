@@ -1,0 +1,6 @@
+#%Module1.0#################################################
+##
+## version file for blast+ 2.2.27
+##
+
+set     ModulesVersion      "8.0.5-gcc"

@@ -1,0 +1,24 @@
+#%Module1.0###################################################
+#
+# This modulefile for package phonopy creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The phonopy module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the phonopy distribution and its libraries.\n"
+puts stderr "\nVersion 1.8.4.1"
+}
+module-whatis "Name: phonopy"
+module-whatis "Version: 1.8.4.1"
+module-whatis "Category: phonon calculations, physics"
+module-whatis "URL: http://phonopy.sourceforge.net"
+module-whatis "Description: Phonopy is an open source package of phonon calculations based on the supercell approach."
+
+prepend-path PATH               /opt/phonopy/1.8.4.1/python/bin
+prepend-path PYTHONPATH		/opt/phonopy/1.8.4.1/python/bin
+prepend-path PYTHONPATH		/opt/phonopy/1.8.4.1/python/lib/python/phonopy
+
+module load anaconda/1.6.1

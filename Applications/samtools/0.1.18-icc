@@ -1,0 +1,27 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Samtools creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Samtools module file defines the following environment variables:"
+puts stderr "PATH, MANPATH for "
+puts stderr "the location of the Samtools distribution and its libraries.\n"
+puts stderr "\nVersion 0.1.18"
+}
+module-whatis "Name: Samtools"
+module-whatis "Version: 0.1.18 (icc)"
+module-whatis "Category: sequence, alignment, map"
+module-whatis "URL: http://samtools.sourceforge.net/"
+module-whatis "Description: Tools for manipulating alignments in SAM format"
+
+
+prepend-path PATH               /opt/samtools/0.1.18/icc
+prepend-path PATH		/opt/samtools/0.1.18/icc/bcftools
+prepend-path PATH		/opt/samtools/0.1.18/icc/include
+prepend-path PATH		/opt/samtools/0.1.18/icc/include/bam
+prepend-path PATH		/opt/samtools/0.1.18/icc/misc
+prepend-path MANPATH            /opt/samtools/0.1.18/icc/man
+prepend-path LD_LIBRARY_PATH	/opt/samtools/0.1.18/icc/lib

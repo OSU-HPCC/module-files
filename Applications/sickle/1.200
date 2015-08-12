@@ -1,0 +1,21 @@
+#%Module1.0###################################################
+#
+# This modulefile for package SPAGeDi creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Sickle module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the Sickle executible.\n"
+puts stderr "\nVersion 1.200"
+}
+module-whatis "Name: Sickle"
+module-whatis "Version: 1.200"
+module-whatis "Scythe determines when to trim reads"
+module-whatis "URL: https://github.com/najoshi/sickle/"
+
+
+
+prepend-path PATH               /opt/sickle/1.200

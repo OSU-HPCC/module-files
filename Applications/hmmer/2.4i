@@ -1,0 +1,20 @@
+#%Module1.0###################################################
+#
+# This modulefile for package HMMER creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The HMMER module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the HMMER distribution and its libraries.\n"
+puts stderr "\nVersion 2.4i"
+}
+module-whatis "Name: HMMER"
+module-whatis "Version: 2.4i"
+module-whatis "Category: bioinformatics, biosequence"
+module-whatis "URL: http://hmmer.janelia.org/software"
+module-whatis "Description: Biosequence analysis using profile hidden Markov models"
+
+prepend-path PATH               /opt/hmmer/2.4i/gcc/bin/sym

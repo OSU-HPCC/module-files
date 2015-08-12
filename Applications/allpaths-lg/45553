@@ -1,0 +1,26 @@
+#%Module1.0###################################################
+#
+# This modulefile for package ALLPATHS-LG creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The ALLPATHS-LG  module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the ALLPATHS-LG executibles.\n"
+puts stderr "\nVersion 45553"
+}
+module-whatis "Name: ALLPATHS-LG"
+module-whatis "Version: 45553"
+module-whatis "Category: genome assembly"
+module-whatis "URL: https://www.broadinstitute.org/software/allpaths-lg/blog/?page_id=2"
+module-whatis "Description: High quality genome assembly from low cost data"
+
+
+module load perl
+prepend-path PATH              /opt/allpathsLG/45553/gcc-4.7.2/bin
+# prepend-path MANPATH           
+
+
+

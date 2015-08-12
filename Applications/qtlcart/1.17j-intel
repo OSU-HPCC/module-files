@@ -1,0 +1,20 @@
+#%Module1.0###################################################
+#
+# This modulefile for package QTLCartographer creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The QTLCartographer module file defines the PATH variables."
+puts stderr "\nVersion 1.17j"
+}
+module-whatis "Name: QTLCartographer"
+module-whatis "Version: 1.17j"
+module-whatis "Category: "
+module-whatis "URL: http://statgen.ncsu.edu/qtlcart/"
+module-whatis "Description: "
+
+
+prepend-path PATH              /opt/QTLCartUnix/1.17j/intel
+

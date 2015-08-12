@@ -1,0 +1,22 @@
+#%Module1.0###################################################
+#
+# This modulefile for package icommands creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The icommands module file defines the following environment variables:"
+puts stderr "PATH, for "
+puts stderr "the location of the icommands commands.\n"
+puts stderr "\nVersion 3.2"
+}
+module-whatis "Name: icommands"
+module-whatis "Version: 3.2"
+module-whatis "Category: data movement to iplant data store"
+module-whatis "Description: URL: https://pods.iplantcollaborative.org/wiki/display/start/Using+icommands"
+module-whatis "Description: Data movement to iplant data store"
+
+
+prepend-path PATH              /opt/icommands/3.2/prebuilt
+

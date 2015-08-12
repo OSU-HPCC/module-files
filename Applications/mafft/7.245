@@ -1,0 +1,20 @@
+#%Module1.0###################################################
+#
+# This modulefile for package mafft creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The mafft module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the mafft distribution and its libraries.\n"
+puts stderr "\nVersion 7.245"
+}
+module-whatis "Name: mafft"
+module-whatis "Version: 7.245"
+module-whatis "Category: alignment"
+module-whatis "URL: http://mafft.cbrc.jp/alignment/software/source.html"
+
+
+prepend-path PATH		/opt/mafft/7.245/gcc/core

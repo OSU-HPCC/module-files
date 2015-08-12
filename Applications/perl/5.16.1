@@ -1,0 +1,24 @@
+#%Module1.0
+
+## Perl
+
+proc ModulesHelp { } {
+        puts stderr "\n"
+        puts stderr "\tModule perl loads environmental variables defining"
+        puts stderr "\tthe location of the Perl binaries and libraries: "
+        puts stderr "\tPerl Version perl_5_16_1\n"
+ }
+
+module-whatis "Perl"
+module-whatis "Version: 5.16.1"
+module-whatis "Category: system, development"
+module-whatis "Description: high-level, interpreted, dynamic programming language"
+module-whatis "URL: http://www.perl.org"
+
+# Perl to paths
+prepend-path PATH /opt/perl/5.16.1/gcc/bin:/opt/gd/2.0.28/gcc/bin
+prepend-path LD_LIBRARY_PATH /opt/perl/5.16.1/gcc/lib:/opt/gd/2.0.28/gcc/lib
+prepend-path MANPATH /opt/perl/5.16.1/gcc/man
+
+
+

@@ -1,0 +1,22 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Celera Assembler creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Celera Assembler module file defines the following environment variables:"
+puts stderr "PATH, LD_LIBRARY_PATH for "
+puts stderr "the location of the Celera/Whole-Genome Shotgun Assembler binaries.\n"
+puts stderr "\nVersion 8.1"
+}
+module-whatis "Name: Celera/Whole-Genome Shotgun Assembler "
+module-whatis "Version: 8.1"
+module-whatis "Category: bioinformatics"
+module-whatis "URL: http://sourceforge.net/projects/wgs-assembler/files/wgs-assembler"
+module-whatis "Description: Celera Assembler is a whole-genome shotgun assembler for reconstrution of genomic DNA sequence from WGS sequencing data."
+
+
+prepend-path PATH               /opt/wgs/8.1/gcc/Linux-amd64/bin
+prepend-path LD_LIBRARY_PATH	/opt/wgs/8.1/gcc/Linux-amd64/lib

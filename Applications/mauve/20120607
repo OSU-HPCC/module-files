@@ -1,0 +1,20 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Mauve creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Mauve module file defines the following environment variables:"
+puts stderr "PATH, for "
+puts stderr "the location of the Mauve distribution and its libraries.\n"
+puts stderr "\nVersion 20120607"
+}
+module-whatis "Name: Mauve"
+module-whatis "Version: 20120607"
+module-whatis "Category: alignment, bioinformatics"
+module-whatis "URL: http:/gel.ahabs.wisc.edu/mauve/"
+module-whatis "Description: Multiple Genome Alignment"
+
+prepend-path PATH               /opt/mauve/20120607/prebuilt

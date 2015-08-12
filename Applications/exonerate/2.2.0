@@ -1,0 +1,24 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Exonerate creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Exonerate  module file defines the following environment variables:"
+puts stderr "PATH, MANPATH for "
+puts stderr "the location of the Exonerate executibles.\n"
+puts stderr "\nVersion 2.2.0"
+}
+module-whatis "Name: Exonerate"
+module-whatis "Version: 2.2.0"
+module-whatis "Category: molecular biology"
+module-whatis "URL: http://www.ebi.ac.uk/~guy/exonerate/"
+module-whatis "Description: Exonerate is a generic tool for pairwise sequence comparison."
+
+
+prepend-path PATH               /opt/exonerate/2.2.0/prebuilt/bin
+prepend-path MANPATH		/opt/exonerate/2.2.0/prebuilt/share/man
+
+

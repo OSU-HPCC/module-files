@@ -1,0 +1,21 @@
+#%Module1.0###################################################
+#
+# This modulefile for package BEAST 2 creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The BEAST 2 module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the BEAST executibles.\n"
+puts stderr "\nVersion 2.1.3"
+}
+module-whatis "Name: BEAST 2"
+module-whatis "Version: 2.1.3"
+module-whatis "Category: molecular biology"
+module-whatis "URL: http://beast2.org"
+module-whatis "Description: BEAST 2 is a cross-platform program for Bayesian evolutionary analysis of sampling trees."
+
+
+prepend-path PATH               /opt/beast/2.1.3/prebuilt/bin

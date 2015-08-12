@@ -1,0 +1,26 @@
+#%Module1.0###################################################
+#
+# This modulefile for package TAU creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The TAU module file defines the following environment variables:"
+puts stderr "PATH, LD_LIBRARY_PATH, MANPATH for "
+puts stderr "the location of the TAU distribution and its libraries.\n"
+puts stderr "\nVersion 2.21.4"
+}
+module-whatis "Name: TAU"
+module-whatis "Version: 2.21.4"
+module-whatis "Category: toolkit, statistical, analysis"
+module-whatis "URL: http://tau.uoregon.edu"
+module-whatis "Description: Toolkit for analysis of parallel program performance"
+
+
+prepend-path PATH               /opt/tau/2.21.4/openmpi-1.4-intel/x86_64/bin
+prepend-path LD_LIBRARY_PATH	/opt/tau/2.21.4/openmpi-1.4-intel/x86_64/lib
+prepend-path MANPATH            /opt/tau/2.21.4/openmpi-1.4-intel/man
+prepend-path TAU_MAKEFILE	/opt/tau/2.21.4/openmpi-1.4-intel/x86_64/lib/Makefile.tau-icpc-mpi-pthread
+
+module load openmpi-1.4/intel

@@ -1,0 +1,22 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Augustus creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Augustus  module file defines the following environment variables:"
+puts stderr "PATH for the location of the Augustus executibles, and"
+puts stderr "AUGUSTUS_CONFIG_PATH for the location of config and parameters files.\n"
+puts stderr "\nVersion 3.0.1"
+}
+module-whatis "Name: Augustus"
+module-whatis "Version: 3.0.1"
+module-whatis "Category: molecular biology"
+module-whatis "URL: http://bioinf.uni-greifswald.de/augustus/"
+module-whatis "AUGUSTUS is a program that predicts genes in eukaryotic genomic sequences."
+
+
+prepend-path PATH               /opt/augustus/3.0.1/gcc/bin/
+setenv       AUGUSTUS_CONFIG_PATH   /opt/augustus/3.0.1/gcc/config

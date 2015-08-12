@@ -1,0 +1,20 @@
+#%Module1.0###################################################
+#
+# This modulefile for package geeqie creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The geeqie module file defines the following environment variables:"
+puts stderr "PATH, for "
+puts stderr "the location of the rsem distribution and its libraries.\n"
+puts stderr "\nVersion 1.1"
+}
+module-whatis "Name: geeqie"
+module-whatis "Version: 1.1"
+module-whatis "Category: image, graphics"
+module-whatis "URL: http://sourceforge.net/projects/geeqie/files/geeqie/"
+module-whatis "Description: Image viewer"
+
+prepend-path PATH		/opt/geeqie/1.1/bin

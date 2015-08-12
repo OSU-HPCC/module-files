@@ -1,0 +1,23 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Mothur creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The T-Coffee module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the T-Coffee distribution and its libraries.\n"
+puts stderr "\nVersion 9.03"
+}
+module-whatis "Name: T-Coffee"
+module-whatis "Version: 9.03"
+module-whatis "Category: genetic sequence alignment"
+module-whatis "URL: http://www.tcoffee.org/"
+module-whatis "Description: T-Coffee is a multiple sequence alignment package."
+
+prepend-path PATH               /opt/t-coffee/9.03/gcc/bin
+prepend-path TMP_4_TCOFFEE	/scratch/$USER/.t_coffee
+
+module load perl/5.16.1

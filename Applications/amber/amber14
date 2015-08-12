@@ -1,0 +1,23 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Amber creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Amber module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the Amber executibles.\n"
+puts stderr "\nVersion Amber14"
+}
+module-whatis "Name: Amber"
+module-whatis "Version: Amber14"
+module-whatis "Category: molecular dynamics"
+module-whatis "URL: http://ambermd.org/"
+module-whatis "Description: molecular dynamics simulator"
+
+prepend-path PATH               /opt/amber/amber14/icc/bin
+prepend-path LD_LIBRARY_PATH	/opt/amber/amber14/icc/lib
+prepend-path INCLUDE		/opt/amber/amber14/icc/include
+prepend-path AMBERHOME		/opt/amber/amber14/icc

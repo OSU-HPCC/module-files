@@ -1,0 +1,5 @@
+#%Module1.0#################################################
+##
+## version file for fftw 3.3.2
+##
+set     ModulesVersion      "3.3.2"

@@ -1,0 +1,21 @@
+#%Module1.0###################################################
+#
+# This modulefile for package genometools creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The GenomeTools module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the GenomeTools distribution and its libraries.\n"
+puts stderr "\nVersion 1.5.1"
+}
+module-whatis "Name: GenomeTools"
+module-whatis "Version: 1.5.1"
+module-whatis "Category: sequencing, statistical, genomics"
+module-whatis "URL: http://genometools.org"
+module-whatis "Description: Genomic analysis with a collection bioinformatics tools"
+
+prepend-path PATH               /opt/genometools/1.5.1/gcc/bin
+prepend-path LD_LIBRARY_PATH	/opt/genometools/1.5.1/gcc/lib

@@ -1,0 +1,27 @@
+#%Module1.0###################################################
+#
+# This modulefile for Genome Analysis Toolkit (GATK) sets variables
+# for the software
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The GATK modulefile sets the "
+puts stderr "PATH variable to"
+puts stderr "the location of the GATK files.\n"
+puts stderr "\nVersion "
+}
+module-whatis "Name: GATK"
+module-whatis "Version: 3.3-0"
+module-whatis "Category: bioinformatics"
+module-whatis "URL: https://www.broadinstitute.org/gatk/"
+
+prepend-path JAVA_HOME		/opt/java/jre1.8.0_25/bin/java
+prepend-path PATH		/opt/java/jre1.8.0_25/bin
+	
+prepend-path PATH		/opt/gatk/3.3-0
+
+module load bwa/0.7.5a
+module load samtools/0.1.18-icc
+module load picard-tools/1.118
+module load R/3.1.3

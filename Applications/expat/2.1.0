@@ -1,0 +1,23 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Expat creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Expat  module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the Expat executibles.\n"
+puts stderr "\nVersion 2.1.0"
+}
+module-whatis "Name: Expat"
+module-whatis "Version: 2.1.0"
+module-whatis "Category: xml parser"
+module-whatis "URL: http://expat.sourceforge.net"
+module-whatis "Description: An XML parser library"
+
+prepend-path PATH               /opt/expat/2.1.0/gcc/bin
+prepend-path LD_LIBRARY_PATH	/opt/expat/2.1.0/gcc/lib
+prepend-path EXPATLIBPATH	/opt/expat/2.1.0/gcc/lib 
+prepend-path EXPATINCPATH	/opt/expat/2.1.0/gcc/include

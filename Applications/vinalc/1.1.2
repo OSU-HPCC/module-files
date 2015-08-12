@@ -1,0 +1,23 @@
+#%Module1.0###################################################
+#
+# This modulefile for package VinaLC creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The VinaLC module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the VinaLC executibles.\n"
+puts stderr "\nVersion 1.1.2"
+}
+module-whatis "Name: VinaLC"
+module-whatis "Version: 1.1.2"
+module-whatis "Category: biochemistry"
+module-whatis "Description: Parallel molecular docking program"
+
+prepend-path PATH		/opt/vinalc/1.1.2/openmpi-1.4-intel/apps
+prepend-path PATH		/opt/vinalc/1.1.2/openmpi-1.4-intel/scripts
+
+module load openmpi-1.4/intel
+module load boost/1.55.0

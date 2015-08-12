@@ -1,0 +1,19 @@
+#%Module1.0###################################################
+#
+# This modulefile for Genome Annotation Generator (GAG) sets the Path variable
+# to the bin directory
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The GAG modulefile sets the "
+puts stderr "PATH variable to"
+puts stderr "the location of the GAG binaries.\n"
+puts stderr "\nVersion "
+}
+module-whatis "Name: GDAL"
+module-whatis "Version: ce7caa6"
+module-whatis "Category: bioinformatics"
+module-whatis "URL: http://genomeannotation.github.io/GAG/"
+
+prepend-path PATH		/opt/gag/genomeannotationgenerator/prebuilt

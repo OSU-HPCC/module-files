@@ -1,0 +1,20 @@
+#%Module1.0###################################################
+#
+# This modulefile for GNU GMP sets the Path variable
+# to the bin directory
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The GNU GMP modulefile sets the "
+puts stderr "PATH variable to"
+puts stderr "the location of the GMP libraries.\n"
+puts stderr "\nVersion 6.0.0"
+}
+module-whatis "Name: GDAL"
+module-whatis "Version: 6.0.0"
+module-whatis "Category: library"
+module-whatis "URL: https://gmplib.org"
+
+prepend-path LD_LIBRARY_PATH	/opt/gmp/6.0.0/lib
+prepend-path CPATH		/opt/gmp/6.0.0/include

@@ -1,0 +1,23 @@
+#%Module1.0
+
+## signalp
+proc ModulesHelp { } {
+        puts stderr "\n"
+        puts stderr "\tModule signalp loads environmental variables defining"
+        puts stderr "\tthe location of the Perl binaries and libraries: "
+        puts stderr "\tPerl Version perl_5_18_1\n"
+	puts stderr "\ttmhmm  Version 4.1\n"
+ }
+
+module-whatis "signalp"
+module-whatis "Version: 4.1"
+module-whatis "Category: bioinformatics"
+module-whatis "Description: signalp  predicts  the presence and location of signal peptide cleavage"
+module-whatis "       sites in amino acid sequences from different  organisms"
+module-whatis "URL: http://www.cbs.dtu.dk/cgi-bin/nph-runsafe?man=signalp"
+
+# Perl to paths
+module load perl/5.18.1
+prepend-path PATH /opt/signalp/signalp-4.1
+
+

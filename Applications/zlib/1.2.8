@@ -1,0 +1,19 @@
+#%Module1.0###################################################
+#
+# This modulefile for package zlib creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The zlib module file defines the following environment variables:"
+puts stderr "PATH "
+puts stderr "the location of the zlib distribution and its libraries.\n"
+puts stderr "\nVersion "
+}
+module-whatis "Name: zlib - GNU Scientific Library"
+module-whatis "Version: 1.2.8"
+module-whatis "Category: library"
+
+prepend-path CPATH		/opt/zlib/1.2.8/gcc/include
+prepend-path LD_LIBRARY_PATH	/opt/zlib/1.2.8/gcc/lib

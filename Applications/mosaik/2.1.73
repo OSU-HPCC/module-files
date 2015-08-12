@@ -1,0 +1,24 @@
+#%Module1.0###################################################
+#
+# This modulefile for package Mosaik creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The Mosaik  module file defines the following environment variables:"
+puts stderr "PATH for "
+puts stderr "the location of the Mosaik executibles.\n"
+puts stderr "\nVersion 2.1.73"
+}
+module-whatis "Name: Mosaik"
+module-whatis "Version: 2.1.73"
+module-whatis "Category: molecular biology"
+module-whatis "URL: https://code.google.com/p/mosaik-aligner/"
+module-whatis "Description: Mosaik is a reference-guided assembler comprising of two main modular programs: MosaikBuild and MosaikAligner. MosaikBuild converts various sequence formats into Mosaik's native read format. MosaikAligner pairwise aligns each read to a specified series of reference sequences and produces BAMs as outputs."
+
+prepend-path PATH               /opt/mosaik/2.1.73/prebuilt
+# prepend-path MANPATH           
+
+
+

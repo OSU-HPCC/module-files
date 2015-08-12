@@ -1,0 +1,18 @@
+#%Module1.0###################################################
+#
+# This modulefile for package ORTHO-MCL creates a variable so
+# that users can easily find the right libraries
+#
+##############################################################
+
+proc ModulesHelp { } {
+puts stderr "The ORTHO-MCL module file defines the PATH variables."
+puts stderr "\nVersion 2.0.9"
+}
+module-whatis "Name: ORTHO-MCL"
+module-whatis "Version: 2.0.9"
+module-whatis "Category: "
+module-whatis "URL: http://orthomcl.org/common/downloads/software/v2.0/"
+module-whatis "Description: "
+
+prepend-path PATH		/opt/orthomcl/2.0.9/gcc/bin
