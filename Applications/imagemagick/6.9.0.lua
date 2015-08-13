@@ -5,9 +5,10 @@
 whatis("Name: ImageMagick")
 whatis("Version: 6.9.0")
 whatis("Category: Package")
-whatis("http://www.imagemagick.org")
+whatis("Description: ImageMagick® is a software suite to create, edit, compose, or convert bitmap images.
+http://www.imagemagick.org")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/imagemagick/6.9.0/gcc/bin")
 prepend_path("LD_LIBRARY_PATH","/opt/imagemagick/6.9.0/gcc/lib")
@@ -15,17 +16,13 @@ prepend_path("LD_LIBRARY_PATH","/opt/imagemagick/6.9.0/gcc/lib")
 --Help description goes here:
 --
 help([[
-The ImageMagick modulefile sets the 
-PATH, LD_LIBRARY_PATH variable to
-the location of the ImageMagick binaries.
+ImageMagick® is a software suite to create, edit, compose, or convert bitmap images. It can read and write images in a variety of formats (over 200) including PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF, and SVG. Use ImageMagick to resize, flip, mirror, rotate, distort, shear and transform images, adjust image colors, apply various special effects, or draw text, lines, polygons, ellipses and Bézier curves.
 
-
-Version 6.9.0
 Version:
 --------
 6.9.0
 
 Website:
 --------
-www
+http://www.imagemagick.org
 ]])

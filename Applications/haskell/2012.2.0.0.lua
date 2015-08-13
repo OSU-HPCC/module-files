@@ -4,8 +4,10 @@
 --
 whatis("Name: Haskell")
 whatis("Version: 2012.2.0.0")
+whatis("Description: A standardized pure functional programming language with non-strict semantics.
+https://www.haskell.org/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/haskell/2012.2.0.0/icc/bin")
 prepend_path("LD_LIBRARYPATH","/opt/haskell/2012.2.0.0/icc/lib")
@@ -14,17 +16,13 @@ load("ghc/7.4.1")
 --Help description goes here:
 --
 help([[
-The Haskell module file defines the following environment variables:
-PATH, LD_LIBRARY_PATH for 
-the location of the Haskell distribution and its libraries.
+A standardized pure functional programming language with non-strict semantics.
 
-
-Version 2012.2.0.0
 Version:
 --------
 2012.2.0.0
 
 Website:
 --------
-www
+https://www.haskell.org/
 ]])
