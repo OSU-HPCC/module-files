@@ -1,4 +1,14 @@
+--
+--Help description goes here:
+--
+--
+--Please place software website after text in the last 'whatis' (the description) separated by one new-line character.
+--This way it will play nice with the script that populates the list of available software on Cowboy.
+--
 #%Module1.0###################################################
+--
+This part actually does stuff.
+--
 #
 # This modulefile for package MIRA creates a variable so
 # that users can easily find the right libraries
@@ -20,4 +30,11 @@ module-whatis "Description: MIRA is a whole genome shotgun and EST sequence asse
 prepend-path PATH               /opt/mira/4.0rc4/gcc/bin/
 
 module load gcc-4.6.2
+Version:
+--------
+N/A
+
+Website:
+--------
+www
 module load boost/1.54.0

@@ -1,4 +1,14 @@
+--
+--Help description goes here:
+--
+--
+--Please place software website after text in the last 'whatis' (the description) separated by one new-line character.
+--This way it will play nice with the script that populates the list of available software on Cowboy.
+--
 #%Module1.0###################################################
+--
+This part actually does stuff.
+--
 #
 # This modulefile for package JAGS creates a variable so
 # that users can easily find the right libraries
@@ -21,4 +31,11 @@ module-whatis "Description: Just Another Gibbs Sampler"
 prepend-path PATH		/opt/jags/3.4.0/gcc/bin
 prepend-path PATH		/opt/jags/3.4.0/gcc/lib
 prepend-path LD_LIBRARY_PATH	/opt/jags/3.4.0/gcc/lib/JAGS/modules-3
+Version:
+--------
+N/A
+
+Website:
+--------
+www
 prepend-path JAGS_INCLUDE	/opt/jags/3.4.0/gcc/include/JAGS

@@ -1,4 +1,14 @@
+--
+--Help description goes here:
+--
+--
+--Please place software website after text in the last 'whatis' (the description) separated by one new-line character.
+--This way it will play nice with the script that populates the list of available software on Cowboy.
+--
 #%Module1.0###################################################
+--
+This part actually does stuff.
+--
 #
 # This modulefile for package MAKER creates a variable so
 # that users can easily find the right libraries
@@ -27,4 +37,11 @@ module load repeatmasker
 module load snap
 
 prepend-path PATH		/opt/maker/2.28/gcc/bin
+Version:
+--------
+N/A
+
+Website:
+--------
+www
 prepend-path ZOE		/opt/snap/0.15.4/prebuilt/bin

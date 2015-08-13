@@ -1,4 +1,14 @@
+--
+--Help description goes here:
+--
+--
+--Please place software website after text in the last 'whatis' (the description) separated by one new-line character.
+--This way it will play nice with the script that populates the list of available software on Cowboy.
+--
 #%Module1.0###################################################
+--
+This part actually does stuff.
+--
 #
 # This modulefile for package makedepend creates a variable so
 # that users can easily find the right libraries
@@ -14,4 +24,11 @@ puts stderr "\nVersion 1.0.5"
 module-whatis "Name: makedepend"
 module-whatis "Version: 1.0.5"
 
+Version:
+--------
+N/A
+
+Website:
+--------
+www
 prepend-path PATH               /opt/makedepend/1.0.5/gcc/bin

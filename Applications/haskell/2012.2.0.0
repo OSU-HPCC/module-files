@@ -1,4 +1,14 @@
+--
+--Help description goes here:
+--
+--
+--Please place software website after text in the last 'whatis' (the description) separated by one new-line character.
+--This way it will play nice with the script that populates the list of available software on Cowboy.
+--
 
+--
+This part actually does stuff.
+--
 #%Module1.0###################################################
 #
 # This modulefile for package Haskell creates a variable so
@@ -22,4 +32,11 @@ module-whatis "Version: 2012.2.0.0"
 prepend-path PATH               /opt/haskell/2012.2.0.0/icc/bin
 prepend-path LD_LIBRARYPATH     /opt/haskell/2012.2.0.0/icc/lib
 
+Version:
+--------
+N/A
+
+Website:
+--------
+www
 module load ghc/7.4.1

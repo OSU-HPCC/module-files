@@ -1,4 +1,14 @@
+--
+--Help description goes here:
+--
+--
+--Please place software website after text in the last 'whatis' (the description) separated by one new-line character.
+--This way it will play nice with the script that populates the list of available software on Cowboy.
+--
 #%Module1.0###################################################
+--
+This part actually does stuff.
+--
 #
 # This modulefile for package PASA2 creates a variable so
 # that users can easily find the right libraries
@@ -24,4 +34,11 @@ prepend-path PASAHOME		/opt/pasa2/r20130605p1/gcc
 
 module load activeperl
 module load blat
+Version:
+--------
+N/A
+
+Website:
+--------
+www
 module load gmap

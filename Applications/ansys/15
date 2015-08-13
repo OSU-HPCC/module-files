@@ -1,4 +1,14 @@
+--
+--Help description goes here:
+--
+--
+--Please place software website after text in the last 'whatis' (the description) separated by one new-line character.
+--This way it will play nice with the script that populates the list of available software on Cowboy.
+--
 #%Module1.0###################################################
+--
+This part actually does stuff.
+--
 #
 # This modulefile for package ANSYS Fluent creates a variable
 # so that users can easily find the right libraries
@@ -25,4 +35,11 @@ prepend-path CPATH		/opt/ansys/ansys15/v150/CFX/include
 prepend-path LD_LIBRARY_PATH	/opt/ansys/ansys15/v150/CFX/lib
 prepend-path PATH               /opt/ansys/ansys15/v150/icemcfd/linux64_amd/bin
 prepend-path LD_LIBRARY_PATH	/opt/ansys/ansys15/v150/icemcfd/linux64_amd/lib
+Version:
+--------
+N/A
+
+Website:
+--------
+www
 prepend-path ANSYSLIC_DIR	/opt/ansys/lm/shared_files/licensing

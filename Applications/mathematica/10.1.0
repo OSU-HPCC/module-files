@@ -1,4 +1,14 @@
+--
+--Help description goes here:
+--
+--
+--Please place software website after text in the last 'whatis' (the description) separated by one new-line character.
+--This way it will play nice with the script that populates the list of available software on Cowboy.
+--
 #%Module1.0###################################################
+--
+This part actually does stuff.
+--
 #
 # This modulefile for Mathematica sets the Path variable
 # to the bin directory
@@ -19,4 +29,11 @@ module-whatis "URL: www.wolfram.com"
 
 prepend-path PATH               	/opt/mathematica/10.1/Executables
 prepend-path MATHEMATICA_BASE		/opt/mathematica/10.1
+Version:
+--------
+N/A
+
+Website:
+--------
+www
 #prepend-path MATHEMATICA_USERBASE	/opt/mathematica/10.1/LM/.Mathematica

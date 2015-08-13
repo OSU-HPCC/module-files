@@ -1,11 +1,21 @@
+--
+--Please place software website after text in the last 'whatis' (the description) separated by one new-line character.
+--This way it will play nice with the script that populates the list of available software on Cowboy.
+--
 whatis("signalp")
 whatis("Version: 4.1")
 whatis("Category: bioinformatics")
-whatis("Description: signalp  predicts  the presence and location of signal peptide cleavage")
+whatis("Description: signalp  predicts  the presence and location of signal peptide cleavage
+http://www.cbs.dtu.dk/cgi-bin/nph-runsafe?man=signalp")
 whatis("       sites in amino acid sequences from different  organisms")
-whatis("URL: http://www.cbs.dtu.dk/cgi-bin/nph-runsafe?man=signalp")
+--
+This part actually does stuff.
+--
 load("perl/5.18.1")
 prepend_path("PATH","/opt/signalp/signalp-4.1")
+--
+--Help description goes here:
+--
 help([[
 
 
@@ -15,4 +25,11 @@ help([[
 
 	tmhmm  Version 4.1
 
+Version:
+--------
+4.1
+
+Website:
+--------
+http://www.cbs.dtu.dk/cgi-bin/nph-runsafe?man=signalp
 ]])

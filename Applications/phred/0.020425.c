@@ -1,4 +1,14 @@
+--
+--Help description goes here:
+--
+--
+--Please place software website after text in the last 'whatis' (the description) separated by one new-line character.
+--This way it will play nice with the script that populates the list of available software on Cowboy.
+--
 #%Module1.0###################################################
+--
+This part actually does stuff.
+--
 #
 # This modulefile for package Phred creates a variable so
 # that users can easily find the right libraries
@@ -20,4 +30,10 @@ module-whatis "Description: "
 
 prepend-path PATH               /opt/phred/0.020425.c
 setenv    PHRED_PARAMETER_FILE       /opt/phred/0.020425.c/phredpar.dat
+Version:
+--------
+N/A
 
+Website:
+--------
+www

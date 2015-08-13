@@ -1,10 +1,20 @@
+--
+--Please place software website after text in the last 'whatis' (the description) separated by one new-line character.
+--This way it will play nice with the script that populates the list of available software on Cowboy.
+--
 whatis("Name: Biopython")
 whatis("Version: 1.61")
 whatis("Category: biology, python, molecular")
-whatis("URL: http://www.biopython.org")
-whatis("Description: Scripting tools for computational molecular biology")
+whatis("Description: Scripting tools for computational molecular biology
+http://www.biopython.org")
+--
+This part actually does stuff.
+--
 prepend_path("PYTHONPATH","/opt/biopython/1.61/biopython-antismash")
 prepend_path("LD_LIBRARY_PATH","/opt/biopython/1.61/biopython-antismash/Bio")
+--
+--Help description goes here:
+--
 help([[
 The BioPython module file defines the following environment variables:
 PATH, PYTHONPATH for 
@@ -12,4 +22,11 @@ the location of the Biopython distribution and its libraries.
 
 
 Version 1.61
+Version:
+--------
+1.61
+
+Website:
+--------
+http://www.biopython.org
 ]])

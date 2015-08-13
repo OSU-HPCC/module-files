@@ -1,4 +1,14 @@
+--
+--Help description goes here:
+--
+--
+--Please place software website after text in the last 'whatis' (the description) separated by one new-line character.
+--This way it will play nice with the script that populates the list of available software on Cowboy.
+--
 #%Module1.0###################################################
+--
+This part actually does stuff.
+--
 #
 # This modulefile for package AMOS creates a variable so
 # that users can easily find the right libraries
@@ -21,4 +31,11 @@ prepend-path PATH               /opt/amos/3.0.0/gcc/bin
 prepend-path LD_LIBRARY_PATH	/opt/amos/3.0.0/gcc/lib
 prepend-path INCLUDE            /opt/amos/3.0.0/gcc/include
 
+Version:
+--------
+N/A
+
+Website:
+--------
+www
 module load mummer/3.23

@@ -1,4 +1,14 @@
+--
+--Help description goes here:
+--
+--
+--Please place software website after text in the last 'whatis' (the description) separated by one new-line character.
+--This way it will play nice with the script that populates the list of available software on Cowboy.
+--
 #%Module1.0###################################################
+--
+This part actually does stuff.
+--
 #
 # This modulefile for package Alignreads creates a variable so
 # that users can easily find the right libraries
@@ -23,4 +33,11 @@ module load mummer
 module load yasra/2.2
 module load lastz/1.03.02
 
+Version:
+--------
+N/A
+
+Website:
+--------
+www
 prepend-path PATH              /opt/alignreads/2.4/alignreads_2-4-0

@@ -1,4 +1,14 @@
+--
+--Help description goes here:
+--
+--
+--Please place software website after text in the last 'whatis' (the description) separated by one new-line character.
+--This way it will play nice with the script that populates the list of available software on Cowboy.
+--
 #%Module1.0###################################################
+--
+This part actually does stuff.
+--
 #
 # This modulefile for package bio_apps loads all needed modules so
 # that users can easily complete the bioworkshop
@@ -31,4 +41,11 @@ module load abyss
 module load mummer
 module load fastx_toolkit
 module load snpeff
+Version:
+--------
+N/A
+
+Website:
+--------
+www
 module load trinotate

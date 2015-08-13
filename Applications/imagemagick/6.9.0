@@ -1,4 +1,14 @@
+--
+--Help description goes here:
+--
+--
+--Please place software website after text in the last 'whatis' (the description) separated by one new-line character.
+--This way it will play nice with the script that populates the list of available software on Cowboy.
+--
 #%Module1.0###################################################
+--
+This part actually does stuff.
+--
 #
 #
 ##############################################################
@@ -16,4 +26,11 @@ module-whatis "http://www.imagemagick.org"
 
 
 prepend-path PATH               /opt/imagemagick/6.9.0/gcc/bin
+Version:
+--------
+N/A
+
+Website:
+--------
+www
 prepend-path LD_LIBRARY_PATH	/opt/imagemagick/6.9.0/gcc/lib

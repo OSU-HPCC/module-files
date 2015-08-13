@@ -1,9 +1,19 @@
+--
+--Please place software website after text in the last 'whatis' (the description) separated by one new-line character.
+--This way it will play nice with the script that populates the list of available software on Cowboy.
+--
 whatis("Name: lastz")
 whatis("Version: 1.02")
 whatis("Category: genome")
-whatis("URL: http://http://www.bx.psu.edu/~rsharris/lastz/")
-whatis("Description: Pairwise aligner")
+whatis("Description: Pairwise aligner
+http://http://www.bx.psu.edu/~rsharris/lastz/")
+--
+This part actually does stuff.
+--
 prepend_path("PATH","/opt/lastz/1.02/gcc/bin")
+--
+--Help description goes here:
+--
 help([[
 The lastz module file defines the following environment variables:
 PATH for 
@@ -11,4 +21,11 @@ the location of the lastz distribution and its libraries.
 
 
 Version 1.02
+Version:
+--------
+1.02
+
+Website:
+--------
+http://http://www.bx.psu.edu/~rsharris/lastz/
 ]])
