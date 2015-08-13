@@ -8,7 +8,7 @@ whatis("Category: BLAS")
 whatis("Description: BLAS
 http://www.openblas.net")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/blas/BLAS")
 prepend_path("LD_LIBRARY_PATH","/opt/blas/BLAS")
@@ -16,12 +16,8 @@ prepend_path("LD_LIBRARY_PATH","/opt/blas/BLAS")
 --Help description goes here:
 --
 help([[
-The BLAS  module file defines the following environment variables:
-PATH for 
-the location of the BLAS executibles.
+BLAS (Basic Linear Algebra Subprograms) is a specification that prescribes a set of low-level routines for performing common linear algebra operations such as vector addition, scalar multiplication, dot products, linear combinations, and matrix multiplication. OpenBLAS is an optimized BLAS library based on GotoBLAS2 1.13 BSD version.
 
-
-Version BLAS
 Version:
 --------
 BLAS

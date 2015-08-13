@@ -8,19 +8,15 @@ whatis("Category: sequencing, statistical, alignment")
 whatis("Description: Alignment and sequencing tools for genomes
 http://blast.ncbi.nlm.nih.gov")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/blast+/2.2.23/gcc/bin")
 --
 --Help description goes here:
 --
 help([[
-The NCBI Blast module file defines the following environment variables:
-PATH 
-the location of the NCBI Blast distribution and its libraries.
+BLAST finds regions of similarity between biological sequences.
 
-
-Version 2.2.23
 Version:
 --------
 2.2.23

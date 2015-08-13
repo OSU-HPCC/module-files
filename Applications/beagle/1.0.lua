@@ -8,7 +8,7 @@ whatis("Category: Bayesian, library")
 whatis("Description: BEAGLE is a high-performance library that can perform the core calculations at the heart of most Bayesian and Maximum Likelihood phylogenetics packages.
 https://code.google.com/p/beagle-lib/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("CPATH","/opt/beagle/1.0/gcc/include")
 prepend_path("LD_LIBRARY_PATH","/opt/beagle/1.0/gcc/lib")
@@ -16,12 +16,8 @@ prepend_path("LD_LIBRARY_PATH","/opt/beagle/1.0/gcc/lib")
 --Help description goes here:
 --
 help([[
-The BEAGLE module file defines the following environment variables:
-PATH for 
-the location of the BEAGLE executibles.
+BEAGLE is a high-performance library that can perform the core calculations at the heart of most Bayesian and Maximum Likelihood phylogenetics packages. It can make use of highly-parallel processors such as those in graphics cards (GPUs) found in many PCs.
 
-
-Version 1.0
 Version:
 --------
 1.0

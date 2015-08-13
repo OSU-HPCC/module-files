@@ -8,19 +8,15 @@ whatis("Category: bioinformatics")
 whatis("Description: blast finds regions of similarity between biological sequences
 http://blast.ncbi.nlm.nih.gov/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/blast+/2.2.26/prebuilt/bin")
 --
 --Help description goes here:
 --
 help([[
-The blast+  module file defines the following environment variables:
-PATH for 
-the location of the blast+ executibles.
+BLAST finds regions of similarity between biological sequences.
 
-
-Version 2.2.26
 Version:
 --------
 2.2.26

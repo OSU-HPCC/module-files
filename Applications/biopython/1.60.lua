@@ -8,7 +8,7 @@ whatis("Category: biology, python, molecular")
 whatis("Description: Scripting tools for computational molecular biology
 http://www.biopython.org")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PYTHONPATH","/opt/biopython/1.60/gcc")
 prepend_path("LD_LIBRARY_PATH","/opt/biopython/1.60/gcc/Bio")
@@ -16,12 +16,8 @@ prepend_path("LD_LIBRARY_PATH","/opt/biopython/1.60/gcc/Bio")
 --Help description goes here:
 --
 help([[
-The BioPython module file defines the following environment variables:
-PATH, PYTHONPATH for 
-the location of the Biopython distribution and its libraries.
+Biopython is a set of freely available tools for biological computation written in Python by an international team of developers.
 
-
-Version 1.60
 Version:
 --------
 1.60

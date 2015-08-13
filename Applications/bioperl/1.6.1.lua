@@ -8,7 +8,7 @@ whatis("Category: bioinformatics")
 whatis("Description: BioPerl is a toolkit of perl modules useful in building bioinformatics solutions in Perl.
 http://www.bioperl.org")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 load("perl/5.18.1")
 load("samtools")
@@ -16,13 +16,7 @@ load("samtools")
 --Help description goes here:
 --
 help([[
-
-
-	Module bioperl loads environmental variables defining
-	the location of the Perl binaries and libraries: 
-	Perl Version perl_5_16_1
-
-	Bioperl Version 1.6.901
+A community effort to produce Perl code which is useful in biology.
 
 Version:
 --------

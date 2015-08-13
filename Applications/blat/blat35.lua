@@ -5,8 +5,10 @@
 whatis("Name: BLAT")
 whatis("Version: BLAT35")
 whatis("Category: genomics, alignment, bioinformatics")
+whatis("Description: The BLAST-Like Alignment Tool, is more accurate and 500 times faster than popular existing tools for mRNA/DNA alignments and 50 times faster for protein alignments at sensitivity settings typically used when comparing vertebrate sequences.
+https://wiki.gacrc.uga.edu/wiki/Blat")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/blat/blat35/gcc/bin/x86_64")
 prepend_path("LD_LIBRARY_PATH","/opt/blat/blat35/gcc/lib/x86_64")
@@ -15,12 +17,8 @@ prepend_path("INCLUDE","/opt/blat/blat35/gcc/inc")
 --Help description goes here:
 --
 help([[
-The BLAT module file defines the following environment variables:
-PATH 
-the location of the BLAT distribution and its libraries.
+The BLAST-Like Alignment Tool, is more accurate and 500 times faster than popular existing tools for mRNA/DNA alignments and 50 times faster for protein alignments at sensitivity settings typically used when comparing vertebrate sequences.
 
-
-Version BLAT35
 Version:
 --------
 BLAT35

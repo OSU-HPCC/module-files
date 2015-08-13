@@ -8,7 +8,7 @@ whatis("Category: library, boost, c++")
 whatis("Description: C++ source libraries
 http://www.boost.org")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/boost/1.45.0/gcc")
 prepend_path("CPLUS_INCLUDE_PATH","/opt/boost/1.45.0/gcc/boost")
@@ -17,12 +17,8 @@ prepend_path("LD_LIBRARY_PATH","/opt/boost/1.45.0/gcc/stage/lib")
 --Help description goes here:
 --
 help([[
-The Boost module file defines the following environment variables:
-PATH for 
-the location of the Boost libraries.
+Boost provides free peer-reviewed portable C++ source libraries.
 
-
-Version 1.45.0
 Version:
 --------
 1.45.0

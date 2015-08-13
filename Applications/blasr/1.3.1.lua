@@ -8,7 +8,7 @@ whatis("Category: bioinformatics")
 whatis("Description: Blasr
 https://github.com/PacificBiosciences/blasr")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/blasr/1.3.1/gcc/alignment/bin")
 prepend_path("PATH","/opt/blasr/1.3.1/gcc/pbihdfutils/bin")
@@ -19,12 +19,8 @@ load("hdf5/1.8.12")
 --Help description goes here:
 --
 help([[
-The Blasr module file defines the following environment variables:
-PATH for 
-the location of the Blasr executibles.
+BLASR: The PacBio® long read aligner
 
-
-Version Blasr
 Version:
 --------
 1.3.1

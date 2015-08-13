@@ -6,7 +6,7 @@ whatis("Name: bio_apps")
 whatis("Version: ")
 whatis("Category: Bioworkshop")
 whatis("Description: module load for workshop
-www")
+")
 --
 This part actually does stuff.
 --
@@ -30,10 +30,7 @@ load("trinotate")
 --Help description goes here:
 --
 help([[
-The bio_apps module file defines the following environment variables:
-PATH, for 
-the location of the bio_apps distribution and its libraries.
-
+Module for workshop.
 
 Version:
 --------
@@ -41,5 +38,5 @@ Version:
 
 Website:
 --------
-www
+
 ]])
