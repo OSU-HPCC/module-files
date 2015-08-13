@@ -5,18 +5,18 @@
 whatis("Name: FreeBayes")
 whatis("Version: v0.9.14-28-g7378ee6")
 whatis("Category: bioinformatics")
+whatis("Description: FreeBayes is a Bayesian genetic variant detector designed to find small polymorphisms, specifically SNPs (single-nucleotide polymorphisms), indels (insertions and deletions), MNPs (multi-nucleotide polymorphisms), and complex events (composite insertion and substitution events) smaller than the length of a short-read sequencing alignment.
+https://github.com/ekg/freebayes")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/freebayes/v0.9.14-28-g7378ee6")
 --
 --Help description goes here:
 --
 help([[
-The Free Bayes  module file defines the following environment variables:
-PATH for the location the binaries
+FreeBayes is a Bayesian genetic variant detector designed to find small polymorphisms, specifically SNPs (single-nucleotide polymorphisms), indels (insertions and deletions), MNPs (multi-nucleotide polymorphisms), and complex events (composite insertion and substitution events) smaller than the length of a short-read sequencing alignment.
 
-Version v0.9.14-28-g7378ee6
 Version:
 --------
 v0.9.14-28-g7378ee6
