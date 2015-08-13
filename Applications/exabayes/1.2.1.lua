@@ -8,7 +8,7 @@ whatis("Category: molecular biology")
 whatis("Description: ExaBayes is a tool for Bayesian phylogenetic analyses.
 http://exelixis-lab.org/web/software/exabayes/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/exabayes/1.2.1/hybrid/bin/bin")
 prepend_path("LD_LIBRARY_PATH","/opt/exabayes/1.2.1/hybrid/lib")
@@ -18,12 +18,8 @@ load("openmpi-1.4/gnu")
 --Help description goes here:
 --
 help([[
-The ExaBayes  module file defines the following environment variables:
-PATH, MANPATH for 
-the location of the ExaBayes executibles.
+ExaBayes is a software package for Bayesian tree inference. It is particularly suitable for large-scale analyses on computer clusters.
 
-
-Version 1.2.1
 Version:
 --------
 1.2.1

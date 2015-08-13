@@ -8,7 +8,7 @@ whatis("Category: pseudopotentials, modeling, energy")
 whatis("Description: Electronic-structure calculation and modeling at the nanoscale
 http://www.quantum-espresso.org")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/espresso/5.0.1/openmpi-1.4-intel/bin")
 prepend_path("C_INCLUDE_PATH","/opt/espresso/5.0.1/openmpi-1.4-intel/clib")
@@ -18,12 +18,8 @@ load("openmpi-1.4/intel")
 --Help description goes here:
 --
 help([[
-The Espresso module file defines the following environment variables:
-PATH 
-the location of the Quantum-Espresso distribution and its libraries.
+Quantum Espresso is an integrated suite of Open-Source computer codes for electronic-structure calculations and materials modeling at the nanoscale. It is based on density-functional theory, plane waves, and pseudopotentials.
 
-
-Version 5.0.1
 Version:
 --------
 5.0.1 (openmpi-1.4-intel)

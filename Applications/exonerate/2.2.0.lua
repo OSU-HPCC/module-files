@@ -8,7 +8,7 @@ whatis("Category: molecular biology")
 whatis("Description: Exonerate is a generic tool for pairwise sequence comparison.
 http://www.ebi.ac.uk/~guy/exonerate/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/exonerate/2.2.0/prebuilt/bin")
 prepend_path("MANPATH","/opt/exonerate/2.2.0/prebuilt/share/man")
@@ -16,12 +16,8 @@ prepend_path("MANPATH","/opt/exonerate/2.2.0/prebuilt/share/man")
 --Help description goes here:
 --
 help([[
-The Exonerate  module file defines the following environment variables:
-PATH, MANPATH for 
-the location of the Exonerate executibles.
+Exonerate is a generic tool for pairwise sequence comparison. It allows you to align sequences using a many alignment models, using either exhaustive dynamic programming, or a variety of heuristics.
 
-
-Version 2.2.0
 Version:
 --------
 2.2.0

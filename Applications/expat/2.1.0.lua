@@ -8,7 +8,7 @@ whatis("Category: xml parser")
 whatis("Description: An XML parser library
 http://expat.sourceforge.net")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/expat/2.1.0/gcc/bin")
 prepend_path("LD_LIBRARY_PATH","/opt/expat/2.1.0/gcc/lib")
@@ -18,12 +18,8 @@ prepend_path("EXPATINCPATH","/opt/expat/2.1.0/gcc/include")
 --Help description goes here:
 --
 help([[
-The Expat  module file defines the following environment variables:
-PATH for 
-the location of the Expat executibles.
+Expat is an XML parser library written in C. It is a stream-oriented parser in which an application registers handlers for things the parser might find in the XML document (like start tags). An introductory article on using Expat is available on xml.com.
 
-
-Version 2.1.0
 Version:
 --------
 2.1.0
