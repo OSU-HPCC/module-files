@@ -8,7 +8,7 @@ whatis("Category: system, development")
 whatis("Description: high-level, interpreted, dynamic programming language
 http://www.activestate.com/activeperl/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/activeperl/5.18.1.1800/gcc/bin")
 prepend_path("LD_LIBRARY_PATH","/opt/activeperl/5.18.1.1800/gcc/lib")
@@ -16,11 +16,7 @@ prepend_path("LD_LIBRARY_PATH","/opt/activeperl/5.18.1.1800/gcc/lib")
 --Help description goes here:
 --
 help([[
-
-
-	Module activeperl loads environmental variables defining
-	the location of the Perl binaries and libraries: 
-	Active Perl Version perl_5_18_1_1800
+ActivePerl Business and Enterprise Editions feature our precompiled, supported, quality-assured Perl distribution used by millions of developers around the world for easy Perl installation and quality-assured code. When you're using Perl on production servers or mission-critical applications, ActivePerl Business and Enterprise Editions offer significant time savings over open source Perl for installing, managing, and standardizing your Perl.
 
 Version:
 --------

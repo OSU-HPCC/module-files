@@ -5,8 +5,10 @@
 whatis("Name: Automake")
 whatis("Version: 1.15")
 whatis("Category: libraries")
+whatis("Description: Automake is a tool for automatically generating Makefile.in files compliant with the GNU Coding Standards. Automake requires the use of Autoconf.
+http://www.gnu.org/software/automake/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/automake/1.15/gcc/bin")
 prepend_path("LD_LIBRARY_PATH","/opt/automake/1.15/gcc/lib")
@@ -14,12 +16,8 @@ prepend_path("LD_LIBRARY_PATH","/opt/automake/1.15/gcc/lib")
 --Help description goes here:
 --
 help([[
-The GNU Automake modulefile sets the 
-PATH variable to
-the location of the Automake libraries.
+Automake is a tool for automatically generating Makefile.in files compliant with the GNU Coding Standards. Automake requires the use of Autoconf.
 
-
-Version 
 Version:
 --------
 1.15

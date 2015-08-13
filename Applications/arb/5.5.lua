@@ -8,7 +8,7 @@ whatis("Category: sequencing")
 whatis("Description: sequence database handling and data analysis
 http://www.arb-home.de/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/arb/5.5/arb_svn/bin")
 prepend_path("LD_LIBRARY_PATH","/opt/arb/5.5/arb_svn/lib")
@@ -18,12 +18,8 @@ prepend_path("ARBHOME","/opt/arb/5.5/arb_svn")
 --Help description goes here:
 --
 help([[
-The ARB module file defines the following environment variables:
-PATH, for 
-the location of the ARB distribution and its libraries.
+The ARB software is a graphically oriented package comprising various tools for sequence database handling and data analysis. A central database of processed (aligned) sequences and any type of additional data linked to the respective sequence entries is structured according to phylogeny or other user defined criteria.
 
-
-Version 5.5
 Version:
 --------
 5.5

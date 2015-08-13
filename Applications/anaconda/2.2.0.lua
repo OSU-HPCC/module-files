@@ -8,7 +8,7 @@ whatis("Category: system, development")
 whatis("Description: interpreted programming language
 https://store.continuum.io/cshop/anaconda/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/anaconda/2.2.0/bin")
 prepend_path("MANPATH","/opt/anaconda/2.2.0/share/man")
@@ -16,11 +16,7 @@ prepend_path("MANPATH","/opt/anaconda/2.2.0/share/man")
 --Help description goes here:
 --
 help([[
-
-
-	Module Anaconda Python loads environmental variables defining
-	the location of the Python binaries and libraries: 
-	Python Version anaconda 2.2.0
+Completely free enterprise-ready Python distribution for large-scale data processing, predictive analytics, and scientific computing.
 
 Version:
 --------

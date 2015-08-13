@@ -8,7 +8,7 @@ whatis("Category: fluid dynamics, CAD")
 whatis("Description: Fluid dynamics simulation software
 http://www.ansys.com")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/ansys/ansys15/v150/fluent/bin")
 prepend_path("CPATH","/opt/ansys/ansys15/v150/fluent/include")
@@ -23,12 +23,8 @@ prepend_path("ANSYSLIC_DIR","/opt/ansys/lm/shared_files/licensing")
 --Help description goes here:
 --
 help([[
-The ANSYS Fluent module file defines the following environment variables:
-PATH, LD_LIBRARY_PATH for 
-the location of the ANSYS Fluent executibles.
+ANSYS computational fluid dynamics (CFD) simulation software allows you to predict, with confidence, the impact of fluid flows on your product — throughout design and manufacturing as well as during end use.
 
-
-Version 15
 Version:
 --------
 15

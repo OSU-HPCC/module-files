@@ -5,8 +5,10 @@
 whatis("Name: aTRAM")
 whatis("Version: aTRAM")
 whatis("Category: alignment")
+whatis("Description: aTRAM performs targeted de novo assembly of loci from paired-end Illumina runs.
+https://github.com/juliema/aTRAM")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 load("perl/5.18.1")
 load("trinity")
@@ -19,12 +21,8 @@ prepend_path("PATH","/opt/aTRAM")
 --Help description goes here:
 --
 help([[
-The aTRAM module file defines the following environment variables:
-PATH for 
-the location of the aTRAM distribution and its libraries.
+aTRAM performs targeted de novo assembly of loci from paired-end Illumina runs.
 
-
-Version aTRAM
 Version:
 --------
 aTRAM

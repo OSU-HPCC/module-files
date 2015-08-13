@@ -8,7 +8,7 @@ whatis("Category: library, statistical, graphics")
 whatis("Description: Whole genome assembley software
 http://sourceforge.net/apps/mediawiki/amos/index.php?title=AMOS")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/amos/3.0.0/gcc/bin")
 prepend_path("LD_LIBRARY_PATH","/opt/amos/3.0.0/gcc/lib")
@@ -18,12 +18,8 @@ load("mummer/3.23")
 --Help description goes here:
 --
 help([[
-The AMOS module file defines the following environment variables:
-PATH, for 
-the location of the rsem distribution and its libraries.
+AMOS is a collection of tools and class interfaces for the assembly of DNA reads. The package includes a robust infrastructure, modular assembly pipelines, and tools for overlapping, consensus generation, contigging, and assembly manipulation.
 
-
-Version 3.0.0
 Version:
 --------
 3.0.0

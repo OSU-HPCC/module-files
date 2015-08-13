@@ -6,9 +6,9 @@ whatis("Name: AutoDock Vina")
 whatis("Version: 1.1.2")
 whatis("Category: biochemistry")
 whatis("Description: molecular docking program
-www")
+www.vina.scripps.edu")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/vina/autodock_vina_1_1_2/gcc/build/linux/release")
 load("boost/1.45.0")
@@ -16,17 +16,13 @@ load("boost/1.45.0")
 --Help description goes here:
 --
 help([[
-The AutoDock Vina module file defines the following environment variables:
-PATH for 
-the location of the AutoDock Vina executibles.
+AutoDock Vina is an open-source program for doing molecular docking. It was designed and implemented by Dr. Oleg Trott in the Molecular Graphics Lab at The Scripps Research Institute.
 
-
-Version 1.1.2
 Version:
 --------
 1.1.2
 
 Website:
 --------
-www
+www.vina.scripps.edu
 ]])

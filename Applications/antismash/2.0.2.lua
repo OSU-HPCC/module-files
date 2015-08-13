@@ -8,7 +8,7 @@ whatis("Category: genomics, mining, metabolite")
 whatis("Description: antibiotics and Secondary Metabolite Analysis SHell
 http://antismash.secondarymetabolites.org")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/antismash/antismash-2.0.2")
 load("python/2.7.3")
@@ -20,12 +20,8 @@ load("muscle/3.8.31")
 --Help description goes here:
 --
 help([[
-The antiSMASH module file defines the following environment variables:
-PATH 
-the location of the antiSMASH distribution and its libraries.
+antiSMASH allows the rapid genome-wide identification, annotation and analysis of secondary metabolite biosynthesis gene clusters in bacterial and fungal genomes. It integrates and cross-links with a large number of in silico secondary metabolite analysis tools that have been published earlier.
 
-
-Version 2.0.2
 Version:
 --------
 2.0.2

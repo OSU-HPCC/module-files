@@ -8,7 +8,7 @@ whatis("Category: molecular dynamics")
 whatis("Description: molecular dynamics simulator
 http://ambermd.org/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/amber/amber12/gcc/bin")
 prepend_path("LD_LIBRARY_PATH","/opt/amber/amber12/gcc/lib")
@@ -18,12 +18,8 @@ prepend_path("AMBERHOME","/opt/amber/amber12/gcc")
 --Help description goes here:
 --
 help([[
-The Amber module file defines the following environment variables:
-PATH for 
-the location of the Amber executibles.
+A package of molecular simulation programs which includes source code and demos.
 
-
-Version Amber12
 Version:
 --------
 Amber12
