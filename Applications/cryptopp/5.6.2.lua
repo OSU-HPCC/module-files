@@ -8,7 +8,7 @@ whatis("Category: cryptography, libraries")
 whatis("Description: Cryptographic C++ libraries
 http://www.cryptopp.com")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/cryptopp/5.6.2/gcc/bin")
 prepend_path("PATH","/opt/cryptopp/5.6.2/gcc")
@@ -19,12 +19,8 @@ load("gcc-4.6.2")
 --Help description goes here:
 --
 help([[
-The Crypto++ module file defines the following environment variables:
-PATH, CPATH, LD_LIBRARY_PATHfor 
-the location of the Crypto++ distribution and its libraries.
+Crypto++ Library is a free C++ class library of cryptographic schemes.
 
-
-Version 5.6.2
 Version:
 --------
 5.6.2

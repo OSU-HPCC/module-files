@@ -8,7 +8,7 @@ whatis("Category: bioinformatics")
 whatis("Description: Tool to visually compared sequeneces
 http://stothard.afns.ualberta.ca/downloads/CCT/index.html")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/cct/cgview_comparison_tool/scripts")
 prepend_path("PATH","/opt/java/jre1.8.0_25/bin")
@@ -26,12 +26,8 @@ load("geeqie")
 --Help description goes here:
 --
 help([[
-The CCT module file defines the following environment variables:
-PATH for 
-the location of the CCT distribution and its libraries.
+The CGView Comparison Tool (CCT) is a package for visually comparing bacterial, plasmid, chloroplast, or mitochondrial sequences of interest to existing genomes or sequence collections. The comparisons are conducted using BLAST, and the BLAST results are presented in the form of graphical maps that can also show sequence features, gene and protein names, COG category assignments, and sequence composition characteristics. CCT can generate maps in a variety of sizes, including 400 Megapixel maps suitable for posters. Comparisons can be conducted within a particular species or genus, or all available genomes can be used. The entire map creation process, from downloading sequences to redrawing zoomed maps, can be completed easily using scripts included with the CCT. User-defined features or analysis results can be included on maps, and maps can be extensively customized. To simplify program setup, a CCT virtual machine that includes all dependencies preinstalled is available. Detailed tutorials illustrating the use of CCT are included with the CCT documentation.
 
-
-Version CCT
 Version:
 --------
 CCT

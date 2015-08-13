@@ -8,7 +8,7 @@ whatis("Category: sequencing, bioinformatics, genomics")
 whatis("Description: Compares and masks protein or nucleotide sequences
 http://www.girinst.org/censor/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/censor/4.2.28/gcc/bin")
 prepend_path("LD_LIBRARY_PATH","/opt/censor/4.2.28/gcc/lib")
@@ -17,12 +17,8 @@ prepend_path("INCLUDE","/opt/censor/4.2.28/gcc/include")
 --Help description goes here:
 --
 help([[
-The CENSOR module file defines the following environment variables:
-PATH for 
-the location of the CENSOR distribution and its libraries.
+CENSOR is a software tool which screens query sequences against a reference collection of repeats and "censors" (masks) homologous portions with masking symbols, as well as generating a report classifying all found repeats.
 
-
-Version 4.2.28
 Version:
 --------
 4.2.28

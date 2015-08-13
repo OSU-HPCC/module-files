@@ -8,7 +8,7 @@ whatis("Category: molecular dynamics, DFT, GPW")
 whatis("Description: Program to perform atomistic and molecular simulations of solid state, liquid, molecular, and biological systems.
 http://www.cp2k.org/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/cp2k/2.5.1/ifort/bin")
 prepend_path("PATH","/opt/cp2k/2.5.1/openmpi-1.4-intel/bin")
@@ -18,12 +18,8 @@ load("openmpi-1.4/intel")
 --Help description goes here:
 --
 help([[
-The CP2K module file defines the following environment variables:
-PATH for 
-the location of the CP2K distribution and its libraries.
+CP2K is a program to perform atomistic and molecular simulations of solid state, liquid, molecular, and biological systems. It provides a general framework for different methods such as e.g., density functional theory (DFT) using a mixed Gaussian and plane waves approach (GPW) and classical pair and many-body potentials.
 
-
-Version 2.5.1-sopt
 Version:
 --------
 2.5.1-sopt

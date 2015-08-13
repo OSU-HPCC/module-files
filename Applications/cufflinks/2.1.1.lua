@@ -8,19 +8,15 @@ whatis("Category: RNA-Seq, transcript, expression, regulation")
 whatis("Description: Transcript assembly, abundance estimation, differential expression/regulation in RNA-Seq samples
 http://cufflinks.cbcb.umd.edu/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/cufflinks/2.1.1/prebuilt")
 --
 --Help description goes here:
 --
 help([[
-The Cufflinks module file defines the following environment variables:
-PATH for 
-the location of the Cufflinks distribution and its libraries.
+Cufflinks assembles transcripts, estimates their abundances, and tests for differential expression and regulation in RNA-Seq samples. It accepts aligned RNA-Seq reads and assembles the alignments into a parsimonious set of transcripts. Cufflinks then estimates the relative abundances of these transcripts based on how many reads support each one, taking into account biases in library preparation protocols.
 
-
-Version 2.1.1
 Version:
 --------
 2.1.1

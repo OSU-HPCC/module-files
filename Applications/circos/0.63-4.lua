@@ -8,7 +8,7 @@ whatis("Category: visualization, perl")
 whatis("Description: Circos is a software package for visualizing data and information.
 http://circos.ca/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 load("perl")
 prepend_path("PATH","/opt/circos/0.63-4/prebuilt/bin")
@@ -16,12 +16,8 @@ prepend_path("PATH","/opt/circos/0.63-4/prebuilt/bin")
 --Help description goes here:
 --
 help([[
-The Circos  module file defines the following environment variables:
-PATH for 
-the location of the Circos executibles.
+Circos is a software package for visualizing data and information. It visualizes data in a circular layout — this makes Circos ideal for exploring relationships between objects or positions. There are other reasons why a circular layout is advantageous, not the least being the fact that it is attractive.
 
-
-Version 0.63-4
 Version:
 --------
 0.63-4

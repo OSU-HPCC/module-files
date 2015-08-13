@@ -8,7 +8,7 @@ whatis("Category: sequencing, bioinformatics, genomics")
 whatis("Description: 
 http://korflab.ucdavis.edu/Datasets/cegma")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 load("genewise/2.4.1")
 load("geneid/1.4.4")
@@ -22,12 +22,8 @@ prepend_path("PERL5LIB","/opt/cegma/2.4.010312/gcc/lib")
 --Help description goes here:
 --
 help([[
-The CEGMA module file defines the following environment variables:
-PATH for 
-the location of the CEGMA distribution and its libraries.
+CEGMA has been discontinued. We suggest you consider using alternative tools.
 
-
-Version 2.4.010312
 Version:
 --------
 2.4.010312
