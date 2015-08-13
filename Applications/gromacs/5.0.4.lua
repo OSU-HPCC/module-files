@@ -8,7 +8,7 @@ whatis("Category: molecular dynamics, particles, optimization")
 whatis("Description: Molecular dynamics package for particle simulations
 http://www.gromacs.org")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/gromacs/5.0.4/icc/bin")
 prepend_path("CPATH","/opt/gromacs/5.0.4/icc/include")
@@ -20,12 +20,8 @@ load("cmake/3.2.2")
 --Help description goes here:
 --
 help([[
-The Gromacs module file defines the following environment variables:
-PATH, MANPATH for 
-the location of the Gromacs distribution and its libraries.
+GROMACS is a versatile package to perform molecular dynamics, i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
 
-
-Version 5.0.4
 Version:
 --------
 5.0.4

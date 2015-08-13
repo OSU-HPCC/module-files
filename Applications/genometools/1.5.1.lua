@@ -8,7 +8,7 @@ whatis("Category: sequencing, statistical, genomics")
 whatis("Description: Genomic analysis with a collection bioinformatics tools
 http://genometools.org")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/genometools/1.5.1/gcc/bin")
 prepend_path("LD_LIBRARY_PATH","/opt/genometools/1.5.1/gcc/lib")
@@ -16,12 +16,8 @@ prepend_path("LD_LIBRARY_PATH","/opt/genometools/1.5.1/gcc/lib")
 --Help description goes here:
 --
 help([[
-The GenomeTools module file defines the following environment variables:
-PATH for 
-the location of the GenomeTools distribution and its libraries.
+The GenomeTools genome analysis system is a free collection of bioinformatics tools (in the realm of genome informatics) combined into a single binary named gt. It is based on a C library named “libgenometools” which consists of several modules.
 
-
-Version 1.5.1
 Version:
 --------
 1.5.1

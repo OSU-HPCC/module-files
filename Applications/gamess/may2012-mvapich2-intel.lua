@@ -4,7 +4,7 @@
 --
 whatis("Gamess path")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/gamess/may2012/mvapich2-1.8-intel")
 load("mvapich2-1.8/intel")
@@ -15,9 +15,7 @@ help([[
 	Gamess
 Version:
 --------
-N/A
 
 Website:
 --------
-www
 ]])

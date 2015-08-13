@@ -5,8 +5,10 @@
 whatis("Name: GSL - GNU Scientific Library")
 whatis("Version: 1.16")
 whatis("Category: library")
+whatis("Description: The GNU Scientific Library (GSL) is a numerical library for C and C++ programmers. It is free software under the GNU General Public License.
+http://www.gnu.org/software/gsl/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/gsl/1.16/gcc-4.7.2/bin")
 prepend_path("CPATH","/opt/gsl/1.16/gcc-4.7.2")
@@ -23,17 +25,15 @@ load("gcc-4.7.2")
 --Help description goes here:
 --
 help([[
-The GSL module file defines the following environment variables:
-PATH 
-the location of the GSL distribution and its libraries.
+The GNU Scientific Library (GSL) is a numerical library for C and C++ programmers. It is free software under the GNU General Public License.
 
+The library provides a wide range of mathematical routines such as random number generators, special functions and least-squares fitting. There are over 1000 functions in total with an extensive test suite.
 
-Version 1.16
 Version:
 --------
 1.16
 
 Website:
 --------
-www
+http://www.gnu.org/software/gsl/
 ]])

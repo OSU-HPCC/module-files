@@ -8,7 +8,7 @@ whatis("Category: framework, library")
 whatis("Description: Google's framework for writing C++ tests
 https://code.google.com/p/googletest/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/gtest/1.7.0/gcc")
 prepend_path("CPATH","/opt/gtest/1.7.0/gcc/include/gtest")
@@ -20,12 +20,8 @@ prepend_path("LD_LIBRARY_PATH","/opt/gtest/1.7.0/gcc/lib")
 --Help description goes here:
 --
 help([[
-The GTest module file defines the following environment variables:
-PATH for 
-the location of the Google Test distribution and its libraries.
+Google's framework for writing C++ tests on a variety of platforms (Linux, Mac OS X, Windows, Cygwin, Windows CE, and Symbian). Based on the xUnit architecture. Supports automatic test discovery, a rich set of assertions, user-defined assertions, death tests, fatal and non-fatal failures, value- and type-parameterized tests, various options for running the tests, and XML test report generation.
 
-
-Version 1.7.0
 Version:
 --------
 1.7.0

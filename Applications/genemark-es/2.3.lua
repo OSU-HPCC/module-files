@@ -5,18 +5,18 @@
 whatis("Name: GeneMark-ES")
 whatis("Version: 2.3")
 whatis("Category: molecular biology")
+whatis("Description: The program combines GeneMark.hmm (eukaryotic) with a self-training procedure that determines parameters for the models used in GeneMark.hmm. (Self-training works for sequences longer than 10MB.)
+http://exon.gatech.edu/license_download.cgi")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/genemark-es/2.3/")
 --
 --Help description goes here:
 --
 help([[
-The GeneMark-ES  module file defines the following environment variables:
-PATH for the location of the GeneMark-ES scrips
+The program combines GeneMark.hmm (eukaryotic) with a self-training procedure that determines parameters for the models used in GeneMark.hmm. (Self-training works for sequences longer than 10MB.)
 
-Version 2.3
 Version:
 --------
 2.3

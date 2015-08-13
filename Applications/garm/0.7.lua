@@ -8,7 +8,7 @@ whatis("Category: library, statistical, graphics")
 whatis("Description: Meta Assembler for de novo assembly results
 http://sourceforge.net/projects/garm-meta-assem/?source=navbar")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("GARMBIN","/opt/garm/0.7/perl/bin")
 prepend_path("GARMLIB","/opt/garm/0.7/perl/lib")
@@ -22,12 +22,7 @@ load("perl")
 --Help description goes here:
 --
 help([[
-The GARM module file defines the following environment variables:
-PATH, for 
-the location of the rsem distribution and its libraries.
-
-
-Version 0.7
+Meta Assembler for de novo assembly results. GARM (Genome Assembly Reconciliation and Merging) is a pipeline to merge results from different assemblers or results from different DNA sequencing technologies.
 Version:
 --------
 0.7

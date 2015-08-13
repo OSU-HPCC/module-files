@@ -8,7 +8,7 @@ whatis("Category: plotting, graphing, GUI")
 whatis("Description: 2D plotting tool for M*tif
 http://plasma-gate.weizmann.ac.il/Grace/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/grace/5.1.23/gcc/grace/bin")
 prepend_path("CPATH","/opt/grace/5.1.23/gcc/grace/include")
@@ -17,12 +17,8 @@ prepend_path("LD_LIBRARY_PATH","/opt/grace/5.1.23/gcc/grace/lib")
 --Help description goes here:
 --
 help([[
-The Grace module file defines the following environment variables:
-PATH, for 
-the location of the Grace distribution and its libraries.
+Grace is a WYSIWYG 2D plotting tool for the X Window System and M*tif. Grace runs on practically any version of Unix-like OS. As well, it has been successfully ported to VMS, OS/2, and Win9*/NT/2000/XP (some minor functionality may be missing, though).
 
-
-Version 5.1.23
 Version:
 --------
 5.1.23

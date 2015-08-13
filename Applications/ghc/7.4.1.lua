@@ -8,7 +8,7 @@ whatis("Category: compiler, library")
 whatis("Description: Compiler and libraries used by Haskell
 http://www.haskell.org/ghc/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/ghc/7.4.1/gcc/bin")
 prepend_path("PATH","/opt/ghc/7.4.1/gcc/share")
@@ -20,12 +20,8 @@ prepend_path("LD_LIBRARYPATH","/opt/haskell/2012.2.0.0/icc/cabal/lib")
 --Help description goes here:
 --
 help([[
-The GHC module file defines the following environment variables:
-PATH for 
-the location of the GHC distribution and its libraries.
+Compiler and libraries used by Haskell.
 
-
-Version 7.4.1
 Version:
 --------
 7.4.1 (gcc)

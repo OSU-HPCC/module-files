@@ -8,7 +8,7 @@ whatis("Category: sequencing, statistical, alignment")
 whatis("Description: GROMACS Library for reading xtc, edr, and trr files
 www.gromacs.org/Developer_Zone/Programming_Guide/XTC_Library")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/gromacs/xtc-1.1/gcc/bin")
 prepend_path("LD_LIBRARY_PATH","/opt/gromacs/xtc-1.1/gcc/lib")
@@ -16,12 +16,8 @@ prepend_path("LD_LIBRARY_PATH","/opt/gromacs/xtc-1.1/gcc/lib")
 --Help description goes here:
 --
 help([[
-The GROMACS XTC module file defines the following environment variables:
-PATH 
-the location of the GROMACS XTC Libraries.
+A separate library for reading and writing xtc, edr and trr files, which will be distributed under the lesser GNU public license.
 
-
-Version 1.1
 Version:
 --------
 1.1

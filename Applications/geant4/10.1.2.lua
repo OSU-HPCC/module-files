@@ -4,8 +4,10 @@
 --
 whatis("Name: GEANT4")
 whatis("Version: 10.01.p02")
+whatis("Description: Geant4 is a toolkit for the simulation of the passage of particles through matter. Its areas of application include high energy, nuclear and accelerator physics, as well as studies in medical and space science.
+http://geant4.cern.ch/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/geant4/10.01.p02/gcc/build/bin")
 prepend_path("CPATH","/opt/geant4/10.01.p02/gcc/build/include")
@@ -23,17 +25,13 @@ setenv("G4NEUTRONXSDATA","/opt/geant4/10.01.p02/gcc/build/share/Geant4-10.1.2/da
 --Help description goes here:
 --
 help([[
-The GEANT4 modulefile sets the 
-PATH variable to
-the location of the GEANT4 binaries.
+Geant4 is a toolkit for the simulation of the passage of particles through matter. Its areas of application include high energy, nuclear and accelerator physics, as well as studies in medical and space science. The two main reference papers for Geant4 are published in Nuclear Instruments and Methods in Physics Research A 506 (2003) 250-303, and IEEE Transactions on Nuclear Science 53 No. 1 (2006) 270-278.
 
-
-Version 
 Version:
 --------
 10.01.p02
 
 Website:
 --------
-www
+http://geant4.cern.ch/
 ]])

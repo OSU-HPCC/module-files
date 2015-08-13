@@ -8,7 +8,7 @@ whatis("Category: molecular dynamics, particles, optimization")
 whatis("Description: Molecular dynamics package for particle simulations
 http://www.gromacs.org")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/gromacs/4.5.5/openmpi-1.4-intel/bin")
 prepend_path("CPATH","/opt/gromacs/4.5.5/openmpi-1.4-intel/include")
@@ -19,12 +19,8 @@ load("openmpi-1.4/intel")
 --Help description goes here:
 --
 help([[
-The Gromacs module file defines the following environment variables:
-PATH, MANPATH for 
-the location of the Gromacs distribution and its libraries.
+GROMACS is a versatile package to perform molecular dynamics, i.e. simulate the Newtonian equations of motion for systems with hundreds to millions of particles.
 
-
-Version 4.5.5
 Version:
 --------
 4.5.5
