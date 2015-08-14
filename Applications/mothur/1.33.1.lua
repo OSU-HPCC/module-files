@@ -8,19 +8,15 @@ whatis("Category: bioinformatics, statistical, microbial ecology")
 whatis("Description: Bioinformatics tool for the microbial ecology community
 http://www.mothur.org/wiki/Main_Page")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/mothur/1.33.1/precompiled")
 --
 --Help description goes here:
 --
 help([[
-The Mothur module file defines the following environment variables:
-PATH for 
-the location of the Mother (non-MPI) distribution and its libraries.
+A project to develop a single piece of open-source, expandable software to fill the bioinformatics needs of the microbial ecology community.
 
-
-Version 1.33.1
 Version:
 --------
 1.33.1

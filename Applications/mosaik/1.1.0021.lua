@@ -8,19 +8,20 @@ whatis("Category: molecular biology")
 whatis("Description: Mosaik is a reference-guided assembler comprising of two main modular programs: MosaikBuild and MosaikAligner. MosaikBuild converts various sequence formats into Mosaik's native read format. MosaikAligner pairwise aligns each read to a specified series of reference sequences and produces BAMs as outputs.
 https://code.google.com/p/mosaik-aligner/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/mosaik/1.1.0021/prebuilt/bin")
 --
 --Help description goes here:
 --
 help([[
-The Mosaik  module file defines the following environment variables:
-PATH for 
-the location of the Mosaik executibles.
+MOSAIK is a reference-guided assembler comprising of two main modular programs:
 
+*MosaikBuild
+*MosaikAligner
 
-Version 1.1.0021
+MosaikBuild converts various sequence formats into Mosaik’s native read format. MosaikAligner pairwise aligns each read to a specified series of reference sequences and produces BAMs as outputs.
+
 Version:
 --------
 1.1.0021

@@ -5,8 +5,10 @@
 whatis("Name: MPC")
 whatis("Version: 1.0.2")
 whatis("Category: libraries")
+whatis("Description: Gnu Mpc is a C library for the arithmetic of complex numbers with arbitrarily high precision and correct rounding of the result.
+http://www.multiprecision.org")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("LD_LIBRARY_PATH","/opt/mpc/1.0.2/lib")
 prepend_path("CPATH","/opt/mpc/1.0.2/include")
@@ -14,12 +16,8 @@ prepend_path("CPATH","/opt/mpc/1.0.2/include")
 --Help description goes here:
 --
 help([[
-The GNU MPC modulefile sets the 
-LD_LIBRARY_PATH variable to
-the location of the MPC libraries.
+Gnu Mpc is a C library for the arithmetic of complex numbers with arbitrarily high precision and correct rounding of the result.
 
-
-Version 1.0.2
 Version:
 --------
 1.0.2

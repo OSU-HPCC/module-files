@@ -5,8 +5,10 @@
 whatis("Name: Matlab")
 whatis("Version: R2012b")
 whatis("Category: Package")
+whatis("Description: Matlab
+www.mathworks.com")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 load("matlab/R2012b")
 prepend_path("PATH","/opt/matio/1.5.2/gcc/bin")
@@ -16,12 +18,8 @@ prepend_path("CPATH","/opt/matio/1.5.2/gcc/include")
 --Help description goes here:
 --
 help([[
-The Matlab modulefile sets the 
-PATH variable to
-the location of the Matlab binaries.
+Matlab
 
-
-Version R2012b
 Version:
 --------
 R2012b

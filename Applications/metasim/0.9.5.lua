@@ -5,20 +5,20 @@
 whatis("Name: MetaSim")
 whatis("Version: 0.9.5")
 whatis("Category: bioinformatics")
+whatis("Description: The aim of MetaSim is to provide a tool for the simulation of reads based on given genome sequences
+reflecting (adaptable) error models of current sequencing technologies
+http://ab.inf.uni-tuebingen.de/data/software/metasim/download/welcome.html")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/metasim/0.9.5")
 --
 --Help description goes here:
 --
 help([[
-The mreps module file defines the following environment variables:
-PATH for 
-the location of the MetaSim distribution and its libraries.
+The aim of MetaSim is to provide a tool for the simulation of reads based on given genome sequences
+reflecting (adaptable) error models of current sequencing technologies
 
-
-Version 0.9.5
 Version:
 --------
 0.9.5

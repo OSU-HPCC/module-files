@@ -5,8 +5,10 @@
 whatis("Name: MetaPathways")
 whatis("Version: 1.0")
 whatis("Category: bioinformatics")
+whatis("Description: MetaPathways is a modular software pipeline for integrated analysis of environmental sequence information.
+http://hallam.microbiology.ubc.ca/MetaPathways/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/metapathways/1.0/MetaPathways-master")
 prepend_path("METAPATHWAYS_PATH","/opt/metapathways/1.0/MetaPathways-master")
@@ -19,12 +21,8 @@ load("python/2.7.3")
 --Help description goes here:
 --
 help([[
-The metapathways module file defines the following environment variables:
-PATH for 
-the location of the MetaPathways distribution and its libraries.
+MetaPathways is a modular software pipeline for integrated analysis of environmental sequence information. The software performs a series of popular analyses for taxonomic profiling and functional potential with limited data handling, allowing researchers to spend their time analyzing their data instead of performing complicated data transformations.
 
-
-Version 1.0
 Version:
 --------
 1.0

@@ -5,8 +5,10 @@
 whatis("Name: Mono")
 whatis("Version: 3.12.0")
 whatis("Category: Package")
+whatis("Description: Sponsored by Xamarin, Mono is an open source implementation of Microsoft's .NET Framework based on the ECMA standards for C# and the Common Language Runtime.
+www.mono-project.com")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/mono/bin")
 prepend_path("MANPATH","/opt/mono/share/man/")
@@ -17,12 +19,8 @@ prepend_path("LIBRARY_PATH","/opt/mono/lib")
 --Help description goes here:
 --
 help([[
-The Mono modulefile sets the 
-PATH variable to
-the location of the Matlab binaries.
+Sponsored by Xamarin, Mono is an open source implementation of Microsoft's .NET Framework based on the ECMA standards for C# and the Common Language Runtime.
 
-
-Version 3.12.0
 Version:
 --------
 3.12.0

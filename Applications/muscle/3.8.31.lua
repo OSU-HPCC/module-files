@@ -5,27 +5,23 @@
 whatis("Name: Muscle")
 whatis("Version: 3.8.31")
 whatis("Category: sequencing, statistical, genomics")
-whatis("Description: n/a
-n/a")
+whatis("Description: MUSCLE stands for MUltiple Sequence Comparison by Log- Expectation.
+http://evomics.org/resources/software/bioinformatics-software/muscle/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/muscle/3.8.31/prebuilt")
 --
 --Help description goes here:
 --
 help([[
-The Muscle module file defines the following environment variables:
-PATH for 
-the location of the Muscle distribution and its libraries.
+MUSCLE stands for MUltiple Sequence Comparison by Log- Expectation. It uses kmer counting followed by a log expectation score profile function for progressive alignment in association with tree-dependant restricted partitioning.
 
-
-Version 3.8.31
 Version:
 --------
 3.8.31
 
 Website:
 --------
-n/a
+http://evomics.org/resources/software/bioinformatics-software/muscle/
 ]])

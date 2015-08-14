@@ -8,19 +8,15 @@ whatis("Category: molecular biology")
 whatis("Description: molecular evolutionary genetics analysis
 http://www.megasoftware.net/megaccbeta.php")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/megacc/7.00-beta/prebuilt")
 --
 --Help description goes here:
 --
 help([[
-The MEGA-CC  module file defines the following environment variables:
-PATH for 
-the location of the MEGA-CC executibles.
+MEGA is an integrated tool for conducting sequence alignment, inferring phylogenetic trees, estimating divergence times, mining online databases, estimating rates of molecular evolution, inferring ancestral sequences, and testing evolutionary hypotheses. MEGA is used by biologists in a large number of laboratories for reconstructing the evolutionary histories of species and inferring the extent and nature of the selective forces shaping the evolution of genes and species.
 
-
-Version 7.00-beta
 Version:
 --------
 7.00-beta

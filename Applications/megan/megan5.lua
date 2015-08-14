@@ -5,20 +5,18 @@
 whatis("Name: MEGAN")
 whatis("Version: MEGAN5")
 whatis("Category: bioinformatics")
+whatis("Description: A stand-alone analysis tool for metagenomic of short-read data.
+http://ab.inf.uni-tuebingen.de/data/software/megan5/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/megan/megan5")
 --
 --Help description goes here:
 --
 help([[
-The MEGAN module file defines the following environment variables:
-PATH for 
-the location of the MetaSim distribution and its libraries.
+A stand-alone analysis tool for metagenomic of short-read data.
 
-
-Version MEGAN5
 Version:
 --------
 MEGAN5

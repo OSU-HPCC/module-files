@@ -8,7 +8,7 @@ whatis("Category: molecular biology")
 whatis("Description:  MGLTools is a software developed at the Molecular Graphics Laboratory (MGL) of The Scripps Research Institute for visualization and analysis of molecular structures.
 http://mgltools.scripps.edu/downloads")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/mgltools/1.5.7rc1/python/bin")
 prepend_path("LD_LIBRARY_PATH","/opt/mgltools/1.5.7rc1/python/lib")
@@ -18,12 +18,8 @@ prepend_path("TK_LIBRARY","/opt/tk/8.5.12/gcc/lib/tk8.5")
 --Help description goes here:
 --
 help([[
-The MGLTools  module file defines the following environment variables:
-PATH for 
-the location of the MGLTools executibles.
+MGLTools is a software developed at the Molecular Graphics Laboratory (MGL) of The Scripps Research Institute for visualization and analysis of molecular structures.
 
-
-Version 1.5.7rc1
 Version:
 --------
 1.5.7rc1

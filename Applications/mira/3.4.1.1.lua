@@ -8,7 +8,7 @@ whatis("Category: molecular biology")
 whatis("Description: MIRA is a whole genome shotgun and EST sequence assembler for Sanger, 454, Solexa (Illumina), IonTorrent data and PacBio.
 http://sourceforge.net/apps/mediawiki/mira-assembler/index.php?title=Main_Page")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/mira/3.4.1.1/gcc/bin/")
 prepend_path("LD_LIBRARY_PATH","/opt/boost/1.51.0/gcc/lib/")
@@ -16,12 +16,8 @@ prepend_path("LD_LIBRARY_PATH","/opt/boost/1.51.0/gcc/lib/")
 --Help description goes here:
 --
 help([[
-The MIRA  module file defines the following environment variables:
-PATH for 
-the location of the MIRA executibles.
+MIRA - Sequence assembler and sequence mapping for whole genome shotgun and EST / RNASeq sequencing data. Can use Sanger, 454, Illumina and IonTorrent data. PacBio: CCS and error corrected data usable, uncorrected not yet.
 
-
-Version 3.4.1.1
 Version:
 --------
 3.4.1.1

@@ -5,10 +5,10 @@
 whatis("Name: MrBayes")
 whatis("Version: 3.1.2 (openmpi-1.4-intel)")
 whatis("Category: bioinformatics")
-whatis("Description: See  http://mrbayes.sourceforge.net/
+whatis("Description: MrBayes is a program for Bayesian inference and model choice across a wide range of phylogenetic and evolutionary models. 
 http://mrbayes.sourceforge.net/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/mrbayes/3.1.2/openmpi-1.4-intel/")
 prepend_path("LD_LIBRARY_PATH","/opt/beagle/1.0/gcc/lib")
@@ -18,8 +18,8 @@ load("beagle/1.0")
 --Help description goes here:
 --
 help([[
-Sample submit script and input file located in
-/opt/mrbayes/sample
+MrBayes is a program for Bayesian inference and model choice across a wide range of phylogenetic and evolutionary models. MrBayes uses Markov chain Monte Carlo (MCMC) methods to estimate the posterior distribution of model parameters.
+
 Version:
 --------
 3.1.2 (openmpi-1.4-intel)

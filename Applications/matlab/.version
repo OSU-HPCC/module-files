@@ -1,5 +1,0 @@
-#%Module1.0#################################################
-##
-## set the default version
-##
-set     ModulesVersion      "R2015a"

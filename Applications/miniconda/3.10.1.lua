@@ -8,7 +8,7 @@ whatis("Category: system, development")
 whatis("Description: interpreted programming language
 http://repo.continuum.io/miniconda")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/miniconda/3.10.1/bin")
 prepend_path("MANPATH","/opt/miniconda/3.10.1/share/man")
@@ -16,10 +16,7 @@ prepend_path("MANPATH","/opt/miniconda/3.10.1/share/man")
 --Help description goes here:
 --
 help([[
-
-
-	Module Miniconda loads environmental variables defining
-	the location of the Miniconda binaries and libraries: 
+Interpreted programming language.
 
 Version:
 --------

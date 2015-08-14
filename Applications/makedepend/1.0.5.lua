@@ -4,8 +4,9 @@
 --
 whatis("Name: makedepend")
 whatis("Version: 1.0.5")
+whatis("Description:")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/makedepend/1.0.5/gcc/bin")
 --
@@ -24,5 +25,5 @@ Version:
 
 Website:
 --------
-www
+
 ]])

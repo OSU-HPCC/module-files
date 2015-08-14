@@ -5,20 +5,18 @@
 whatis("Name: Matlab")
 whatis("Version: R2015a")
 whatis("Category: Package")
+whatis("Description: MATLAB (matrix laboratory) is a multi-paradigm numerical computing environment and fourth-generation programming language.
+www.mathworks.com")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/matlab/R2015a/bin")
 --
 --Help description goes here:
 --
 help([[
-The Matlab modulefile sets the 
-PATH variable to
-the location of the Matlab binaries.
+MATLAB (matrix laboratory) is a multi-paradigm numerical computing environment and fourth-generation programming language.
 
-
-Version R2015a
 Version:
 --------
 R2015a

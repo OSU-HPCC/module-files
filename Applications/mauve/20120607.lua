@@ -8,19 +8,15 @@ whatis("Category: alignment, bioinformatics")
 whatis("Description: Multiple Genome Alignment
 http:/gel.ahabs.wisc.edu/mauve/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/mauve/20120607/prebuilt")
 --
 --Help description goes here:
 --
 help([[
-The Mauve module file defines the following environment variables:
-PATH, for 
-the location of the Mauve distribution and its libraries.
+Mauve is a multiple genome alignment and visualization package that considers large-scale rearrangements in addition to nucleotide substitution and indels.
 
-
-Version 20120607
 Version:
 --------
 20120607

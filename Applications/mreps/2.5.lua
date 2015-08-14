@@ -8,19 +8,15 @@ whatis("Category: bioinformatics")
 whatis("Description: Software for identifying serial repeats in genome sequences
 http://bioinfo.lifl.fr/mreps/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/mreps/2.5/gcc")
 --
 --Help description goes here:
 --
 help([[
-The mreps module file defines the following environment variables:
-PATH for 
-the location of the MrBayes distribution and its libraries.
+mreps is a flexible and efficient software for identifying serial repeats (usually called tandem repeats) in DNA sequences. It was developed in the years 2000-2005 at LORIA in former Adage group and is currently maintained by Gregory Kucherov.
 
-
-Version 2.5
 Version:
 --------
 2.5

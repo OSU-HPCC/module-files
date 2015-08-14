@@ -8,19 +8,15 @@ whatis("Category: sequencing, statistical, genomics")
 whatis("Description: Software package for rapid alignment of very large DNA and amino acid sequences
 http://mummer.sourceforge.net")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/mummer/3.23/gcc")
 --
 --Help description goes here:
 --
 help([[
-The MUMmer module file defines the following environment variables:
-PATH for 
-the location of the MUMmer distribution and its libraries.
+MUMmer is a system for rapidly aligning entire genomes, whether in complete or draft form.
 
-
-Version 3.23
 Version:
 --------
 3.23
