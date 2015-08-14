@@ -8,19 +8,15 @@ whatis("Category: sequencing, statistical, genomics")
 whatis("Description: A de-novo repeat family identification and modeling package
 http://www.repeatmasker.org/RMDownload.html")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/repeatmasker/4.0.1/perl")
 --
 --Help description goes here:
 --
 help([[
-The RepeatMasker module file defines the following environment variables:
-PATH for 
-the location of the RepeatMasker distribution and its libraries.
+RepeatMasker uses a sequence search engine to perform it's search for repeats.
 
-
-Version 4.0.1
 Version:
 --------
 4.0.1

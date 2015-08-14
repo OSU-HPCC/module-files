@@ -8,19 +8,15 @@ whatis("Category: sequencing, statistical, genomics")
 whatis("Description: A de-novo repeat family identification and modeling package
 http://www.repeatmasker.org/RepeatModeler.html")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/repeatmodeler/1.0.7/gcc")
 --
 --Help description goes here:
 --
 help([[
-The RepeatModeler module file defines the following environment variables:
-PATH for 
-the location of the RepeatModeler distribution and its libraries.
+RepeatModeler is a de-novo repeat family identification and modeling package. At the heart of RepeatModeler are two de-novo repeat finding programs ( RECON and RepeatScout ) which employ complementary computational methods for identifying repeat element boundaries and family relationships from sequence data. RepeatModeler assists in automating the runs of RECON and RepeatScout given a genomic database and uses the output to build, refine and classify consensus models of putative interspersed repeats.
 
-
-Version 1.0.7
 Version:
 --------
 1.0.7

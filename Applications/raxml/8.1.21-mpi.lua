@@ -4,8 +4,10 @@
 --
 whatis("Name: RAxML intelmpi")
 whatis("Version: 8.1.21")
+whatis("Description: RAxML
+")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/raxml/8.1.21/intelmpi")
 load("gcc-4.7.2")
@@ -14,17 +16,13 @@ load("intelmpi")
 --Help description goes here:
 --
 help([[
-The RAxML module file defines the following environment variables:
-PATH for 
-the location of the RAxML distribution and its libraries.
+RAxML
 
-
-Version 8.1.21
 Version:
 --------
 8.1.21
 
 Website:
 --------
-www
+
 ]])

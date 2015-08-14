@@ -8,7 +8,7 @@ whatis("Category: sequencing, statistical, genomics")
 whatis("Description: Recognize errors in assemblies using paired reads
 https://www.sanger.ac.uk/resources/software/reapr/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/reapr/1.0.17/Reapr_1.0.17")
 load("R/2.15.1")
@@ -17,12 +17,8 @@ load("perl/5.18.1")
 --Help description goes here:
 --
 help([[
-The Reapr module file defines the following environment variables:
-PATH for 
-the location of the RepeatScout distribution and its libraries.
+REAPR is a tool that evaluates the accuracy of a genome assembly using mapped paired end reads, without the use of a reference genome for comparison. It can be used in any stage of an assembly pipeline to automatically break incorrect scaffolds and flag other errors in an assembly for manual inspection. It reports mis-assemblies and other warnings, and produces a new broken assembly based on the error calls.
 
-
-Version 1.0.17
 Version:
 --------
 1.0.17

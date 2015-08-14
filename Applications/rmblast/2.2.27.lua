@@ -8,7 +8,7 @@ whatis("Category: sequencing, statistical, alignment")
 whatis("Description: A modified version of NCBI Blast for use with RepeatMasker and RepeatModeler
 http://www.repeatmasker.org/RMBlast.html")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/rmblast/2.2.27/gcc/bin")
 prepend_path("INCLUDE","/opt/rmblast/2.2.27/gcc/include")
@@ -17,12 +17,8 @@ prepend_path("LD_LIBRARY_PATH","/opt/rmblast/2.2.27/gcc/lib")
 --Help description goes here:
 --
 help([[
-The RMBlast module file defines the following environment variables:
-PATH 
-the location of the RMBlast distribution and its libraries.
+RMBlast is a RepeatMasker compatible version of the standard NCBI BLAST suite. The primary difference between this distribution and the NCBI distribution is the addition of a new program "rmblastn" for use with RepeatMasker and RepeatModeler.
 
-
-Version 2.2.27
 Version:
 --------
 2.2.27

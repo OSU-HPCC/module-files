@@ -8,7 +8,7 @@ whatis("Category: sequencing, statistical, genomics")
 whatis("Description: Integrates bioinformatics programs
 http://urgi.versailles.inra.fr/Tools/REPET")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/repet/2.0/bin")
 prepend_path("REPET_PATH","/opt/repet/2.0")
@@ -31,12 +31,7 @@ load("hmmer/3.0")
 --Help description goes here:
 --
 help([[
-The REPET module file defines the following environment variables:
-PATH for 
-the location of the REPET distribution and its libraries.
-
-
-Version 2.0
+The REPET package integrates bioinformatics programs in order to tackle biological issues at the genomic scale.
 Version:
 --------
 2.0

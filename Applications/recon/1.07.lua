@@ -8,7 +8,7 @@ whatis("Category: sequencing, statistical, genomics")
 whatis("Description: Tool for automated de novo identification of repeat families from genomic sequences
 http://repeatmasker.org")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/recon/1.07/gcc/bin")
 prepend_path("PATH","/opt/recon/1.07/gcc/scripts")
@@ -16,12 +16,8 @@ prepend_path("PATH","/opt/recon/1.07/gcc/scripts")
 --Help description goes here:
 --
 help([[
-The RECON module file defines the following environment variables:
-PATH for 
-the location of the RepeatScout distribution and its libraries.
+RepeatMasker is a program that screens DNA sequences for interspersed repeats and low complexity DNA sequences. The output of the program is a detailed annotation of the repeats that are present in the query sequence as well as a modified version of the query sequence in which all the annotated repeats have been masked (default: replaced by Ns). Currently over 56% of human genomic sequence is identified and masked by the program. Sequence comparisons in RepeatMasker are performed by one of several popular search engines including nhmmer, cross_match, ABBlast/WUBlast, RMBlast and Decypher. RepeatMasker makes use of curated libraries of repeats and currently supports Dfam ( profile HMM library derived from Repbase sequences ) and Repbase, a service of the Genetic Information Research Institute.
 
-
-Version 1.0.5
 Version:
 --------
 1.07
