@@ -8,19 +8,15 @@ whatis("Category: browser")
 whatis("Description: command line browser
 http://lynx.isc.org/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/lynx/2.8.7/gcc/bin")
 --
 --Help description goes here:
 --
 help([[
-The lynx module file defines the following environment variables:
-PATH, for 
-the location of the lynx distribution and its libraries.
+A command line (text based) browser.
 
-
-Version 2.8.7
 Version:
 --------
 2.8.7

@@ -5,8 +5,10 @@
 whatis("Name: libxc")
 whatis("Version: 2.0.2 MPI")
 whatis("Category: library")
+whatis("Description: intel library
+")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("LD_LIBRARY_PATH","/opt/libxc/2.0.2/openmpi-1.4-intel/lib")
 prepend_path("INCLUDE","/opt/libxc/2.0.2/openmpi-1.4-intel/include")
@@ -14,17 +16,13 @@ prepend_path("INCLUDE","/opt/libxc/2.0.2/openmpi-1.4-intel/include")
 --Help description goes here:
 --
 help([[
-The libxc module file defines the following environment variables:
-PATH 
-the location of the libxc distribution and its libraries.
+intel library
 
-
-Version 2.0.2 MPI
 Version:
 --------
 2.0.2 MPI
 
 Website:
 --------
-www
+
 ]])

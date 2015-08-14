@@ -5,8 +5,10 @@
 whatis("Name: libxc")
 whatis("Version: 2.0.2")
 whatis("Category: library")
+whatis("Description: gcc library
+")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("LD_LIBRARY_PATH","/opt/libxc/2.0.2/gcc/lib")
 prepend_path("INCLUDE","/opt/libxc/2.0.2/gcc/include")
@@ -26,5 +28,5 @@ Version:
 
 Website:
 --------
-www
+
 ]])

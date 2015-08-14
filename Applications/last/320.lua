@@ -16,12 +16,8 @@ prepend_path("PATH","/opt/last/320/gcc/scripts")
 --Help description goes here:
 --
 help([[
-The LAST module file defines the following environment variables:
-PATH for 
-the location of the LAST distribution and its libraries.
+AST finds initial matches based on their multiplicity, instead of using a fixed length (e.g. BLAST uses 11-mers). To find these variable-length matches, it uses a suffix array (inspired by Vmatch). To achieve high sensitivity, it uses a spaced suffix array (or subset suffix array), analogous to spaced seeds (or subset seeds).
 
-
-Version 320
 Version:
 --------
 320 (gcc)

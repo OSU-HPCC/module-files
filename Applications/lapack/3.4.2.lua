@@ -8,7 +8,7 @@ whatis("Category: linear equations")
 whatis("Description: Linear Algebra PACK
 www.netlib.org/lapack/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/lapack/3.4.2/gcc")
 prepend_path("LD_LIBRARY_PATH","/opt/lapack/3.4.2/gcc")
@@ -16,12 +16,8 @@ prepend_path("LD_LIBRARY_PATH","/opt/lapack/3.4.2/gcc")
 --Help description goes here:
 --
 help([[
-The LAPACK module file defines the following environment variables:
-PATH for 
-the location of the LAPACK distribution and its libraries.
+LAPACK is written in Fortran 90 and provides routines for solving systems of simultaneous linear equations, least-squares solutions of linear systems of equations, eigenvalue problems, and singular value problems.
 
-
-Version 3.4.2
 Version:
 --------
 3.4.2

@@ -6,26 +6,22 @@ whatis("Name: lastz")
 whatis("Version: 1.02")
 whatis("Category: genome")
 whatis("Description: Pairwise aligner
-http://http://www.bx.psu.edu/~rsharris/lastz/")
+http://www.bx.psu.edu/~rsharris/lastz/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/lastz/1.02/gcc/bin")
 --
 --Help description goes here:
 --
 help([[
-The lastz module file defines the following environment variables:
-PATH for 
-the location of the lastz distribution and its libraries.
+LASTZ is a program for aligning DNA sequences, a pairwise aligner. Originally designed to handle sequences the size of human chromosomes and from different species, it is also useful for sequences produced by NGS sequencing technologies such as Roche 454.
 
-
-Version 1.02
 Version:
 --------
 1.02
 
 Website:
 --------
-http://http://www.bx.psu.edu/~rsharris/lastz/
+http://www.bx.psu.edu/~rsharris/lastz/
 ]])

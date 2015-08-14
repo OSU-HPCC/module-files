@@ -8,7 +8,7 @@ whatis("Category: log4cpp")
 whatis("Description: log4cpp
 http://log4cpp.sourceforge.net")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("LD_LIBRARY_PATH","/opt/log4cpp/1.1.1/gcc/lib")
 prepend_path("LIBRARY_PATH","/opt/log4cpp/1.1.1/gcc/lib")
@@ -17,12 +17,8 @@ prepend_path("CPATH","/opt/log4cpp/1.1.1/gcc/include")
 --Help description goes here:
 --
 help([[
-The log4cpp module file defines the following environment variables:
-LD_LIBRARY_PATH for 
-the location of the log4cpp C++ libraries.
+Log4cpp is library of C++ classes for flexible logging to files, syslog, IDSA and other destinations. It is modeled after the Log4j Java library, staying as close to their API as is reasonable.
 
-
-Version log4cpp
 Version:
 --------
 1.1.1
