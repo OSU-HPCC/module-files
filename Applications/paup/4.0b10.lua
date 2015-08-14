@@ -8,7 +8,7 @@ whatis("Category: molecular biology")
 whatis("Description: Paup is a tool for inferring and interpreting phylogenetic trees.
 http://paup.csit.fsu.edu/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("LD_LIBRARY_PATH","/opt/ncurses/5.9-i686/gcc/lib")
 prepend_path("PATH","/opt/paup/4.0b10/prebuilt/")
@@ -16,12 +16,8 @@ prepend_path("PATH","/opt/paup/4.0b10/prebuilt/")
 --Help description goes here:
 --
 help([[
-The Paup  module file defines the following environment variables:
-PATH for 
-the location of the Paup executibles.
+Paup is a tool for inferring and interpreting phylogenetic trees.
 
-
-Version 4.0b10
 Version:
 --------
 4.0b10

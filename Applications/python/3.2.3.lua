@@ -8,7 +8,7 @@ whatis("Category: system, development")
 whatis("Description: interpreted programming language
 http://www.python.org")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/python/3.2.3/gcc/bin")
 prepend_path("LD_LIBRARY_PATH","/opt/python/3.2.3/gcc/lib")
@@ -17,11 +17,7 @@ prepend_path("MANPATH","/opt/python/3.2.3/gcc/share/man")
 --Help description goes here:
 --
 help([[
-
-
-	Module python loads environmental variables defining
-	the location of the Python binaries and libraries: 
-	Python Version python3_2_3
+Python is a programming language that lets you work quickly and integrate systems more effectively.
 
 Version:
 --------

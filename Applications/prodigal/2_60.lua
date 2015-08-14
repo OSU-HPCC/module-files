@@ -5,24 +5,23 @@
 whatis("Name: Prodigal")
 whatis("Version: 2_60")
 whatis("Category: genomics, alignment, bioinformatics")
-whatis("url: https://code.google.com/p/prodigal/")
+whatis("Description: https://github.com/hyattpd/Prodigal
+Website: https://code.google.com/p/prodigal/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/prodigal/prodigal.v2_60/")
 --
 --Help description goes here:
 --
 help([[
-The Prodigal module file puts the binary in the 
-PATH 
+Fast, reliable protein-coding gene prediction for prokaryotic genomes.
 
-Version 2_60
 Version:
 --------
 2_60
 
 Website:
 --------
-www
+https://github.com/hyattpd/Prodigal
 ]])

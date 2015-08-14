@@ -5,22 +5,18 @@
 whatis("Name: Phd2fasta")
 whatis("Version: 0.990622.f")
 whatis("Category: ")
-whatis("Description: 
+whatis("Description: The phred software reads DNA sequencing trace files, calls bases, and assigns a quality value to each called base.
 http://www.phrap.org/phredphrapconsed.html")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/phd2fasta/0.990622.f")
 --
 --Help description goes here:
 --
 help([[
-The Phd2fasta module file defines the following environment variables:
-PATH 
-the location of the Phd2fasta.
+The phred software reads DNA sequencing trace files, calls bases, and assigns a quality value to each called base.
 
-
-Version 0.990622.f
 Version:
 --------
 0.990622.f

@@ -8,7 +8,7 @@ whatis("Category: molecular biology")
 whatis("Description: PASA2 is a eukaryotic genome annotation tool
 http://pasa.sourceforge.net/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/pasa2/r20130605p1/gcc/bin")
 prepend_path("PATH","/opt/pasa2/r20130605p1/gcc/scripts")
@@ -20,12 +20,8 @@ load("gmap")
 --Help description goes here:
 --
 help([[
-The PASA2 module file defines the following environment variables:
-PATH for 
-the location of the PASA executibles.
+PASA, acronym for Program to Assemble Spliced Alignments, is a eukaryotic genome annotation tool that exploits spliced alignments of expressed transcript sequences to automatically model gene structures, and to maintain gene structure annotation consistent with the most recently available experimental sequence data. PASA also identifies and classifies all splicing variations supported by the transcript alignments.
 
-
-Version r20130605p1
 Version:
 --------
 r20130605p1

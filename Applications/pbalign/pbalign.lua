@@ -7,7 +7,7 @@ whatis("Category: sequencing, statistical, alignment")
 whatis("Description: Alignment tool for PacBio reads
 https://github.com/PacificBiosciences/pbalign")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 load("hdf5")
 load("anaconda")
@@ -18,13 +18,10 @@ prepend_path("TMPDIR","/tmp")
 --Help description goes here:
 --
 help([[
-The pbalign module file defines the following environment variables:
-PATH 
-the location of the pbalign distribution and its libraries.
+pbalign maps PacBio reads to reference sequences and saves alignments to a SAM or cmp.h5 file.
 
 Version:
 --------
-N/A
 
 Website:
 --------

@@ -8,19 +8,15 @@ whatis("Category: bioinformatics, genomics, sequencing")
 whatis("Description: Genomics repeat analysis software
 http://www.drive5.com/piler/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/piler/1.0/gcc/bin")
 --
 --Help description goes here:
 --
 help([[
-The PILER module file defines the following environment variables:
-PATH for 
-the location of the PILER distribution and its libraries.
+PILER is public domain software for analyzing repetitive DNA found in genome sequences.
 
-
-Version 1.0
 Version:
 --------
 1.0

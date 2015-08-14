@@ -8,7 +8,7 @@ whatis("Category: cartographic software required for R package rgdal")
 whatis("Description:See https://github.com/OSGeo/proj.4
 https://github.com/OSGeo/proj.4")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/proj4/4.4/bin")
 prepend_path("LD_LIBRARY_PATH","/opt/proj4/4.4/lib")
@@ -16,11 +16,11 @@ prepend_path("LD_LIBRARY_PATH","/opt/proj4/4.4/lib")
 --Help description goes here:
 --
 help([[
-This software is needed for the R package rgdal
+Cartographic Projections Library http://proj.osgeo.org
+
 Version:
 --------
 4.4
-
 Website:
 --------
 https://github.com/OSGeo/proj.4

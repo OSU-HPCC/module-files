@@ -8,19 +8,15 @@ whatis("Category: bioinformatics")
 whatis("Description: Integrates genomic data with detailed functional annotations of the genome
 http://brg.ai.sri.com/ptools")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/pathway-tools/18.0")
 --
 --Help description goes here:
 --
 help([[
-The pathway-tools module file defines the following environment variables:
-PATH, LIB for 
-the location of the pathway-tools distribution and its libraries.
+Pathway Tools is a comprehensive symbolic systems biology software system that is associated with the BioCyc database collection.
 
-
-Version 18.0
 Version:
 --------
 18.0

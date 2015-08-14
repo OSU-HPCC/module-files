@@ -8,7 +8,7 @@ whatis("Category: pbdagcon")
 whatis("Description: Sequence consensus algorithm implementation based on using directed acyclic graphs
 https://github.com/PacificBiosciences/pbdagcon")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/pbdagcon/0.2.3/gcc/src/cpp")
 prepend_path("BLASR","/opt/blasr/1.3.1/gcc/pblibblasr-master")
@@ -22,12 +22,8 @@ load("gtest")
 --Help description goes here:
 --
 help([[
-The pbdagcon module file defines the following environment variables:
-PATH, LD_LIBRARY_PATH for 
-the location of the pbdagcon libraries.
+pbdagcon is a tool that implements DAGCon (Directed Acyclic Graph Consensus) which is a sequence consensus algorithm based on using directed acyclic graphs to encode multiple sequence alignment.
 
-
-Version pbdagcon
 Version:
 --------
 0.2.3

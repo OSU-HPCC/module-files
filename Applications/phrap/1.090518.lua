@@ -5,22 +5,18 @@
 whatis("Name: Phrap")
 whatis("Version: 1.090518")
 whatis("Category: ")
-whatis("Description: 
+whatis("Description: The phred software reads DNA sequencing trace files, calls bases, and assigns a quality value to each called base.
 http://www.phrap.org/phredphrapconsed.html")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/phrap/1.090518")
 --
 --Help description goes here:
 --
 help([[
-The Phrap module file defines the following environment variables:
-PATH 
-the location of the Phred.
+The phred software reads DNA sequencing trace files, calls bases, and assigns a quality value to each called base.
 
-
-Version 1.090518
 Version:
 --------
 1.090518

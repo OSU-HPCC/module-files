@@ -8,7 +8,7 @@ whatis("Category: phonon calculations, physics")
 whatis("Description: Phonopy is an open source package of phonon calculations based on the supercell approach.
 http://phonopy.sourceforge.net")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/phonopy/1.8.4.1/python/bin")
 prepend_path("PYTHONPATH","/opt/phonopy/1.8.4.1/python/bin")
@@ -19,11 +19,8 @@ load("anaconda/1.6.1")
 --
 help([[
 The phonopy module file defines the following environment variables:
-PATH for 
-the location of the phonopy distribution and its libraries.
+nopy is an open source package for phonon calculations at harmonic and quasi-harmonic levels.
 
-
-Version 1.8.4.1
 Version:
 --------
 1.8.4.1

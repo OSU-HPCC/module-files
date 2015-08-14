@@ -5,10 +5,10 @@
 whatis("Name: Phred")
 whatis("Version: 0.020425.c")
 whatis("Category: ")
-whatis("Description: 
+whatis("Description: The phred software reads DNA sequencing trace files, calls bases, and assigns a quality value to each called base.
 http://www.phrap.org/phredphrapconsed.html")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/phred/0.020425.c")
 setenv("PHRED_PARAMETER_FILE","/opt/phred/0.020425.c/phredpar.dat")
@@ -16,12 +16,8 @@ setenv("PHRED_PARAMETER_FILE","/opt/phred/0.020425.c/phredpar.dat")
 --Help description goes here:
 --
 help([[
-The Phred module file defines the following environment variables:
-PATH, PHRED_PARAMETER_FILE  
-the location of the Phred.
+The phred software reads DNA sequencing trace files, calls bases, and assigns a quality value to each called base.
 
-
-Version 0.020425.c
 Version:
 --------
 0.020425.c

@@ -8,18 +8,14 @@ whatis("Category: multithreaded benchmarks")
 whatis("Description: Princeton Application Repository for Shared-Memory Computers (PARSEC) is a benchmark suite composed of multithreaded programs. The suite focuses on emerging workloads and was designed to be representative of next-generation shared-memory programs for chip-multiprocessors.
 http://parsec.cs.princeton.edu/index.htm")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 --
 --Help description goes here:
 --
 help([[
-The Parsec  module file defines the following environment variables:
-PATH for 
-the location of the Parsec executibles.
+The Princeton Application Repository for Shared-Memory Computers (PARSEC) is a benchmark suite composed of multithreaded programs. The suite focuses on emerging workloads and was designed to be representative of next-generation shared-memory programs for chip-multiprocessors.
 
-
-Version 3.0
 Version:
 --------
 3.0
