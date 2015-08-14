@@ -5,19 +5,18 @@
 whatis("Name: QTLCartographer")
 whatis("Version: 1.17j")
 whatis("Category: ")
-whatis("Description: 
+whatis("Description: QTL Cartographer is a suite of programs to map quantitative traits using a map of molecular markers.
 http://statgen.ncsu.edu/qtlcart/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/QTLCartUnix/1.17j/intel")
 --
 --Help description goes here:
 --
 help([[
-The QTLCartographer module file defines the PATH variables.
+QTL Cartographer is a suite of programs to map quantitative traits using a map of molecular markers. The programs are available via an anonymous ftp server. See the README for more information. You will also want a copy of Gnuplot to display plots made by QTL Cartographer. Gnuplot is freely available on the web. Do a search to find the latest version for your operating system.
 
-Version 1.17j
 Version:
 --------
 1.17j

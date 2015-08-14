@@ -5,8 +5,10 @@
 whatis("Name: quast")
 whatis("Version: 2.3")
 whatis("Category: assembly evaluation ")
+whatis("Description: QUAST evaluates genome assemblies.
+http://bioinf.spbau.ru/quast")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/quast/2.3")
 load("anaconda")
@@ -14,12 +16,10 @@ load("anaconda")
 --Help description goes here:
 --
 help([[
-The quast module file defines the following environment variables:
-PATH for 
-the location of the REPET distribution and its libraries.
+QUAST evaluates genome assemblies.
+It can works both with and without a given reference genome.
+The tool accepts multiple assemblies, thus is suitable for comparison.
 
-
-Version 2.0
 Version:
 --------
 2.3
