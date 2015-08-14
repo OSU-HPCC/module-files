@@ -5,8 +5,10 @@
 whatis("ngopt NextGenOptimator")
 whatis("Version: 20140604")
 whatis("Category: bio")
+whatis("Description: de novo assembly & analysis of Illumina sequence data, including the A5 pipeline, A5-miseq, tools to evaluate assembly quality, and scripts to facilitate data submission to NCBI and the RAST annotation system.
+http://code.google.com/p/ngopt/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/ngopt/a5_miseq_linux_20140604/bin")
 load("perl")
@@ -14,12 +16,7 @@ load("perl")
 --Help description goes here:
 --
 help([[
-
-
-	Module ngopt loads environmental variables defining
-	the location of the ngopt (NextGenOptimator): 
-	Version 20140604
-	and loads perl module
+de novo assembly & analysis of Illumina sequence data, including the A5 pipeline, A5-miseq, tools to evaluate assembly quality, and scripts to facilitate data submission to NCBI and the RAST annotation system.
 
 Version:
 --------

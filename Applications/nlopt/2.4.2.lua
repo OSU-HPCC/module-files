@@ -8,7 +8,7 @@ whatis("Category: statistics, math")
 whatis("Description: Statistical software
 http://ab-initio.mit.edu")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("LD_LIBRARY_PATH","/opt/nlopt/2.4.2/icc/lib")
 prepend_path("CPATH","/opt/nlopt/2.4.2/icc/include")
@@ -16,12 +16,8 @@ prepend_path("CPATH","/opt/nlopt/2.4.2/icc/include")
 --Help description goes here:
 --
 help([[
-The nlopt module file defines the following environment variables:
-PATH, MANPATH for 
-the location of the nlopt distribution and its libraries.
+NLopt is a free/open-source library for nonlinear optimization, providing a common interface for a number of different free optimization routines available online as well as original implementations of various other algorithms.
 
-
-Version 2.4.2
 Version:
 --------
 2.4.2

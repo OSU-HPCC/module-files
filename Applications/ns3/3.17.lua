@@ -8,7 +8,7 @@ whatis("Category: wireless, simulation")
 whatis("Description: Wireless network simulator
 http://www.nsnam.org")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/ns-allinone-3.17/ns-3.17")
 load("python/3.2.3")
@@ -16,12 +16,8 @@ load("python/3.2.3")
 --Help description goes here:
 --
 help([[
-The NS3 module file defines the following environment variables:
-PATH for 
-the location of the GHC distribution and its libraries.
+ns-3 is a discrete-event network simulator for Internet systems, targeted primarily for research and educational use.
 
-
-Version 3.17
 Version:
 --------
 ns-allinone-3.17

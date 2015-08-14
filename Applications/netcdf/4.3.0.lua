@@ -5,8 +5,10 @@
 whatis("Name: NetCDF")
 whatis("Version: 4.3.0")
 whatis("Category: software libraries")
+whatis("Description: NetCDF Software Libraries
+http://unidata.ucar.edu/software/netcdf")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/netcdf/4.3.0/gcc/bin")
 prepend_path("CPLUS_INCLUDE_PATH","/opt/netcdf/4.3.0/gcc/include")
@@ -15,12 +17,8 @@ prepend_path("LD_LIBRARY_PATH","/opt/netcdf/4.3.0/gcc/lib")
 --Help description goes here:
 --
 help([[
-The NetCDF module file defines the following environment variables:
-PATH for 
-the location of the NetCDF distribution and its libraries.
+NetCDF Software Libraries
 
-
-Version 4.3.0
 Version:
 --------
 4.3.0

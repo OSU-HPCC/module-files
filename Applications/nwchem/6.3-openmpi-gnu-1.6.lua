@@ -8,7 +8,7 @@ whatis("Category: chemistry, computation, dynamics")
 whatis("Description: Computational chemistry tools for parallel computing and problem solving
 http://www.nwchem-sw.org")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("USE_MPI","y")
 prepend_path("USE_MPIF","y")
@@ -33,12 +33,8 @@ load("openmpi-1.6/gnu")
 --Help description goes here:
 --
 help([[
-The NWChem module file defines the following environment variables:
-PATH for 
-the location of the NWChem distribution and its libraries.
+NWChem aims to provide its users with computational chemistry tools that are scalable both in their ability to treat large scientific computational chemistry problems efficiently, and in their use of available parallel computing resources from high-performance parallel supercomputers to conventional workstation clusters.
 
-
-Version 6.3 MPI
 Version:
 --------
 6.3 MPI
