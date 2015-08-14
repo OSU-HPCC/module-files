@@ -5,20 +5,18 @@
 whatis("Name: Scythe")
 whatis("Version: 0.981")
 whatis("Scythe classifies contaminant substrings in sequence reads")
+whatis("Description: Scythe uses a Naive Bayesian approach to classify contaminant substrings in sequence reads.
+https://github.com/vsbuffalo/scythe")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/scythe/0.981")
 --
 --Help description goes here:
 --
 help([[
-The Scythe module file defines the following environment variables:
-PATH for 
-the location of the Scythe executible.
+Scythe uses a Naive Bayesian approach to classify contaminant substrings in sequence reads. It considers quality information, which can make it robust in picking out 3'-end adapters, which often include poor quality bases.
 
-
-Version 0.981 BETA
 Version:
 --------
 0.981

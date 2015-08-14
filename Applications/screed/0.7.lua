@@ -5,22 +5,18 @@
 whatis("Name: screed")
 whatis("Version: 0.7")
 whatis("Category: biology, python, molecular")
-whatis("Description: 
+whatis("Description: Screed parses FASTA and FASTQ files, generates databases, and lets you query these databases. Values such as sequence name, sequence description, sequence quality, and the sequence itself can be retrieved from these databases.
 https://screed.readthedocs.org/en/latest/index.html ")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PYTHONPATH","/opt/screed/0.7")
 --
 --Help description goes here:
 --
 help([[
-The screed module file defines the following environment variables:
-PYTHONPATH for 
-the location of the screed distribution and its libraries.
+Screed parses FASTA and FASTQ files, generates databases, and lets you query these databases. Values such as sequence name, sequence description, sequence quality, and the sequence itself can be retrieved from these databases.
 
-
-Version 0.7
 Version:
 --------
 0.7

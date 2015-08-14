@@ -8,19 +8,15 @@ whatis("Category: spatial structure, statistical, genomics")
 whatis("Description: Characterise spatial genetic structure using genotype data of any ploidy level.
 http://ebe.ulb.ac.be/ebe/Software.html")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/spagedi/1.3a/prebuilt/bin")
 --
 --Help description goes here:
 --
 help([[
-The SPAGeDi module file defines the following environment variables:
-PATH for 
-the location of the SPAGeDi distribution and its libraries.
+SPAGeDi (Spatial Pattern Analysis of Genetic Diversity) is a computer package primarily designed to characterise the spatial genetic structure of mapped individuals and/or mapped populations using genotype data of any ploidy level.
 
-
-Version 1.3a
 Version:
 --------
 1.3a

@@ -4,25 +4,30 @@
 --
 whatis("Name: SRA toolkit")
 whatis("Version: 2.3.5")
+whatis("Description: SRA Toolkit
+http://www.ncbi.nlm.nih.gov/books/NBK158900/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/sratoolkit/sratoolkit.2.3.5-2-centos_linux64/bin")
 --
 --Help description goes here:
 --
 help([[
-The SRA toolkit module file defines the following environment variables:
-PATH for 
-the location of the sra toolkit executibles.
+The SRA Toolkit, and the source-code SRA System Development Kit (SDK), will allow you to programmatically access data housed within SRA and convert it from the SRA format to the following formats:
 
+*ABI SOLiD native (colorspace fasta / qual)
+*fasta
+*fastq
+*sff
+*sam (human-readable bam, aligned or unaligned)
+*Illumina native
 
-Version 2.3.5
 Version:
 --------
 2.3.5
 
 Website:
 --------
-www
+http://www.ncbi.nlm.nih.gov/books/NBK158900/
 ]])

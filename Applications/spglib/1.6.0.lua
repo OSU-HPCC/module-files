@@ -8,19 +8,15 @@ whatis("Category: C library, crystal symmetries, physics")
 whatis("Description: Spglib is a C library for finding and handling crystal symmetries.
 http://spglib.sourceforge.net/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/spglib/1.6.0/gcc/lib")
 --
 --Help description goes here:
 --
 help([[
-The spglib module file defines the following environment variables:
-PATH for 
-the location of the spglib distribution and its libraries.
+Spglib is a C library for finding and handling crystal symmetries.
 
-
-Version 1.6.0
 Version:
 --------
 1.6.0

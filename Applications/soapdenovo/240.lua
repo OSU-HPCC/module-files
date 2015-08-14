@@ -6,26 +6,22 @@ whatis("Name: SOAPdenovo")
 whatis("Version: r240")
 whatis("Category: de novo, sequence, assembler")
 whatis("Description: De novo sequence assembler
-www")
+http://soap.genomics.org.cn/soapdenovo.html")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/soapdenovo/240/gcc")
 --
 --Help description goes here:
 --
 help([[
-The SOAPdenovo module file defines the following environment variables:
-PATH for 
-the location of the SOAPdenovo executibles.
+SOAPdenovo is a novel short-read assembly method that can build a de novo draft assembly for the human-sized genomes. The program is specially designed to assemble Illumina GA short reads. It creates new opportunities for building reference sequences and carrying out accurate analyses of unexplored genomes in a cost effective way. Now the new version is available. SOAPdenovo2, which has the advantage of a new algorithm design that reduces memory consumption in graph construction, resolves more repeat regions in contig assembly, increases coverage and length in scaffold construction, improves gap closing, and optimizes for large genome.
 
-
-Version r240
 Version:
 --------
 r240
 
 Website:
 --------
-www
+http://soap.genomics.org.cn/soapdenovo.html
 ]])

@@ -7,7 +7,7 @@ whatis("Category: system, development")
 whatis("Description: interpreted programming language
 http://repo.continuum.io/miniconda")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/seqcluster/anaconda/bin")
 prepend_path("PATH","/opt/seqcluster/linuxbrew/bin")
@@ -17,14 +17,10 @@ load("R/3.2.1")
 --Help description goes here:
 --
 help([[
-
-
-	Module seqcluster loads environmental variables defining
-	the location of the seqcluster binaries and libraries: 
+Interpreted programming language.
 
 Version:
 --------
-N/A
 
 Website:
 --------

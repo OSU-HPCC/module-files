@@ -8,7 +8,7 @@ whatis("Category: sequence, alignment, map")
 whatis("Description: Tools for manipulating alignments in SAM format
 http://samtools.sourceforge.net/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/samtools/0.1.18/icc")
 prepend_path("PATH","/opt/samtools/0.1.18/icc/bcftools")
@@ -21,12 +21,8 @@ prepend_path("LD_LIBRARY_PATH","/opt/samtools/0.1.18/icc/lib")
 --Help description goes here:
 --
 help([[
-The Samtools module file defines the following environment variables:
-PATH, MANPATH for 
-the location of the Samtools distribution and its libraries.
+SAM (Sequence Alignment/Map) format is a generic format for storing large nucleotide sequence alignments.
 
-
-Version 0.1.18
 Version:
 --------
 0.1.18 (icc)
