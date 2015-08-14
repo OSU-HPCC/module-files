@@ -8,19 +8,23 @@ whatis("Category: sequencing, statistical, alignment")
 whatis("Description: An old version of WUBlast for use with REPET
 http://blast.wustl.edu")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/wublast/2.0a19/gcc")
 --
 --Help description goes here:
 --
 help([[
-The WUBlast module file defines the following environment variables:
-PATH 
-the location of the WUBlast distribution and its libraries.
+Rights to BLAST 2.0 (WU-BLAST) have been acquired by Advanced Biocomputing, LLC. 
+All interested parties are hereby referred to: 
 
+Advanced Biocomputing, LLC 
+11469 Olive Blvd. #105 
+St. Louis, MO 63141-7108 
+http://blast.advbiocomp.com 
+ 
+Rights to BLAST 2.0 (WU-BLAST) have been acquired by Advanced Biocomputing, LLC.
 
-Version 2.0a19
 Version:
 --------
 2.0a19

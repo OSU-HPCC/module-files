@@ -6,26 +6,22 @@ whatis("Name: Velvet")
 whatis("Version: 1.2.10")
 whatis("Category: de novo, sequence, assembler")
 whatis("Description: De novo sequence assembler
-www")
+http://www.ebi.ac.uk/~zerbino/velvet/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/velvet/1.2.10/gcc")
 --
 --Help description goes here:
 --
 help([[
-The Velvet module file defines the following environment variables:
-PATH for 
-the location of the Abyss executibles.
+Velvet is an algorithm package that has been designed to deal with de novo genome assembly and short read sequencing alignments. 
 
-
-Version 1.2.10
 Version:
 --------
 1.2.10
 
 Website:
 --------
-www
+http://www.ebi.ac.uk/~zerbino/velvet/
 ]])

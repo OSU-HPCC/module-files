@@ -5,10 +5,10 @@
 whatis("Name: VinaMPI")
 whatis("Version: 1.1.2")
 whatis("Category: biochemistry")
-whatis("Description: Parallel molecular docking program
-www")
+whatis("Description: Parallel molecular docking program.
+")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/vina/vinampi-2/openmpi-1.4-intel")
 prepend_path("PATH","/opt/vina/vinampi-2/openmpi-1.4-intel/scripts")
@@ -18,17 +18,13 @@ load("autodock-vina")
 --Help description goes here:
 --
 help([[
-The VinaMPI module file defines the following environment variables:
-PATH for 
-the location of the VinaMPI executibles.
+Parallel molecular docking program.
 
-
-Version 1.1.2
 Version:
 --------
 1.1.2
 
 Website:
 --------
-www
+
 ]])
