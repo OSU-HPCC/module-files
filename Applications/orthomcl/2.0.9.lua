@@ -5,19 +5,22 @@
 whatis("Name: ORTHO-MCL")
 whatis("Version: 2.0.9")
 whatis("Category: ")
-whatis("Description: 
+whatis("Description: OrthoMCL groups proteins into “ortholog groups.”
 http://orthomcl.org/common/downloads/software/v2.0/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/orthomcl/2.0.9/gcc/bin")
 --
 --Help description goes here:
 --
 help([[
-The ORTHO-MCL module file defines the PATH variables.
+OrthoMCL groups proteins into “ortholog groups.” That name is a little misleading because the groups contain proteins related by:
 
-Version 2.0.9
+*orthology (recent descent)
+*in-paralogy (recent duplication)
+*co-orthology (recent descent and duplication).
+
 Version:
 --------
 2.0.9

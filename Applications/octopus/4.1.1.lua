@@ -5,10 +5,10 @@
 whatis("Name: Octopus")
 whatis("Version: 4.1.1")
 whatis("Category: ")
-whatis("Description: 
+whatis("Description: Octopus is a scientific program aimed at the ab initio virtual experimentation on a hopefully ever-increasing range of system types.
 http://www.tddft.org/programs/octopus")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/octopus/4.1.1/bin")
 prepend_path("CPLUS_INCLUDE_PATH","/opt/octopus/4.1.1/include")
@@ -21,9 +21,8 @@ load("netcdf")
 --Help description goes here:
 --
 help([[
-The Octopus module file defines the PATH variables.
+Octopus is a scientific program aimed at the ab initio virtual experimentation on a hopefully ever-increasing range of system types. Electrons are described quantum-mechanically within density-functional theory (DFT), in its time-dependent form (TDDFT) when doing simulations in time. Nuclei are described classically as point particles. Electron-nucleus interaction is described within the pseudopotential approximation.
 
-Version 4.1.1
 Version:
 --------
 4.1.1
