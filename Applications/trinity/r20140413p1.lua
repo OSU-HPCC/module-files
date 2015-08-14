@@ -8,7 +8,7 @@ whatis("Category: sequencing, de novo, genomics")
 whatis("Description: Software for reconstructing transcriptomes from RNA-seq data
 http://trinityrnaseq.sourceforge.net/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/trinity/r20140413p1/gcc")
 prepend_path("PATH","/opt/trinity/r20140413p1/gcc/Chrysalis")
@@ -31,12 +31,8 @@ load("gmap")
 --Help description goes here:
 --
 help([[
-The Trinity module file defines the following environment variables:
-PATH for the location of the Trinity
- distribution and its libraries.
+Trinity, developed at the Broad Institute and the Hebrew University of Jerusalem, represents a novel method for the efficient and robust de novo reconstruction of transcriptomes from RNA-seq data. Trinity combines three independent software modules: Inchworm, Chrysalis, and Butterfly, applied sequentially to process large volumes of RNA-seq reads. Trinity partitions the sequence data into many individual de Bruijn graphs, each representing the transcriptional complexity at at a given gene or locus, and then processes each graph independently to extract full-length splicing isoforms and to tease apart transcripts derived from paralogous genes.
 
-
-Version r2014-04-13-p1
 Version:
 --------
 r2014-04-13-p1

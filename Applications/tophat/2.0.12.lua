@@ -8,7 +8,7 @@ whatis("Category: splice, mapper, alignment")
 whatis("Description: Splice junction mapper for RNA-Seq reads
 http://tophat.cbcb.umd.edu/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/tophat/2.0.12/prebuilt")
 load("python/3.2.3")
@@ -18,12 +18,8 @@ load("samtools")
 --Help description goes here:
 --
 help([[
-The Tophat module file defines the following environment variables:
-PATH 
-the location of the Tophat distribution and its libraries.
+TopHat is a fast splice junction mapper for RNA-Seq reads. It aligns RNA-Seq reads to mammalian-sized genomes using the ultra high-throughput short read aligner Bowtie, and then analyzes the mapping results to identify splice junctions between exons. 
 
-
-Version 2.0.12
 Version:
 --------
 2.0.12

@@ -8,19 +8,15 @@ whatis("Category: sequencing, repeats, genomics")
 whatis("Description: Tool for finding repeats in genomic sequences
 http://tandem.bu.edu/trf/trf.html")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/trf/4.07b/prebuilt")
 --
 --Help description goes here:
 --
 help([[
-The TRF module file defines the following environment variables:
-PATH for the location of the Tandem Repeats Finder
- distribution and its libraries.
+TRDB is a public database of tandem repeats that allows users to run their own sequences.
 
-
-Version 4.07b
 Version:
 --------
 4.07b

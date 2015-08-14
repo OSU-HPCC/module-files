@@ -8,7 +8,7 @@ whatis("Category: toolkit, statistical, analysis")
 whatis("Description: Toolkit for analysis of parallel program performance
 http://tau.uoregon.edu")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/tau/2.21.4/openmpi-1.4-intel/x86_64/bin")
 prepend_path("LD_LIBRARY_PATH","/opt/tau/2.21.4/openmpi-1.4-intel/x86_64/lib")
@@ -19,12 +19,8 @@ load("openmpi-1.4/intel")
 --Help description goes here:
 --
 help([[
-The TAU module file defines the following environment variables:
-PATH, LD_LIBRARY_PATH, MANPATH for 
-the location of the TAU distribution and its libraries.
+TAU Performance System® is a portable profiling and tracing toolkit for performance analysis of parallel programs written in Fortran, C, C++, UPC, Java, Python.
 
-
-Version 2.21.4
 Version:
 --------
 2.21.4

@@ -8,19 +8,15 @@ whatis("Category: bioinformatics")
 whatis("Description: A wrapper tool around cutadept and fastqc to apply quality and adapter trimming to FastQ files.
 http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/trimgalore/0.3.3/prebuilt")
 --
 --Help description goes here:
 --
 help([[
-The Trim_Galore module file defines the following environment variables:
-PATH for 
-the location of the Trim_Galore executibles.
+Trim Galore! is a wrapper script to automate quality and adapter trimming as well as quality control, with some added functionality to remove biased methylation positions for RRBS sequence files (for directional, non-directional (or paired-end) sequencing).
 
-
-Version 0.3.3
 Version:
 --------
 0.3.3
