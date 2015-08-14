@@ -6,7 +6,7 @@ whatis("Name: Kr - Estimation of Mutation Genome Distances")
 whatis("Version: 2.0.2")
 whatis("Category: bioinformatics")
 --
-This part actually does stuff.
+--This part actually does stuff.
 --
 prepend_path("PATH","/opt/kr/2.0.2/gcc/Src/Kr")
 prepend_path("CPATH","/opt/kr/2.0.2/gcc/Src/Kr")
@@ -28,5 +28,5 @@ Version:
 
 Website:
 --------
-www
+
 ]])
